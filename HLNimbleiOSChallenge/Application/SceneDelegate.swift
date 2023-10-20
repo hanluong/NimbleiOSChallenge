@@ -22,7 +22,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 //            print("ViewController not found")
 //            return
 //        }
-        let rootNC = UINavigationController(rootViewController: ViewController())
+        let rootNC = UINavigationController(rootViewController: LoginViewController())
         self.window?.rootViewController = rootNC
         self.window?.makeKeyAndVisible()
     }

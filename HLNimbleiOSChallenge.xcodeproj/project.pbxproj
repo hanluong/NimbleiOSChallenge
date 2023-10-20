@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		989DA4872AE26D8700054926 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989DA4862AE26D8700054926 /* AppDelegate.swift */; };
 		989DA4892AE26D8700054926 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989DA4882AE26D8700054926 /* SceneDelegate.swift */; };
-		989DA48B2AE26D8700054926 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989DA48A2AE26D8700054926 /* ViewController.swift */; };
 		989DA4902AE26D8800054926 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 989DA48F2AE26D8800054926 /* Assets.xcassets */; };
 		989DA4932AE26D8800054926 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 989DA4912AE26D8800054926 /* LaunchScreen.storyboard */; };
 		989DA49E2AE26D8800054926 /* HLNimbleiOSChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989DA49D2AE26D8800054926 /* HLNimbleiOSChallengeTests.swift */; };
@@ -17,6 +16,12 @@
 		989DA4AA2AE26D8800054926 /* HLNimbleiOSChallengeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989DA4A92AE26D8800054926 /* HLNimbleiOSChallengeUITestsLaunchTests.swift */; };
 		989DA4B92AE27FB100054926 /* AppAppearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989DA4B82AE27FB100054926 /* AppAppearance.swift */; };
 		989DA4BB2AE2840F00054926 /* AppConfigurations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989DA4BA2AE2840F00054926 /* AppConfigurations.swift */; };
+		989DA4C42AE2CE4E00054926 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989DA4C22AE2CE4E00054926 /* LoginViewController.swift */; };
+		989DA4C52AE2CE4E00054926 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 989DA4C32AE2CE4E00054926 /* LoginViewController.xib */; };
+		989DA4CC2AE2D29A00054926 /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989DA4CA2AE2D29A00054926 /* ForgotPasswordViewController.swift */; };
+		989DA4CD2AE2D29A00054926 /* ForgotPasswordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 989DA4CB2AE2D29A00054926 /* ForgotPasswordViewController.xib */; };
+		989DA4D12AE2D9F600054926 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989DA4D02AE2D9F600054926 /* CustomTextField.swift */; };
+		989DA4D32AE2DDD300054926 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989DA4D22AE2DDD300054926 /* CustomButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +45,6 @@
 		989DA4832AE26D8700054926 /* HLNimbleiOSChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HLNimbleiOSChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		989DA4862AE26D8700054926 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		989DA4882AE26D8700054926 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		989DA48A2AE26D8700054926 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		989DA48F2AE26D8800054926 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		989DA4922AE26D8800054926 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		989DA4942AE26D8800054926 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -51,6 +55,12 @@
 		989DA4A92AE26D8800054926 /* HLNimbleiOSChallengeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HLNimbleiOSChallengeUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		989DA4B82AE27FB100054926 /* AppAppearance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppAppearance.swift; sourceTree = "<group>"; };
 		989DA4BA2AE2840F00054926 /* AppConfigurations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfigurations.swift; sourceTree = "<group>"; };
+		989DA4C22AE2CE4E00054926 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		989DA4C32AE2CE4E00054926 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		989DA4CA2AE2D29A00054926 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
+		989DA4CB2AE2D29A00054926 /* ForgotPasswordViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ForgotPasswordViewController.xib; sourceTree = "<group>"; };
+		989DA4D02AE2D9F600054926 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		989DA4D22AE2DDD300054926 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,7 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				989DA4B72AE27F6B00054926 /* Application */,
-				989DA48A2AE26D8700054926 /* ViewController.swift */,
+				989DA4BC2AE2CCD100054926 /* Presentation */,
 				989DA4B62AE27EA300054926 /* Resources */,
 			);
 			path = HLNimbleiOSChallenge;
@@ -144,6 +154,91 @@
 				989DA4882AE26D8700054926 /* SceneDelegate.swift */,
 			);
 			path = Application;
+			sourceTree = "<group>";
+		};
+		989DA4BC2AE2CCD100054926 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				989DA4BD2AE2CD3F00054926 /* AuthenticationScene */,
+				989DA4CF2AE2D9BF00054926 /* HomeScene */,
+				989DA4CE2AE2D9B100054926 /* Utils */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		989DA4BD2AE2CD3F00054926 /* AuthenticationScene */ = {
+			isa = PBXGroup;
+			children = (
+				989DA4BF2AE2CDB500054926 /* ForgotPassword */,
+				989DA4BE2AE2CDA300054926 /* Login */,
+			);
+			path = AuthenticationScene;
+			sourceTree = "<group>";
+		};
+		989DA4BE2AE2CDA300054926 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				989DA4C12AE2CDCF00054926 /* ViewModel */,
+				989DA4C02AE2CDC800054926 /* View */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		989DA4BF2AE2CDB500054926 /* ForgotPassword */ = {
+			isa = PBXGroup;
+			children = (
+				989DA4C92AE2D28E00054926 /* ViewModel */,
+				989DA4C82AE2D28800054926 /* View */,
+			);
+			path = ForgotPassword;
+			sourceTree = "<group>";
+		};
+		989DA4C02AE2CDC800054926 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				989DA4C22AE2CE4E00054926 /* LoginViewController.swift */,
+				989DA4C32AE2CE4E00054926 /* LoginViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		989DA4C12AE2CDCF00054926 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		989DA4C82AE2D28800054926 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				989DA4CA2AE2D29A00054926 /* ForgotPasswordViewController.swift */,
+				989DA4CB2AE2D29A00054926 /* ForgotPasswordViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		989DA4C92AE2D28E00054926 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		989DA4CE2AE2D9B100054926 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				989DA4D02AE2D9F600054926 /* CustomTextField.swift */,
+				989DA4D22AE2DDD300054926 /* CustomButton.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		989DA4CF2AE2D9BF00054926 /* HomeScene */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = HomeScene;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,8 +345,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				989DA4CD2AE2D29A00054926 /* ForgotPasswordViewController.xib in Resources */,
 				989DA4932AE26D8800054926 /* LaunchScreen.storyboard in Resources */,
 				989DA4902AE26D8800054926 /* Assets.xcassets in Resources */,
+				989DA4C52AE2CE4E00054926 /* LoginViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,10 +373,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				989DA48B2AE26D8700054926 /* ViewController.swift in Sources */,
 				989DA4872AE26D8700054926 /* AppDelegate.swift in Sources */,
+				989DA4D12AE2D9F600054926 /* CustomTextField.swift in Sources */,
 				989DA4892AE26D8700054926 /* SceneDelegate.swift in Sources */,
+				989DA4CC2AE2D29A00054926 /* ForgotPasswordViewController.swift in Sources */,
+				989DA4D32AE2DDD300054926 /* CustomButton.swift in Sources */,
 				989DA4BB2AE2840F00054926 /* AppConfigurations.swift in Sources */,
+				989DA4C42AE2CE4E00054926 /* LoginViewController.swift in Sources */,
 				989DA4B92AE27FB100054926 /* AppAppearance.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
