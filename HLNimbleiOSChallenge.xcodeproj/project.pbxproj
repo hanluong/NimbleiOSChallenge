@@ -1,0 +1,607 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		989DA4872AE26D8700054926 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989DA4862AE26D8700054926 /* AppDelegate.swift */; };
+		989DA4892AE26D8700054926 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989DA4882AE26D8700054926 /* SceneDelegate.swift */; };
+		989DA48B2AE26D8700054926 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989DA48A2AE26D8700054926 /* ViewController.swift */; };
+		989DA48E2AE26D8700054926 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 989DA48C2AE26D8700054926 /* Main.storyboard */; };
+		989DA4902AE26D8800054926 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 989DA48F2AE26D8800054926 /* Assets.xcassets */; };
+		989DA4932AE26D8800054926 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 989DA4912AE26D8800054926 /* LaunchScreen.storyboard */; };
+		989DA49E2AE26D8800054926 /* HLNimbleiOSChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989DA49D2AE26D8800054926 /* HLNimbleiOSChallengeTests.swift */; };
+		989DA4A82AE26D8800054926 /* HLNimbleiOSChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989DA4A72AE26D8800054926 /* HLNimbleiOSChallengeUITests.swift */; };
+		989DA4AA2AE26D8800054926 /* HLNimbleiOSChallengeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989DA4A92AE26D8800054926 /* HLNimbleiOSChallengeUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		989DA49A2AE26D8800054926 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 989DA47B2AE26D8700054926 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 989DA4822AE26D8700054926;
+			remoteInfo = HLNimbleiOSChallenge;
+		};
+		989DA4A42AE26D8800054926 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 989DA47B2AE26D8700054926 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 989DA4822AE26D8700054926;
+			remoteInfo = HLNimbleiOSChallenge;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		989DA4832AE26D8700054926 /* HLNimbleiOSChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HLNimbleiOSChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		989DA4862AE26D8700054926 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		989DA4882AE26D8700054926 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		989DA48A2AE26D8700054926 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		989DA48D2AE26D8700054926 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		989DA48F2AE26D8800054926 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		989DA4922AE26D8800054926 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		989DA4942AE26D8800054926 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		989DA4992AE26D8800054926 /* HLNimbleiOSChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HLNimbleiOSChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		989DA49D2AE26D8800054926 /* HLNimbleiOSChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HLNimbleiOSChallengeTests.swift; sourceTree = "<group>"; };
+		989DA4A32AE26D8800054926 /* HLNimbleiOSChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HLNimbleiOSChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		989DA4A72AE26D8800054926 /* HLNimbleiOSChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HLNimbleiOSChallengeUITests.swift; sourceTree = "<group>"; };
+		989DA4A92AE26D8800054926 /* HLNimbleiOSChallengeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HLNimbleiOSChallengeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		989DA4802AE26D8700054926 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		989DA4962AE26D8800054926 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		989DA4A02AE26D8800054926 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		989DA47A2AE26D8700054926 = {
+			isa = PBXGroup;
+			children = (
+				989DA4852AE26D8700054926 /* HLNimbleiOSChallenge */,
+				989DA49C2AE26D8800054926 /* HLNimbleiOSChallengeTests */,
+				989DA4A62AE26D8800054926 /* HLNimbleiOSChallengeUITests */,
+				989DA4842AE26D8700054926 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		989DA4842AE26D8700054926 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				989DA4832AE26D8700054926 /* HLNimbleiOSChallenge.app */,
+				989DA4992AE26D8800054926 /* HLNimbleiOSChallengeTests.xctest */,
+				989DA4A32AE26D8800054926 /* HLNimbleiOSChallengeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		989DA4852AE26D8700054926 /* HLNimbleiOSChallenge */ = {
+			isa = PBXGroup;
+			children = (
+				989DA4862AE26D8700054926 /* AppDelegate.swift */,
+				989DA4882AE26D8700054926 /* SceneDelegate.swift */,
+				989DA48A2AE26D8700054926 /* ViewController.swift */,
+				989DA48C2AE26D8700054926 /* Main.storyboard */,
+				989DA48F2AE26D8800054926 /* Assets.xcassets */,
+				989DA4912AE26D8800054926 /* LaunchScreen.storyboard */,
+				989DA4942AE26D8800054926 /* Info.plist */,
+			);
+			path = HLNimbleiOSChallenge;
+			sourceTree = "<group>";
+		};
+		989DA49C2AE26D8800054926 /* HLNimbleiOSChallengeTests */ = {
+			isa = PBXGroup;
+			children = (
+				989DA49D2AE26D8800054926 /* HLNimbleiOSChallengeTests.swift */,
+			);
+			path = HLNimbleiOSChallengeTests;
+			sourceTree = "<group>";
+		};
+		989DA4A62AE26D8800054926 /* HLNimbleiOSChallengeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				989DA4A72AE26D8800054926 /* HLNimbleiOSChallengeUITests.swift */,
+				989DA4A92AE26D8800054926 /* HLNimbleiOSChallengeUITestsLaunchTests.swift */,
+			);
+			path = HLNimbleiOSChallengeUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		989DA4822AE26D8700054926 /* HLNimbleiOSChallenge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 989DA4AD2AE26D8800054926 /* Build configuration list for PBXNativeTarget "HLNimbleiOSChallenge" */;
+			buildPhases = (
+				989DA47F2AE26D8700054926 /* Sources */,
+				989DA4802AE26D8700054926 /* Frameworks */,
+				989DA4812AE26D8700054926 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HLNimbleiOSChallenge;
+			productName = HLNimbleiOSChallenge;
+			productReference = 989DA4832AE26D8700054926 /* HLNimbleiOSChallenge.app */;
+			productType = "com.apple.product-type.application";
+		};
+		989DA4982AE26D8800054926 /* HLNimbleiOSChallengeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 989DA4B02AE26D8800054926 /* Build configuration list for PBXNativeTarget "HLNimbleiOSChallengeTests" */;
+			buildPhases = (
+				989DA4952AE26D8800054926 /* Sources */,
+				989DA4962AE26D8800054926 /* Frameworks */,
+				989DA4972AE26D8800054926 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				989DA49B2AE26D8800054926 /* PBXTargetDependency */,
+			);
+			name = HLNimbleiOSChallengeTests;
+			productName = HLNimbleiOSChallengeTests;
+			productReference = 989DA4992AE26D8800054926 /* HLNimbleiOSChallengeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		989DA4A22AE26D8800054926 /* HLNimbleiOSChallengeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 989DA4B32AE26D8800054926 /* Build configuration list for PBXNativeTarget "HLNimbleiOSChallengeUITests" */;
+			buildPhases = (
+				989DA49F2AE26D8800054926 /* Sources */,
+				989DA4A02AE26D8800054926 /* Frameworks */,
+				989DA4A12AE26D8800054926 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				989DA4A52AE26D8800054926 /* PBXTargetDependency */,
+			);
+			name = HLNimbleiOSChallengeUITests;
+			productName = HLNimbleiOSChallengeUITests;
+			productReference = 989DA4A32AE26D8800054926 /* HLNimbleiOSChallengeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		989DA47B2AE26D8700054926 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					989DA4822AE26D8700054926 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					989DA4982AE26D8800054926 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 989DA4822AE26D8700054926;
+					};
+					989DA4A22AE26D8800054926 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 989DA4822AE26D8700054926;
+					};
+				};
+			};
+			buildConfigurationList = 989DA47E2AE26D8700054926 /* Build configuration list for PBXProject "HLNimbleiOSChallenge" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 989DA47A2AE26D8700054926;
+			productRefGroup = 989DA4842AE26D8700054926 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				989DA4822AE26D8700054926 /* HLNimbleiOSChallenge */,
+				989DA4982AE26D8800054926 /* HLNimbleiOSChallengeTests */,
+				989DA4A22AE26D8800054926 /* HLNimbleiOSChallengeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		989DA4812AE26D8700054926 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				989DA4932AE26D8800054926 /* LaunchScreen.storyboard in Resources */,
+				989DA4902AE26D8800054926 /* Assets.xcassets in Resources */,
+				989DA48E2AE26D8700054926 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		989DA4972AE26D8800054926 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		989DA4A12AE26D8800054926 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		989DA47F2AE26D8700054926 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				989DA48B2AE26D8700054926 /* ViewController.swift in Sources */,
+				989DA4872AE26D8700054926 /* AppDelegate.swift in Sources */,
+				989DA4892AE26D8700054926 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		989DA4952AE26D8800054926 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				989DA49E2AE26D8800054926 /* HLNimbleiOSChallengeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		989DA49F2AE26D8800054926 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				989DA4A82AE26D8800054926 /* HLNimbleiOSChallengeUITests.swift in Sources */,
+				989DA4AA2AE26D8800054926 /* HLNimbleiOSChallengeUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		989DA49B2AE26D8800054926 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 989DA4822AE26D8700054926 /* HLNimbleiOSChallenge */;
+			targetProxy = 989DA49A2AE26D8800054926 /* PBXContainerItemProxy */;
+		};
+		989DA4A52AE26D8800054926 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 989DA4822AE26D8700054926 /* HLNimbleiOSChallenge */;
+			targetProxy = 989DA4A42AE26D8800054926 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		989DA48C2AE26D8700054926 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				989DA48D2AE26D8700054926 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		989DA4912AE26D8800054926 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				989DA4922AE26D8800054926 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		989DA4AB2AE26D8800054926 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		989DA4AC2AE26D8800054926 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		989DA4AE2AE26D8800054926 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H45E9F8W3K;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = HLNimbleiOSChallenge/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.luonghan.HLNimbleiOSChallenge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		989DA4AF2AE26D8800054926 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H45E9F8W3K;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = HLNimbleiOSChallenge/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.luonghan.HLNimbleiOSChallenge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		989DA4B12AE26D8800054926 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H45E9F8W3K;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.luonghan.HLNimbleiOSChallengeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HLNimbleiOSChallenge.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/HLNimbleiOSChallenge";
+			};
+			name = Debug;
+		};
+		989DA4B22AE26D8800054926 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H45E9F8W3K;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.luonghan.HLNimbleiOSChallengeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HLNimbleiOSChallenge.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/HLNimbleiOSChallenge";
+			};
+			name = Release;
+		};
+		989DA4B42AE26D8800054926 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H45E9F8W3K;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.luonghan.HLNimbleiOSChallengeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HLNimbleiOSChallenge;
+			};
+			name = Debug;
+		};
+		989DA4B52AE26D8800054926 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H45E9F8W3K;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.luonghan.HLNimbleiOSChallengeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HLNimbleiOSChallenge;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		989DA47E2AE26D8700054926 /* Build configuration list for PBXProject "HLNimbleiOSChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				989DA4AB2AE26D8800054926 /* Debug */,
+				989DA4AC2AE26D8800054926 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		989DA4AD2AE26D8800054926 /* Build configuration list for PBXNativeTarget "HLNimbleiOSChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				989DA4AE2AE26D8800054926 /* Debug */,
+				989DA4AF2AE26D8800054926 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		989DA4B02AE26D8800054926 /* Build configuration list for PBXNativeTarget "HLNimbleiOSChallengeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				989DA4B12AE26D8800054926 /* Debug */,
+				989DA4B22AE26D8800054926 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		989DA4B32AE26D8800054926 /* Build configuration list for PBXNativeTarget "HLNimbleiOSChallengeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				989DA4B42AE26D8800054926 /* Debug */,
+				989DA4B52AE26D8800054926 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 989DA47B2AE26D8700054926 /* Project object */;
+}
