@@ -10,12 +10,13 @@
 		989DA4872AE26D8700054926 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989DA4862AE26D8700054926 /* AppDelegate.swift */; };
 		989DA4892AE26D8700054926 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989DA4882AE26D8700054926 /* SceneDelegate.swift */; };
 		989DA48B2AE26D8700054926 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989DA48A2AE26D8700054926 /* ViewController.swift */; };
-		989DA48E2AE26D8700054926 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 989DA48C2AE26D8700054926 /* Main.storyboard */; };
 		989DA4902AE26D8800054926 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 989DA48F2AE26D8800054926 /* Assets.xcassets */; };
 		989DA4932AE26D8800054926 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 989DA4912AE26D8800054926 /* LaunchScreen.storyboard */; };
 		989DA49E2AE26D8800054926 /* HLNimbleiOSChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989DA49D2AE26D8800054926 /* HLNimbleiOSChallengeTests.swift */; };
 		989DA4A82AE26D8800054926 /* HLNimbleiOSChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989DA4A72AE26D8800054926 /* HLNimbleiOSChallengeUITests.swift */; };
 		989DA4AA2AE26D8800054926 /* HLNimbleiOSChallengeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989DA4A92AE26D8800054926 /* HLNimbleiOSChallengeUITestsLaunchTests.swift */; };
+		989DA4B92AE27FB100054926 /* AppAppearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989DA4B82AE27FB100054926 /* AppAppearance.swift */; };
+		989DA4BB2AE2840F00054926 /* AppConfigurations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989DA4BA2AE2840F00054926 /* AppConfigurations.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +41,6 @@
 		989DA4862AE26D8700054926 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		989DA4882AE26D8700054926 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		989DA48A2AE26D8700054926 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		989DA48D2AE26D8700054926 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		989DA48F2AE26D8800054926 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		989DA4922AE26D8800054926 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		989DA4942AE26D8800054926 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +49,8 @@
 		989DA4A32AE26D8800054926 /* HLNimbleiOSChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HLNimbleiOSChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		989DA4A72AE26D8800054926 /* HLNimbleiOSChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HLNimbleiOSChallengeUITests.swift; sourceTree = "<group>"; };
 		989DA4A92AE26D8800054926 /* HLNimbleiOSChallengeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HLNimbleiOSChallengeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		989DA4B82AE27FB100054926 /* AppAppearance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppAppearance.swift; sourceTree = "<group>"; };
+		989DA4BA2AE2840F00054926 /* AppConfigurations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfigurations.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,13 +101,9 @@
 		989DA4852AE26D8700054926 /* HLNimbleiOSChallenge */ = {
 			isa = PBXGroup;
 			children = (
-				989DA4862AE26D8700054926 /* AppDelegate.swift */,
-				989DA4882AE26D8700054926 /* SceneDelegate.swift */,
+				989DA4B72AE27F6B00054926 /* Application */,
 				989DA48A2AE26D8700054926 /* ViewController.swift */,
-				989DA48C2AE26D8700054926 /* Main.storyboard */,
-				989DA48F2AE26D8800054926 /* Assets.xcassets */,
-				989DA4912AE26D8800054926 /* LaunchScreen.storyboard */,
-				989DA4942AE26D8800054926 /* Info.plist */,
+				989DA4B62AE27EA300054926 /* Resources */,
 			);
 			path = HLNimbleiOSChallenge;
 			sourceTree = "<group>";
@@ -125,6 +123,27 @@
 				989DA4A92AE26D8800054926 /* HLNimbleiOSChallengeUITestsLaunchTests.swift */,
 			);
 			path = HLNimbleiOSChallengeUITests;
+			sourceTree = "<group>";
+		};
+		989DA4B62AE27EA300054926 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				989DA48F2AE26D8800054926 /* Assets.xcassets */,
+				989DA4912AE26D8800054926 /* LaunchScreen.storyboard */,
+				989DA4942AE26D8800054926 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		989DA4B72AE27F6B00054926 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				989DA4862AE26D8700054926 /* AppDelegate.swift */,
+				989DA4B82AE27FB100054926 /* AppAppearance.swift */,
+				989DA4BA2AE2840F00054926 /* AppConfigurations.swift */,
+				989DA4882AE26D8700054926 /* SceneDelegate.swift */,
+			);
+			path = Application;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,7 +252,6 @@
 			files = (
 				989DA4932AE26D8800054926 /* LaunchScreen.storyboard in Resources */,
 				989DA4902AE26D8800054926 /* Assets.xcassets in Resources */,
-				989DA48E2AE26D8700054926 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +279,8 @@
 				989DA48B2AE26D8700054926 /* ViewController.swift in Sources */,
 				989DA4872AE26D8700054926 /* AppDelegate.swift in Sources */,
 				989DA4892AE26D8700054926 /* SceneDelegate.swift in Sources */,
+				989DA4BB2AE2840F00054926 /* AppConfigurations.swift in Sources */,
+				989DA4B92AE27FB100054926 /* AppAppearance.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,14 +317,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		989DA48C2AE26D8700054926 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				989DA48D2AE26D8700054926 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		989DA4912AE26D8800054926 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -435,16 +447,19 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLIENT_ID = "ofzl-2h5ympKa0WqqTzqlVJUiRsxmXQmt5tkgrlWnOE";
+				CLIENT_SECRET = "lMQb900L-mTeU-FVTCwyhjsfBwRCxwwbCitPob96cuU\nlMQb900L-mTeU-FVTCwyhjsfBwRCxwwbCitPob96cuU\n";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = H45E9F8W3K;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = HLNimbleiOSChallenge/Info.plist;
+				INFOPLIST_FILE = HLNimbleiOSChallenge/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -452,6 +467,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.luonghan.HLNimbleiOSChallenge;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				ROOT_URL = "https://survey-api.nimblehq.co/";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -463,16 +479,19 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLIENT_ID = "ofzl-2h5ympKa0WqqTzqlVJUiRsxmXQmt5tkgrlWnOE";
+				CLIENT_SECRET = "lMQb900L-mTeU-FVTCwyhjsfBwRCxwwbCitPob96cuU\nlMQb900L-mTeU-FVTCwyhjsfBwRCxwwbCitPob96cuU\n";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = H45E9F8W3K;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = HLNimbleiOSChallenge/Info.plist;
+				INFOPLIST_FILE = HLNimbleiOSChallenge/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -480,6 +499,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.luonghan.HLNimbleiOSChallenge;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				ROOT_URL = "https://nimble-survey-web-staging.herokuapp.com/";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
