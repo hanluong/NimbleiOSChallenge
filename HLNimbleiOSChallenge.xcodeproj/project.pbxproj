@@ -22,6 +22,8 @@
 		989DA4CD2AE2D29A00054926 /* ForgotPasswordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 989DA4CB2AE2D29A00054926 /* ForgotPasswordViewController.xib */; };
 		989DA4D12AE2D9F600054926 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989DA4D02AE2D9F600054926 /* CustomTextField.swift */; };
 		989DA4D32AE2DDD300054926 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989DA4D22AE2DDD300054926 /* CustomButton.swift */; };
+		989DA4D62AE2E5CB00054926 /* UIColor+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989DA4D52AE2E5CB00054926 /* UIColor+Ext.swift */; };
+		989DA4D92AE2E77F00054926 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989DA4D82AE2E77F00054926 /* LoadingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +63,8 @@
 		989DA4CB2AE2D29A00054926 /* ForgotPasswordViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ForgotPasswordViewController.xib; sourceTree = "<group>"; };
 		989DA4D02AE2D9F600054926 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		989DA4D22AE2DDD300054926 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		989DA4D52AE2E5CB00054926 /* UIColor+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Ext.swift"; sourceTree = "<group>"; };
+		989DA4D82AE2E77F00054926 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -228,8 +232,9 @@
 		989DA4CE2AE2D9B100054926 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				989DA4D02AE2D9F600054926 /* CustomTextField.swift */,
-				989DA4D22AE2DDD300054926 /* CustomButton.swift */,
+				989DA4D42AE2E5B000054926 /* Extensions */,
+				989DA4D72AE2E76D00054926 /* Customized */,
+				989DA4D82AE2E77F00054926 /* LoadingView.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -239,6 +244,23 @@
 			children = (
 			);
 			path = HomeScene;
+			sourceTree = "<group>";
+		};
+		989DA4D42AE2E5B000054926 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				989DA4D52AE2E5CB00054926 /* UIColor+Ext.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		989DA4D72AE2E76D00054926 /* Customized */ = {
+			isa = PBXGroup;
+			children = (
+				989DA4D02AE2D9F600054926 /* CustomTextField.swift */,
+				989DA4D22AE2DDD300054926 /* CustomButton.swift */,
+			);
+			path = Customized;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -376,9 +398,11 @@
 				989DA4872AE26D8700054926 /* AppDelegate.swift in Sources */,
 				989DA4D12AE2D9F600054926 /* CustomTextField.swift in Sources */,
 				989DA4892AE26D8700054926 /* SceneDelegate.swift in Sources */,
+				989DA4D92AE2E77F00054926 /* LoadingView.swift in Sources */,
 				989DA4CC2AE2D29A00054926 /* ForgotPasswordViewController.swift in Sources */,
 				989DA4D32AE2DDD300054926 /* CustomButton.swift in Sources */,
 				989DA4BB2AE2840F00054926 /* AppConfigurations.swift in Sources */,
+				989DA4D62AE2E5CB00054926 /* UIColor+Ext.swift in Sources */,
 				989DA4C42AE2CE4E00054926 /* LoginViewController.swift in Sources */,
 				989DA4B92AE27FB100054926 /* AppAppearance.swift in Sources */,
 			);

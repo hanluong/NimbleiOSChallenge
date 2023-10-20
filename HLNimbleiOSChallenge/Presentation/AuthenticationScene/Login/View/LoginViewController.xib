@@ -35,7 +35,6 @@
                             <subviews>
                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" minimumFontSize="19" translatesAutoresizingMaskIntoConstraints="NO" id="Oip-hy-rrL" customClass="CustomTextField" customModule="HLNimbleiOSChallenge" customModuleProvider="target">
                                     <rect key="frame" x="0.0" y="0.0" width="364" height="56"/>
-                                    <color key="backgroundColor" red="0.28998512030000001" green="0.27480539679999999" blue="0.25882118939999998" alpha="0.81765130655655005" colorSpace="custom" customColorSpace="displayP3"/>
                                     <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -43,7 +42,6 @@
                                 </textField>
                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dk1-A9-nDu" customClass="CustomTextField" customModule="HLNimbleiOSChallenge" customModuleProvider="target">
                                     <rect key="frame" x="0.0" y="86" width="364" height="56"/>
-                                    <color key="backgroundColor" red="0.28998512030000001" green="0.27480539679999999" blue="0.25882118939999998" alpha="0.81765130659999996" colorSpace="custom" customColorSpace="displayP3"/>
                                     <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>

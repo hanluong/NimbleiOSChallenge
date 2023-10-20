@@ -19,6 +19,7 @@ class CustomTextField: UITextField {
     }
 
     private func setupView() {
+        backgroundColor = .textFieldBgColor
         layer.cornerRadius = 12
         textColor = UIColor.white
         attributedPlaceholder = NSAttributedString(
