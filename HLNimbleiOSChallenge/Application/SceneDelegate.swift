@@ -9,6 +9,8 @@ import UIKit
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
+    let appDIContainer = AppDIContainer()
+    var appFlowCoordinator: AppFlowCoordinator?
     var window: UIWindow?
 
 
@@ -16,14 +18,12 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         AppAppearance.setupAppearance()
         guard let windowScene = (scene as? UIWindowScene) else { return }
         window = UIWindow(windowScene: windowScene)
+        let navigationController = UINavigationController()
+        self.window?.rootViewController = navigationController
+        appFlowCoordinator = AppFlowCoordinator(navigationController: navigationController,
+                                                appDIContainer: appDIContainer)
+        appFlowCoordinator?.start()
         
-//        let storyboard = UIStoryboard(name: "MyStoryboardName", bundle: nil)
-//        guard let rootVC = storyboard.instantiateViewController(identifier: "ViewControllerIdentifierName") as? ViewController else {
-//            print("ViewController not found")
-//            return
-//        }
-        let rootNC = UINavigationController(rootViewController: LoginViewController())
-        self.window?.rootViewController = rootNC
         self.window?.makeKeyAndVisible()
     }
 

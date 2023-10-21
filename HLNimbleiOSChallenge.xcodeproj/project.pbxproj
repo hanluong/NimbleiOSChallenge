@@ -17,13 +17,22 @@
 		989DA4B92AE27FB100054926 /* AppAppearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989DA4B82AE27FB100054926 /* AppAppearance.swift */; };
 		989DA4BB2AE2840F00054926 /* AppConfigurations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989DA4BA2AE2840F00054926 /* AppConfigurations.swift */; };
 		989DA4C42AE2CE4E00054926 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989DA4C22AE2CE4E00054926 /* LoginViewController.swift */; };
-		989DA4C52AE2CE4E00054926 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 989DA4C32AE2CE4E00054926 /* LoginViewController.xib */; };
 		989DA4CC2AE2D29A00054926 /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989DA4CA2AE2D29A00054926 /* ForgotPasswordViewController.swift */; };
 		989DA4CD2AE2D29A00054926 /* ForgotPasswordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 989DA4CB2AE2D29A00054926 /* ForgotPasswordViewController.xib */; };
 		989DA4D12AE2D9F600054926 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989DA4D02AE2D9F600054926 /* CustomTextField.swift */; };
 		989DA4D32AE2DDD300054926 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989DA4D22AE2DDD300054926 /* CustomButton.swift */; };
 		989DA4D62AE2E5CB00054926 /* UIColor+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989DA4D52AE2E5CB00054926 /* UIColor+Ext.swift */; };
 		989DA4D92AE2E77F00054926 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989DA4D82AE2E77F00054926 /* LoadingView.swift */; };
+		989DA4DC2AE2EBC700054926 /* AuthenticationFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989DA4DB2AE2EBC700054926 /* AuthenticationFlowCoordinator.swift */; };
+		989DA4DE2AE2EC9400054926 /* AppFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989DA4DD2AE2EC9400054926 /* AppFlowCoordinator.swift */; };
+		989DA4E12AE2ECB800054926 /* AppDIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989DA4E02AE2ECB800054926 /* AppDIContainer.swift */; };
+		989DA4E32AE2EE7500054926 /* AuthenticationSceneDIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989DA4E22AE2EE7500054926 /* AuthenticationSceneDIContainer.swift */; };
+		989DA4E92AE4203500054926 /* DataTransferService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989DA4E82AE4203500054926 /* DataTransferService.swift */; };
+		989DA4EC2AE4218300054926 /* StoryboardInstantiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989DA4EB2AE4218300054926 /* StoryboardInstantiable.swift */; };
+		989DA4EE2AE42DA800054926 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989DA4ED2AE42DA800054926 /* Endpoint.swift */; };
+		989DA4F02AE42DC000054926 /* NetworkConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989DA4EF2AE42DC000054926 /* NetworkConfig.swift */; };
+		989DA4F22AE42DF300054926 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989DA4F12AE42DF300054926 /* NetworkService.swift */; };
+		989DA4F42AE42EF600054926 /* LoginViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 989DA4F32AE42EF600054926 /* LoginViewController.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,13 +67,22 @@
 		989DA4B82AE27FB100054926 /* AppAppearance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppAppearance.swift; sourceTree = "<group>"; };
 		989DA4BA2AE2840F00054926 /* AppConfigurations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfigurations.swift; sourceTree = "<group>"; };
 		989DA4C22AE2CE4E00054926 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		989DA4C32AE2CE4E00054926 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		989DA4CA2AE2D29A00054926 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
 		989DA4CB2AE2D29A00054926 /* ForgotPasswordViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ForgotPasswordViewController.xib; sourceTree = "<group>"; };
 		989DA4D02AE2D9F600054926 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		989DA4D22AE2DDD300054926 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		989DA4D52AE2E5CB00054926 /* UIColor+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Ext.swift"; sourceTree = "<group>"; };
 		989DA4D82AE2E77F00054926 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		989DA4DB2AE2EBC700054926 /* AuthenticationFlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationFlowCoordinator.swift; sourceTree = "<group>"; };
+		989DA4DD2AE2EC9400054926 /* AppFlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFlowCoordinator.swift; sourceTree = "<group>"; };
+		989DA4E02AE2ECB800054926 /* AppDIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDIContainer.swift; sourceTree = "<group>"; };
+		989DA4E22AE2EE7500054926 /* AuthenticationSceneDIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationSceneDIContainer.swift; sourceTree = "<group>"; };
+		989DA4E82AE4203500054926 /* DataTransferService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTransferService.swift; sourceTree = "<group>"; };
+		989DA4EB2AE4218300054926 /* StoryboardInstantiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardInstantiable.swift; sourceTree = "<group>"; };
+		989DA4ED2AE42DA800054926 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		989DA4EF2AE42DC000054926 /* NetworkConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConfig.swift; sourceTree = "<group>"; };
+		989DA4F12AE42DF300054926 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		989DA4F32AE42EF600054926 /* LoginViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginViewController.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +135,9 @@
 			children = (
 				989DA4B72AE27F6B00054926 /* Application */,
 				989DA4BC2AE2CCD100054926 /* Presentation */,
+				989DA4E42AE41FE100054926 /* Domain */,
+				989DA4E52AE41FF000054926 /* Data */,
+				989DA4E62AE41FF700054926 /* Infrastructure */,
 				989DA4B62AE27EA300054926 /* Resources */,
 			);
 			path = HLNimbleiOSChallenge;
@@ -152,10 +173,12 @@
 		989DA4B72AE27F6B00054926 /* Application */ = {
 			isa = PBXGroup;
 			children = (
+				989DA4882AE26D8700054926 /* SceneDelegate.swift */,
 				989DA4862AE26D8700054926 /* AppDelegate.swift */,
 				989DA4B82AE27FB100054926 /* AppAppearance.swift */,
 				989DA4BA2AE2840F00054926 /* AppConfigurations.swift */,
-				989DA4882AE26D8700054926 /* SceneDelegate.swift */,
+				989DA4DD2AE2EC9400054926 /* AppFlowCoordinator.swift */,
+				989DA4DF2AE2ECA300054926 /* DIContainer */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -173,6 +196,7 @@
 		989DA4BD2AE2CD3F00054926 /* AuthenticationScene */ = {
 			isa = PBXGroup;
 			children = (
+				989DA4DA2AE2EAE300054926 /* Flows */,
 				989DA4BF2AE2CDB500054926 /* ForgotPassword */,
 				989DA4BE2AE2CDA300054926 /* Login */,
 			);
@@ -201,7 +225,7 @@
 			isa = PBXGroup;
 			children = (
 				989DA4C22AE2CE4E00054926 /* LoginViewController.swift */,
-				989DA4C32AE2CE4E00054926 /* LoginViewController.xib */,
+				989DA4F32AE42EF600054926 /* LoginViewController.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -232,6 +256,7 @@
 		989DA4CE2AE2D9B100054926 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				989DA4EA2AE4217400054926 /* Protocols */,
 				989DA4D42AE2E5B000054926 /* Extensions */,
 				989DA4D72AE2E76D00054926 /* Customized */,
 				989DA4D82AE2E77F00054926 /* LoadingView.swift */,
@@ -261,6 +286,64 @@
 				989DA4D22AE2DDD300054926 /* CustomButton.swift */,
 			);
 			path = Customized;
+			sourceTree = "<group>";
+		};
+		989DA4DA2AE2EAE300054926 /* Flows */ = {
+			isa = PBXGroup;
+			children = (
+				989DA4DB2AE2EBC700054926 /* AuthenticationFlowCoordinator.swift */,
+			);
+			path = Flows;
+			sourceTree = "<group>";
+		};
+		989DA4DF2AE2ECA300054926 /* DIContainer */ = {
+			isa = PBXGroup;
+			children = (
+				989DA4E02AE2ECB800054926 /* AppDIContainer.swift */,
+				989DA4E22AE2EE7500054926 /* AuthenticationSceneDIContainer.swift */,
+			);
+			path = DIContainer;
+			sourceTree = "<group>";
+		};
+		989DA4E42AE41FE100054926 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		989DA4E52AE41FF000054926 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		989DA4E62AE41FF700054926 /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				989DA4E72AE4202300054926 /* Network */,
+			);
+			path = Infrastructure;
+			sourceTree = "<group>";
+		};
+		989DA4E72AE4202300054926 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				989DA4E82AE4203500054926 /* DataTransferService.swift */,
+				989DA4F12AE42DF300054926 /* NetworkService.swift */,
+				989DA4ED2AE42DA800054926 /* Endpoint.swift */,
+				989DA4EF2AE42DC000054926 /* NetworkConfig.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		989DA4EA2AE4217400054926 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				989DA4EB2AE4218300054926 /* StoryboardInstantiable.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -369,8 +452,8 @@
 			files = (
 				989DA4CD2AE2D29A00054926 /* ForgotPasswordViewController.xib in Resources */,
 				989DA4932AE26D8800054926 /* LaunchScreen.storyboard in Resources */,
+				989DA4F42AE42EF600054926 /* LoginViewController.storyboard in Resources */,
 				989DA4902AE26D8800054926 /* Assets.xcassets in Resources */,
-				989DA4C52AE2CE4E00054926 /* LoginViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -399,11 +482,20 @@
 				989DA4D12AE2D9F600054926 /* CustomTextField.swift in Sources */,
 				989DA4892AE26D8700054926 /* SceneDelegate.swift in Sources */,
 				989DA4D92AE2E77F00054926 /* LoadingView.swift in Sources */,
+				989DA4DE2AE2EC9400054926 /* AppFlowCoordinator.swift in Sources */,
 				989DA4CC2AE2D29A00054926 /* ForgotPasswordViewController.swift in Sources */,
 				989DA4D32AE2DDD300054926 /* CustomButton.swift in Sources */,
+				989DA4F02AE42DC000054926 /* NetworkConfig.swift in Sources */,
 				989DA4BB2AE2840F00054926 /* AppConfigurations.swift in Sources */,
 				989DA4D62AE2E5CB00054926 /* UIColor+Ext.swift in Sources */,
+				989DA4E92AE4203500054926 /* DataTransferService.swift in Sources */,
+				989DA4E32AE2EE7500054926 /* AuthenticationSceneDIContainer.swift in Sources */,
+				989DA4E12AE2ECB800054926 /* AppDIContainer.swift in Sources */,
+				989DA4DC2AE2EBC700054926 /* AuthenticationFlowCoordinator.swift in Sources */,
 				989DA4C42AE2CE4E00054926 /* LoginViewController.swift in Sources */,
+				989DA4F22AE42DF300054926 /* NetworkService.swift in Sources */,
+				989DA4EC2AE4218300054926 /* StoryboardInstantiable.swift in Sources */,
+				989DA4EE2AE42DA800054926 /* Endpoint.swift in Sources */,
 				989DA4B92AE27FB100054926 /* AppAppearance.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

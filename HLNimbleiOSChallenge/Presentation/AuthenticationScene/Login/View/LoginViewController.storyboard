@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y6W-OH-hqX" customClass="LoginViewController" customModule="HLNimbleiOSChallenge" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_blur" translatesAutoresizingMaskIntoConstraints="NO" id="VQ9-ub-CsL">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="150" translatesAutoresizingMaskIntoConstraints="NO" id="xIT-kt-pgl">
+                                <rect key="frame" x="15" y="159" width="363" height="418"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="Gkq-2i-wkG">
+                                        <rect key="frame" x="97.666666666666686" y="0.0" width="168" height="40"/>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="gOl-Pl-msT">
+                                        <rect key="frame" x="10" y="190" width="343" height="228"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" minimumFontSize="19" translatesAutoresizingMaskIntoConstraints="NO" id="F72-z1-exl" customClass="CustomTextField" customModule="HLNimbleiOSChallenge" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="343" height="56"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <textInputTraits key="textInputTraits" spellCheckingType="no" textContentType="email"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qSf-ZJ-n2I" customClass="CustomTextField" customModule="HLNimbleiOSChallenge" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="86" width="343" height="56"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                                            </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H1v-p0-Ral" customClass="CustomButton" customModule="HLNimbleiOSChallenge" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="172" width="343" height="56"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="56" id="4v5-mU-VO5"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <state key="normal" title="Log in">
+                                                    <color key="titleColor" systemColor="labelColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="logInButtonTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="w7k-XV-Phl"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="gOl-Pl-msT" firstAttribute="leading" secondItem="xIT-kt-pgl" secondAttribute="leading" constant="10" id="Sd4-k8-He1"/>
+                                    <constraint firstAttribute="trailing" secondItem="gOl-Pl-msT" secondAttribute="trailing" constant="10" id="aea-Aj-KGF"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="xIT-kt-pgl" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="100" id="3OS-kq-6sQ"/>
+                            <constraint firstAttribute="trailing" secondItem="VQ9-ub-CsL" secondAttribute="trailing" id="SRO-TH-mSm"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="xIT-kt-pgl" secondAttribute="trailing" constant="15" id="YZU-xQ-ktX"/>
+                            <constraint firstAttribute="bottom" secondItem="VQ9-ub-CsL" secondAttribute="bottom" id="cfb-Nz-eMh"/>
+                            <constraint firstItem="VQ9-ub-CsL" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="qVS-oS-KOh"/>
+                            <constraint firstItem="VQ9-ub-CsL" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leading" id="u0f-Ll-VQQ"/>
+                            <constraint firstItem="xIT-kt-pgl" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="15" id="uYH-qU-2zb"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="F72-z1-exl" id="QLw-56-IOs"/>
+                        <outlet property="passwordTextField" destination="qSf-ZJ-n2I" id="AOx-FZ-orA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="98" y="-27"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bg_blur" width="375" height="812"/>
+        <image name="logo" width="168" height="40"/>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

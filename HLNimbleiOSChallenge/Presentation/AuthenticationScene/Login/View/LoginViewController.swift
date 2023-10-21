@@ -7,7 +7,7 @@
 
 import UIKit
 
-class LoginViewController: UIViewController {
+class LoginViewController: UIViewController, StoryboardInstantiable {
     
     // MARK: - Outlets
     
@@ -22,8 +22,15 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var passwordTextField: CustomTextField!
     
 //    let viewModel = LoginViewModel(apiClient: APIClient(cachedData: CacheData()))
+//    private var viewModel: MovieDetailsViewModel!
     
     // MARK: - Lifecycle
+    
+    static func create() -> LoginViewController {
+        let view = LoginViewController.instantiateViewController()
+//        view.viewModel = viewModel
+        return view
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
