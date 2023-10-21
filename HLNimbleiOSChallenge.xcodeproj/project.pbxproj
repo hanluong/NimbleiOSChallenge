@@ -18,7 +18,6 @@
 		989DA4BB2AE2840F00054926 /* AppConfigurations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989DA4BA2AE2840F00054926 /* AppConfigurations.swift */; };
 		989DA4C42AE2CE4E00054926 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989DA4C22AE2CE4E00054926 /* LoginViewController.swift */; };
 		989DA4CC2AE2D29A00054926 /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989DA4CA2AE2D29A00054926 /* ForgotPasswordViewController.swift */; };
-		989DA4CD2AE2D29A00054926 /* ForgotPasswordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 989DA4CB2AE2D29A00054926 /* ForgotPasswordViewController.xib */; };
 		989DA4D12AE2D9F600054926 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989DA4D02AE2D9F600054926 /* CustomTextField.swift */; };
 		989DA4D32AE2DDD300054926 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989DA4D22AE2DDD300054926 /* CustomButton.swift */; };
 		989DA4D62AE2E5CB00054926 /* UIColor+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989DA4D52AE2E5CB00054926 /* UIColor+Ext.swift */; };
@@ -33,6 +32,7 @@
 		989DA4F02AE42DC000054926 /* NetworkConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989DA4EF2AE42DC000054926 /* NetworkConfig.swift */; };
 		989DA4F22AE42DF300054926 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989DA4F12AE42DF300054926 /* NetworkService.swift */; };
 		989DA4F42AE42EF600054926 /* LoginViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 989DA4F32AE42EF600054926 /* LoginViewController.storyboard */; };
+		989DA4F62AE430B600054926 /* ForgotPasswordViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 989DA4F52AE430B600054926 /* ForgotPasswordViewController.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,7 +68,6 @@
 		989DA4BA2AE2840F00054926 /* AppConfigurations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfigurations.swift; sourceTree = "<group>"; };
 		989DA4C22AE2CE4E00054926 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		989DA4CA2AE2D29A00054926 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
-		989DA4CB2AE2D29A00054926 /* ForgotPasswordViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ForgotPasswordViewController.xib; sourceTree = "<group>"; };
 		989DA4D02AE2D9F600054926 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		989DA4D22AE2DDD300054926 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		989DA4D52AE2E5CB00054926 /* UIColor+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Ext.swift"; sourceTree = "<group>"; };
@@ -83,6 +82,7 @@
 		989DA4EF2AE42DC000054926 /* NetworkConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConfig.swift; sourceTree = "<group>"; };
 		989DA4F12AE42DF300054926 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		989DA4F32AE42EF600054926 /* LoginViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginViewController.storyboard; sourceTree = "<group>"; };
+		989DA4F52AE430B600054926 /* ForgotPasswordViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ForgotPasswordViewController.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -241,7 +241,7 @@
 			isa = PBXGroup;
 			children = (
 				989DA4CA2AE2D29A00054926 /* ForgotPasswordViewController.swift */,
-				989DA4CB2AE2D29A00054926 /* ForgotPasswordViewController.xib */,
+				989DA4F52AE430B600054926 /* ForgotPasswordViewController.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -450,8 +450,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				989DA4CD2AE2D29A00054926 /* ForgotPasswordViewController.xib in Resources */,
 				989DA4932AE26D8800054926 /* LaunchScreen.storyboard in Resources */,
+				989DA4F62AE430B600054926 /* ForgotPasswordViewController.storyboard in Resources */,
 				989DA4F42AE42EF600054926 /* LoginViewController.storyboard in Resources */,
 				989DA4902AE26D8800054926 /* Assets.xcassets in Resources */,
 			);

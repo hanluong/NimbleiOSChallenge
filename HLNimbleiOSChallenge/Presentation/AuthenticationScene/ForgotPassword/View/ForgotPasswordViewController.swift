@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ForgotPasswordViewController: UIViewController {
+class ForgotPasswordViewController: UIViewController, StoryboardInstantiable {
     
     @IBOutlet weak var emailField: CustomTextField!
     
