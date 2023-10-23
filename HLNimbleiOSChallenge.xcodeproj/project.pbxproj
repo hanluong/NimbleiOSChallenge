@@ -25,10 +25,10 @@
 		989DA4D32AE2DDD300054926 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989DA4D22AE2DDD300054926 /* CustomButton.swift */; };
 		989DA4D62AE2E5CB00054926 /* UIColor+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989DA4D52AE2E5CB00054926 /* UIColor+Ext.swift */; };
 		989DA4D92AE2E77F00054926 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989DA4D82AE2E77F00054926 /* LoadingView.swift */; };
-		989DA4DC2AE2EBC700054926 /* AuthenticationFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989DA4DB2AE2EBC700054926 /* AuthenticationFlowCoordinator.swift */; };
+		989DA4DC2AE2EBC700054926 /* LoginFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989DA4DB2AE2EBC700054926 /* LoginFlowCoordinator.swift */; };
 		989DA4DE2AE2EC9400054926 /* AppFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989DA4DD2AE2EC9400054926 /* AppFlowCoordinator.swift */; };
 		989DA4E12AE2ECB800054926 /* AppDIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989DA4E02AE2ECB800054926 /* AppDIContainer.swift */; };
-		989DA4E32AE2EE7500054926 /* AuthenticationSceneDIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989DA4E22AE2EE7500054926 /* AuthenticationSceneDIContainer.swift */; };
+		989DA4E32AE2EE7500054926 /* LoginSceneDIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989DA4E22AE2EE7500054926 /* LoginSceneDIContainer.swift */; };
 		989DA4E92AE4203500054926 /* DataTransferService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989DA4E82AE4203500054926 /* DataTransferService.swift */; };
 		989DA4EC2AE4218300054926 /* StoryboardInstantiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989DA4EB2AE4218300054926 /* StoryboardInstantiable.swift */; };
 		989DA4EE2AE42DA800054926 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989DA4ED2AE42DA800054926 /* Endpoint.swift */; };
@@ -107,10 +107,10 @@
 		989DA4D22AE2DDD300054926 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		989DA4D52AE2E5CB00054926 /* UIColor+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Ext.swift"; sourceTree = "<group>"; };
 		989DA4D82AE2E77F00054926 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
-		989DA4DB2AE2EBC700054926 /* AuthenticationFlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationFlowCoordinator.swift; sourceTree = "<group>"; };
+		989DA4DB2AE2EBC700054926 /* LoginFlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginFlowCoordinator.swift; sourceTree = "<group>"; };
 		989DA4DD2AE2EC9400054926 /* AppFlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFlowCoordinator.swift; sourceTree = "<group>"; };
 		989DA4E02AE2ECB800054926 /* AppDIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDIContainer.swift; sourceTree = "<group>"; };
-		989DA4E22AE2EE7500054926 /* AuthenticationSceneDIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationSceneDIContainer.swift; sourceTree = "<group>"; };
+		989DA4E22AE2EE7500054926 /* LoginSceneDIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginSceneDIContainer.swift; sourceTree = "<group>"; };
 		989DA4E82AE4203500054926 /* DataTransferService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTransferService.swift; sourceTree = "<group>"; };
 		989DA4EB2AE4218300054926 /* StoryboardInstantiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardInstantiable.swift; sourceTree = "<group>"; };
 		989DA4ED2AE42DA800054926 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
@@ -297,7 +297,6 @@
 		989DA4BD2AE2CD3F00054926 /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
-				989DA4DA2AE2EAE300054926 /* Flows */,
 				989DA4BF2AE2CDB500054926 /* ForgotPassword */,
 				989DA4BE2AE2CDA300054926 /* Login */,
 			);
@@ -307,6 +306,7 @@
 		989DA4BE2AE2CDA300054926 /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				989DA4DA2AE2EAE300054926 /* Flows */,
 				989DA4C12AE2CDCF00054926 /* ViewModel */,
 				989DA4C02AE2CDC800054926 /* View */,
 			);
@@ -394,7 +394,7 @@
 		989DA4DA2AE2EAE300054926 /* Flows */ = {
 			isa = PBXGroup;
 			children = (
-				989DA4DB2AE2EBC700054926 /* AuthenticationFlowCoordinator.swift */,
+				989DA4DB2AE2EBC700054926 /* LoginFlowCoordinator.swift */,
 			);
 			path = Flows;
 			sourceTree = "<group>";
@@ -404,7 +404,7 @@
 			children = (
 				989DA4E02AE2ECB800054926 /* AppDIContainer.swift */,
 				989DA5322AE631FC00054926 /* RootSceneDIContainer.swift */,
-				989DA4E22AE2EE7500054926 /* AuthenticationSceneDIContainer.swift */,
+				989DA4E22AE2EE7500054926 /* LoginSceneDIContainer.swift */,
 				989DA4F72AE45CBD00054926 /* HomeSceneDIContainer.swift */,
 			);
 			path = DIContainer;
@@ -786,7 +786,7 @@
 				989DA50B2AE5F96400054926 /* Cancellable.swift in Sources */,
 				989DA53F2AE6505700054926 /* UserRequestDTO+Mapping.swift in Sources */,
 				989DA5122AE5FC0100054926 /* APIEndpoints.swift in Sources */,
-				989DA4E32AE2EE7500054926 /* AuthenticationSceneDIContainer.swift in Sources */,
+				989DA4E32AE2EE7500054926 /* LoginSceneDIContainer.swift in Sources */,
 				989DA4E12AE2ECB800054926 /* AppDIContainer.swift in Sources */,
 				989DA5022AE5337C00054926 /* RootViewController.swift in Sources */,
 				989DA5202AE5FF2000054926 /* Survey.swift in Sources */,
@@ -797,7 +797,7 @@
 				980AB87F2AE6E4C800CFBEBB /* UserStorage.swift in Sources */,
 				989DA54C2AE65E4700054926 /* CoreDataStorage.swift in Sources */,
 				989DA4FB2AE45D5000054926 /* HomeFlowCoordinator.swift in Sources */,
-				989DA4DC2AE2EBC700054926 /* AuthenticationFlowCoordinator.swift in Sources */,
+				989DA4DC2AE2EBC700054926 /* LoginFlowCoordinator.swift in Sources */,
 				989DA5222AE6027E00054926 /* LoginModel.swift in Sources */,
 				989DA5242AE6029500054926 /* HomeModel.swift in Sources */,
 				989DA5422AE6517800054926 /* UserResponseStorage.swift in Sources */,

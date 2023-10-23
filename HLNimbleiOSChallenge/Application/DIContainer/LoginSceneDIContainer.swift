@@ -1,5 +1,5 @@
 //
-//  AuthenticationSceneDIContainer.swift
+//  LoginSceneDIContainer.swift
 //  HLNimbleiOSChallenge
 //
 //  Created by Han Luong on 21/10/2023.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class AuthenticationSceneDIContainer: AuthenticationFlowCoordinatorDependencies {
+final class LoginSceneDIContainer: LoginFlowCoordinatorDependencies {
     
     struct Dependencies {
         let apiDataTransferService: DataTransferService
@@ -20,8 +20,8 @@ final class AuthenticationSceneDIContainer: AuthenticationFlowCoordinatorDepende
     }
     
     // MARK: - Flow Coordinators
-    func makeAuthenticationFlowCoordinator(navigationController: UINavigationController) -> AuthenticationFlowCoordinator {
-        return AuthenticationFlowCoordinator(navigationController: navigationController,
+    func makeLoginFlowCoordinator(navigationController: UINavigationController) -> LoginFlowCoordinator {
+        return LoginFlowCoordinator(navigationController: navigationController,
                                            dependencies: self)
     }
     

@@ -1,5 +1,5 @@
 //
-//  AuthenticationFlowCoordinator.swift
+//  LoginFlowCoordinator.swift
 //  HLNimbleiOSChallenge
 //
 //  Created by Han Luong on 21/10/2023.
@@ -7,17 +7,17 @@
 
 import UIKit
 
-protocol AuthenticationFlowCoordinatorDependencies {
+protocol LoginFlowCoordinatorDependencies {
     func makeLoginViewController() -> UIViewController
 }
 
 
-final class AuthenticationFlowCoordinator {
+final class LoginFlowCoordinator {
     private weak var navigationController: UINavigationController?
-    private let dependencies: AuthenticationFlowCoordinatorDependencies
+    private let dependencies: LoginFlowCoordinatorDependencies
     
     init(navigationController: UINavigationController,
-         dependencies: AuthenticationFlowCoordinatorDependencies) {
+         dependencies: LoginFlowCoordinatorDependencies) {
         self.navigationController = navigationController
         self.dependencies = dependencies
     }
