@@ -23,6 +23,16 @@ final class RootSceneDIContainer {
     func makeRootFlowCoordinator(navigationController: UINavigationController) -> RootFlowCoordinator {
         return RootFlowCoordinator(navigationController: navigationController, dependencies: self)
     }
+    
+    // MARK: - DIContainers of scenes
+    
+    func makeLoginSceneDIContainer() -> LoginSceneDIContainer {
+        return LoginSceneDIContainer(dependencies: dependencies)
+    }
+    
+    func makeHomeSceneDIContainer() -> HomeSceneDIContainer {
+        return HomeSceneDIContainer(dependencies: dependencies)
+    }
 }
 
 extension RootSceneDIContainer: RootFlowCoordinatorDependencies {

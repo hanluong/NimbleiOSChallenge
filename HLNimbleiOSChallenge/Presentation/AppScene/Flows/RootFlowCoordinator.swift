@@ -23,7 +23,8 @@ final class RootFlowCoordinator {
     }
     
     func start() {
-        let vc = dependencies.makeRootViewController()
+//        let vc = dependencies.makeRootViewController()
+        let vc = LoginViewController.create()
         navigationController?.pushViewController(vc, animated: false)
     }
 }

@@ -9,13 +9,9 @@ import UIKit
 
 final class LoginSceneDIContainer: LoginFlowCoordinatorDependencies {
     
-    struct Dependencies {
-        let apiDataTransferService: DataTransferService
-    }
+    private let dependencies: DataTransferService
     
-    private let dependencies: Dependencies
-    
-    init(dependencies: Dependencies) {
+    init(dependencies: DataTransferService) {
         self.dependencies = dependencies
     }
     

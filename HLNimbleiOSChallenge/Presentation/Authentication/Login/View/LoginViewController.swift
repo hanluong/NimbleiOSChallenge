@@ -34,6 +34,7 @@ class LoginViewController: UIViewController, StoryboardInstantiable {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        hideKeyboardWhenTappedAround()
         setupViews()
     }
     
@@ -53,7 +54,7 @@ class LoginViewController: UIViewController, StoryboardInstantiable {
     }
     
     @objc func handleForgotPassword(sender: UIButton) {
-        let vc = ForgotPasswordViewController()
+        let vc = ForgotPasswordViewController.create()
         vc.modalTransitionStyle = .crossDissolve
         vc.modalPresentationStyle = .fullScreen
         self.present(vc, animated: true)

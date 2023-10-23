@@ -13,8 +13,17 @@ class ForgotPasswordViewController: UIViewController, StoryboardInstantiable {
     
 //    let viewModel = LoginViewModel(apiClient: APIClient(cachedData: CacheData()))
     
+    // MARK: - Lifecycle
+    
+    static func create() -> ForgotPasswordViewController {
+        let view = ForgotPasswordViewController.instantiateViewController()
+//        view.viewModel = viewModel
+        return view
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        hideKeyboardWhenTappedAround()
     }
     
     @IBAction func resetButton(_ sender: CustomButton) {

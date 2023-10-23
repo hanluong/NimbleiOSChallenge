@@ -9,24 +9,21 @@ import UIKit
 
 final class HomeSceneDIContainer: HomeFlowCoordinatorDependencies {
     
-//    struct Dependencies {
-//        let apiDataTransferService: DataTransferService
-//    }
-//    
-//    private let dependencies: Dependencies
-//    
-//    init(dependencies: Dependencies) {
-//        self.dependencies = dependencies
-//    }
-//    
-//    // MARK: - Flow Coordinators
-//    func makeAuthenticationFlowCoordinator(navigationController: UINavigationController) -> AuthenticationFlowCoordinator {
-//        return AuthenticationFlowCoordinator(navigationController: navigationController,
-//                                           dependencies: self)
-//    }
-//    
-//    // MARK: - Login View
-//    func makeLoginViewController() -> UIViewController {
-//        return LoginViewController.create()
+    private let dependencies: DataTransferService
+    
+    init(dependencies: DataTransferService) {
+        self.dependencies = dependencies
+    }
+    
+    // MARK: - Flow Coordinators
+    // MARK: - Flow Coordinators
+    func makeHomeFlowCoordinator(navigationController: UINavigationController) -> HomeFlowCoordinator {
+        return HomeFlowCoordinator(navigationController: navigationController,
+                                           dependencies: self)
+    }
+    
+    // MARK: - Login View
+//    func makeHomeViewController() -> UIViewController {
+//        return HomeViewController.create()
 //    }
 }
