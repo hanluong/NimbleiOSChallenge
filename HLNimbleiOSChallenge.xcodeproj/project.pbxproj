@@ -220,21 +220,21 @@
 			isa = PBXGroup;
 			children = (
 				989DA4FC2AE5306800054926 /* AppScene */,
-				989DA4BD2AE2CD3F00054926 /* AuthenticationScene */,
+				989DA4BD2AE2CD3F00054926 /* Authentication */,
 				989DA4CF2AE2D9BF00054926 /* HomeScene */,
 				989DA4CE2AE2D9B100054926 /* Utils */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
 		};
-		989DA4BD2AE2CD3F00054926 /* AuthenticationScene */ = {
+		989DA4BD2AE2CD3F00054926 /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
 				989DA4DA2AE2EAE300054926 /* Flows */,
 				989DA4BF2AE2CDB500054926 /* ForgotPassword */,
 				989DA4BE2AE2CDA300054926 /* Login */,
 			);
-			path = AuthenticationScene;
+			path = Authentication;
 			sourceTree = "<group>";
 		};
 		989DA4BE2AE2CDA300054926 /* Login */ = {
