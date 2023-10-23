@@ -13,7 +13,7 @@ final class RootViewController: UIViewController, StoryboardInstantiable {
 
     private var viewModel: RootViewModel!
     
-    static func create(with viewModel: RootViewModel = DefaultRootViewModel()) -> RootViewController {
+    static func create(with viewModel: RootViewModel) -> RootViewController {
         let view = RootViewController.instantiateViewController()
         view.viewModel = viewModel
         return view
@@ -23,6 +23,12 @@ final class RootViewController: UIViewController, StoryboardInstantiable {
         super.viewDidLoad()
         setupViews()
         bind(to: viewModel)
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        viewModel.viewWillAppear()
     }
 
     private func bind(to viewModel: RootViewModel) {
@@ -34,11 +40,6 @@ final class RootViewController: UIViewController, StoryboardInstantiable {
                 LoadingView.hide()
             }
         }
-    }
-    
-    override func viewDidLayoutSubviews() {
-        super.viewDidLayoutSubviews()
-        viewModel.refreshAuthenticationToken()
     }
 
     // MARK: - Private

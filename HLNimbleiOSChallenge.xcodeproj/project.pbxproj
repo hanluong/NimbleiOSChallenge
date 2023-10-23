@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		980AB87F2AE6E4C800CFBEBB /* UserStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980AB87E2AE6E4C800CFBEBB /* UserStorage.swift */; };
+		980AB8832AE6E51500CFBEBB /* UserDefaultsUserStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980AB8822AE6E51500CFBEBB /* UserDefaultsUserStorage.swift */; };
+		980AB8862AE6E5A500CFBEBB /* UserUDS+Mapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980AB8852AE6E5A500CFBEBB /* UserUDS+Mapping.swift */; };
 		989DA4872AE26D8700054926 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989DA4862AE26D8700054926 /* AppDelegate.swift */; };
 		989DA4892AE26D8700054926 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989DA4882AE26D8700054926 /* SceneDelegate.swift */; };
 		989DA4902AE26D8800054926 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 989DA48F2AE26D8800054926 /* Assets.xcassets */; };
@@ -49,6 +52,19 @@
 		989DA5202AE5FF2000054926 /* Survey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989DA51F2AE5FF2000054926 /* Survey.swift */; };
 		989DA5222AE6027E00054926 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989DA5212AE6027E00054926 /* LoginModel.swift */; };
 		989DA5242AE6029500054926 /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989DA5232AE6029500054926 /* HomeModel.swift */; };
+		989DA5332AE631FC00054926 /* RootSceneDIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989DA5322AE631FC00054926 /* RootSceneDIContainer.swift */; };
+		989DA5362AE6351500054926 /* RootFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989DA5352AE6351500054926 /* RootFlowCoordinator.swift */; };
+		989DA5382AE63D2600054926 /* FetchRecentUserUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989DA5372AE63D2600054926 /* FetchRecentUserUseCase.swift */; };
+		989DA53A2AE6408C00054926 /* UserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989DA5392AE6408C00054926 /* UserRepository.swift */; };
+		989DA53C2AE64C5F00054926 /* DefaultUserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989DA53B2AE64C5F00054926 /* DefaultUserRepository.swift */; };
+		989DA53F2AE6505700054926 /* UserRequestDTO+Mapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989DA53E2AE6505700054926 /* UserRequestDTO+Mapping.swift */; };
+		989DA5422AE6517800054926 /* UserResponseStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989DA5412AE6517800054926 /* UserResponseStorage.swift */; };
+		989DA5442AE651CA00054926 /* UserResponseDTO+Mapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989DA5432AE651CA00054926 /* UserResponseDTO+Mapping.swift */; };
+		989DA5462AE656E200054926 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989DA5452AE656E200054926 /* User.swift */; };
+		989DA54A2AE65E2E00054926 /* CoreDataStorage.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 989DA5482AE65E2E00054926 /* CoreDataStorage.xcdatamodeld */; };
+		989DA54C2AE65E4700054926 /* CoreDataStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989DA54B2AE65E4700054926 /* CoreDataStorage.swift */; };
+		989DA54E2AE6605600054926 /* CoreDataUserResponseStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989DA54D2AE6605600054926 /* CoreDataUserResponseStorage.swift */; };
+		989DA5512AE6612F00054926 /* UserResponseEntity+Mapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989DA5502AE6612F00054926 /* UserResponseEntity+Mapping.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +85,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		980AB87E2AE6E4C800CFBEBB /* UserStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStorage.swift; sourceTree = "<group>"; };
+		980AB8822AE6E51500CFBEBB /* UserDefaultsUserStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsUserStorage.swift; sourceTree = "<group>"; };
+		980AB8852AE6E5A500CFBEBB /* UserUDS+Mapping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserUDS+Mapping.swift"; sourceTree = "<group>"; };
 		989DA4832AE26D8700054926 /* HLNimbleiOSChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HLNimbleiOSChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		989DA4862AE26D8700054926 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		989DA4882AE26D8700054926 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -115,6 +134,20 @@
 		989DA51F2AE5FF2000054926 /* Survey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Survey.swift; sourceTree = "<group>"; };
 		989DA5212AE6027E00054926 /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
 		989DA5232AE6029500054926 /* HomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
+		989DA5322AE631FC00054926 /* RootSceneDIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootSceneDIContainer.swift; sourceTree = "<group>"; };
+		989DA5352AE6351500054926 /* RootFlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootFlowCoordinator.swift; sourceTree = "<group>"; };
+		989DA5372AE63D2600054926 /* FetchRecentUserUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchRecentUserUseCase.swift; sourceTree = "<group>"; };
+		989DA5392AE6408C00054926 /* UserRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepository.swift; sourceTree = "<group>"; };
+		989DA53B2AE64C5F00054926 /* DefaultUserRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultUserRepository.swift; sourceTree = "<group>"; };
+		989DA53E2AE6505700054926 /* UserRequestDTO+Mapping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserRequestDTO+Mapping.swift"; sourceTree = "<group>"; };
+		989DA5412AE6517800054926 /* UserResponseStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserResponseStorage.swift; sourceTree = "<group>"; };
+		989DA5432AE651CA00054926 /* UserResponseDTO+Mapping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserResponseDTO+Mapping.swift"; sourceTree = "<group>"; };
+		989DA5452AE656E200054926 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		989DA5492AE65E2E00054926 /* CoreDataStorage.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataStorage.xcdatamodel; sourceTree = "<group>"; };
+		989DA54B2AE65E4700054926 /* CoreDataStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStorage.swift; sourceTree = "<group>"; };
+		989DA54D2AE6605600054926 /* CoreDataUserResponseStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataUserResponseStorage.swift; sourceTree = "<group>"; };
+		989DA5502AE6612F00054926 /* UserResponseEntity+Mapping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserResponseEntity+Mapping.swift"; sourceTree = "<group>"; };
+		989DA5522AE663A300054926 /* CoreDataStorage 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "CoreDataStorage 2.xcdatamodel"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +175,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		980AB87D2AE6E4A300CFBEBB /* UserStorage */ = {
+			isa = PBXGroup;
+			children = (
+				980AB8812AE6E4F500CFBEBB /* UserDefaultsStorage */,
+				980AB8802AE6E4E500CFBEBB /* CoreDataStorage */,
+				980AB87E2AE6E4C800CFBEBB /* UserStorage.swift */,
+			);
+			path = UserStorage;
+			sourceTree = "<group>";
+		};
+		980AB8802AE6E4E500CFBEBB /* CoreDataStorage */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CoreDataStorage;
+			sourceTree = "<group>";
+		};
+		980AB8812AE6E4F500CFBEBB /* UserDefaultsStorage */ = {
+			isa = PBXGroup;
+			children = (
+				980AB8842AE6E57F00CFBEBB /* DataMapping */,
+				980AB8822AE6E51500CFBEBB /* UserDefaultsUserStorage.swift */,
+			);
+			path = UserDefaultsStorage;
+			sourceTree = "<group>";
+		};
+		980AB8842AE6E57F00CFBEBB /* DataMapping */ = {
+			isa = PBXGroup;
+			children = (
+				980AB8852AE6E5A500CFBEBB /* UserUDS+Mapping.swift */,
+			);
+			path = DataMapping;
+			sourceTree = "<group>";
+		};
 		989DA47A2AE26D8700054926 = {
 			isa = PBXGroup;
 			children = (
@@ -336,6 +403,7 @@
 			isa = PBXGroup;
 			children = (
 				989DA4E02AE2ECB800054926 /* AppDIContainer.swift */,
+				989DA5322AE631FC00054926 /* RootSceneDIContainer.swift */,
 				989DA4E22AE2EE7500054926 /* AuthenticationSceneDIContainer.swift */,
 				989DA4F72AE45CBD00054926 /* HomeSceneDIContainer.swift */,
 			);
@@ -355,9 +423,9 @@
 		989DA4E52AE41FF000054926 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				989DA50F2AE5FBCD00054926 /* Repositories */,
 				989DA5102AE5FBF000054926 /* Network */,
 				989DA5132AE5FC5D00054926 /* PersistentStorages */,
-				989DA50F2AE5FBCD00054926 /* Repositories */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -400,6 +468,7 @@
 		989DA4FC2AE5306800054926 /* AppScene */ = {
 			isa = PBXGroup;
 			children = (
+				989DA5342AE6350900054926 /* Flows */,
 				989DA4FD2AE530D300054926 /* ViewModel */,
 				989DA4FE2AE530DA00054926 /* View */,
 			);
@@ -443,6 +512,7 @@
 		989DA50F2AE5FBCD00054926 /* Repositories */ = {
 			isa = PBXGroup;
 			children = (
+				989DA53B2AE64C5F00054926 /* DefaultUserRepository.swift */,
 				989DA50C2AE5FB7D00054926 /* Utils */,
 			);
 			path = Repositories;
@@ -451,6 +521,7 @@
 		989DA5102AE5FBF000054926 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				989DA53D2AE6503000054926 /* DataMapping */,
 				989DA5112AE5FC0100054926 /* APIEndpoints.swift */,
 			);
 			path = Network;
@@ -459,6 +530,9 @@
 		989DA5132AE5FC5D00054926 /* PersistentStorages */ = {
 			isa = PBXGroup;
 			children = (
+				980AB87D2AE6E4A300CFBEBB /* UserStorage */,
+				989DA5402AE6515C00054926 /* UserResponseStorage */,
+				989DA5472AE65DFD00054926 /* CoreDataStorage */,
 			);
 			path = PersistentStorages;
 			sourceTree = "<group>";
@@ -474,6 +548,7 @@
 		989DA5152AE5FCB500054926 /* UseCases */ = {
 			isa = PBXGroup;
 			children = (
+				989DA5372AE63D2600054926 /* FetchRecentUserUseCase.swift */,
 				989DA5182AE5FCD400054926 /* Protocol */,
 			);
 			path = UseCases;
@@ -485,6 +560,7 @@
 				989DA51D2AE5FEEB00054926 /* Question.swift */,
 				989DA51B2AE5FDC400054926 /* Answer.swift */,
 				989DA51F2AE5FF2000054926 /* Survey.swift */,
+				989DA5452AE656E200054926 /* User.swift */,
 				989DA5212AE6027E00054926 /* LoginModel.swift */,
 				989DA5232AE6029500054926 /* HomeModel.swift */,
 			);
@@ -494,6 +570,7 @@
 		989DA5172AE5FCC800054926 /* Repositories */ = {
 			isa = PBXGroup;
 			children = (
+				989DA5392AE6408C00054926 /* UserRepository.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -504,6 +581,50 @@
 				989DA5192AE5FCE200054926 /* UseCase.swift */,
 			);
 			path = Protocol;
+			sourceTree = "<group>";
+		};
+		989DA5342AE6350900054926 /* Flows */ = {
+			isa = PBXGroup;
+			children = (
+				989DA5352AE6351500054926 /* RootFlowCoordinator.swift */,
+			);
+			path = Flows;
+			sourceTree = "<group>";
+		};
+		989DA53D2AE6503000054926 /* DataMapping */ = {
+			isa = PBXGroup;
+			children = (
+				989DA53E2AE6505700054926 /* UserRequestDTO+Mapping.swift */,
+				989DA5432AE651CA00054926 /* UserResponseDTO+Mapping.swift */,
+			);
+			path = DataMapping;
+			sourceTree = "<group>";
+		};
+		989DA5402AE6515C00054926 /* UserResponseStorage */ = {
+			isa = PBXGroup;
+			children = (
+				989DA5412AE6517800054926 /* UserResponseStorage.swift */,
+				989DA54D2AE6605600054926 /* CoreDataUserResponseStorage.swift */,
+				989DA54F2AE6610F00054926 /* EntityMapping */,
+			);
+			path = UserResponseStorage;
+			sourceTree = "<group>";
+		};
+		989DA5472AE65DFD00054926 /* CoreDataStorage */ = {
+			isa = PBXGroup;
+			children = (
+				989DA5482AE65E2E00054926 /* CoreDataStorage.xcdatamodeld */,
+				989DA54B2AE65E4700054926 /* CoreDataStorage.swift */,
+			);
+			path = CoreDataStorage;
+			sourceTree = "<group>";
+		};
+		989DA54F2AE6610F00054926 /* EntityMapping */ = {
+			isa = PBXGroup;
+			children = (
+				989DA5502AE6612F00054926 /* UserResponseEntity+Mapping.swift */,
+			);
+			path = EntityMapping;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -643,36 +764,52 @@
 				989DA4D12AE2D9F600054926 /* CustomTextField.swift in Sources */,
 				989DA5042AE5399F00054926 /* RootViewModel.swift in Sources */,
 				989DA4892AE26D8700054926 /* SceneDelegate.swift in Sources */,
+				989DA54E2AE6605600054926 /* CoreDataUserResponseStorage.swift in Sources */,
+				989DA54A2AE65E2E00054926 /* CoreDataStorage.xcdatamodeld in Sources */,
 				989DA4D92AE2E77F00054926 /* LoadingView.swift in Sources */,
+				989DA5512AE6612F00054926 /* UserResponseEntity+Mapping.swift in Sources */,
+				989DA5362AE6351500054926 /* RootFlowCoordinator.swift in Sources */,
 				989DA4F82AE45CBD00054926 /* HomeSceneDIContainer.swift in Sources */,
+				989DA5382AE63D2600054926 /* FetchRecentUserUseCase.swift in Sources */,
 				989DA4DE2AE2EC9400054926 /* AppFlowCoordinator.swift in Sources */,
 				989DA4CC2AE2D29A00054926 /* ForgotPasswordViewController.swift in Sources */,
 				989DA5092AE5F94E00054926 /* ConnectionError.swift in Sources */,
+				989DA53C2AE64C5F00054926 /* DefaultUserRepository.swift in Sources */,
 				989DA51A2AE5FCE200054926 /* UseCase.swift in Sources */,
 				989DA4D32AE2DDD300054926 /* CustomButton.swift in Sources */,
 				989DA4F02AE42DC000054926 /* NetworkConfig.swift in Sources */,
+				989DA5332AE631FC00054926 /* RootSceneDIContainer.swift in Sources */,
 				989DA4BB2AE2840F00054926 /* AppConfigurations.swift in Sources */,
 				989DA51E2AE5FEEB00054926 /* Question.swift in Sources */,
 				989DA4D62AE2E5CB00054926 /* UIColor+Ext.swift in Sources */,
 				989DA4E92AE4203500054926 /* DataTransferService.swift in Sources */,
 				989DA50B2AE5F96400054926 /* Cancellable.swift in Sources */,
+				989DA53F2AE6505700054926 /* UserRequestDTO+Mapping.swift in Sources */,
 				989DA5122AE5FC0100054926 /* APIEndpoints.swift in Sources */,
 				989DA4E32AE2EE7500054926 /* AuthenticationSceneDIContainer.swift in Sources */,
 				989DA4E12AE2ECB800054926 /* AppDIContainer.swift in Sources */,
 				989DA5022AE5337C00054926 /* RootViewController.swift in Sources */,
 				989DA5202AE5FF2000054926 /* Survey.swift in Sources */,
 				989DA5062AE53EA600054926 /* Observable.swift in Sources */,
+				980AB8832AE6E51500CFBEBB /* UserDefaultsUserStorage.swift in Sources */,
+				989DA5442AE651CA00054926 /* UserResponseDTO+Mapping.swift in Sources */,
+				980AB8862AE6E5A500CFBEBB /* UserUDS+Mapping.swift in Sources */,
+				980AB87F2AE6E4C800CFBEBB /* UserStorage.swift in Sources */,
+				989DA54C2AE65E4700054926 /* CoreDataStorage.swift in Sources */,
 				989DA4FB2AE45D5000054926 /* HomeFlowCoordinator.swift in Sources */,
 				989DA4DC2AE2EBC700054926 /* AuthenticationFlowCoordinator.swift in Sources */,
 				989DA5222AE6027E00054926 /* LoginModel.swift in Sources */,
 				989DA5242AE6029500054926 /* HomeModel.swift in Sources */,
+				989DA5422AE6517800054926 /* UserResponseStorage.swift in Sources */,
 				989DA4C42AE2CE4E00054926 /* LoginViewController.swift in Sources */,
 				989DA4F22AE42DF300054926 /* NetworkService.swift in Sources */,
 				989DA50E2AE5FB8800054926 /* RepositoryTask.swift in Sources */,
 				989DA4EC2AE4218300054926 /* StoryboardInstantiable.swift in Sources */,
 				989DA51C2AE5FDC400054926 /* Answer.swift in Sources */,
 				989DA4EE2AE42DA800054926 /* Endpoint.swift in Sources */,
+				989DA53A2AE6408C00054926 /* UserRepository.swift in Sources */,
 				989DA4B92AE27FB100054926 /* AppAppearance.swift in Sources */,
+				989DA5462AE656E200054926 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1014,6 +1151,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		989DA5482AE65E2E00054926 /* CoreDataStorage.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				989DA5522AE663A300054926 /* CoreDataStorage 2.xcdatamodel */,
+				989DA5492AE65E2E00054926 /* CoreDataStorage.xcdatamodel */,
+			);
+			currentVersion = 989DA5492AE65E2E00054926 /* CoreDataStorage.xcdatamodel */;
+			path = CoreDataStorage.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 989DA47B2AE26D8700054926 /* Project object */;
 }

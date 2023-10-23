@@ -7,13 +7,11 @@
 
 import Foundation
 
-//struct RootViewModelDependencies {
-//  let authorizationService: AuthorizationServiceProtocol
-//  let userInteractorUseCases: UserUseCasesProtocol
-//  let navigateToSignInSceneFlow: Any
-//  let navigateToSignUpSceneFlow: Any
-//  let navigateToMainSceneFlow: Any
-//}
+struct RootViewModelActions {
+    let navigateToSignInSceneFlow: () -> Void
+    let navigateToSignUpSceneFlow: () -> Void
+    let navigateToMainSceneFlow: () -> Void
+}
 
 enum DataReadyStatus {
   case loading
@@ -22,7 +20,7 @@ enum DataReadyStatus {
 }
 
 protocol RootViewModelInput {
-    func refreshAuthenticationToken()
+    func viewWillAppear()
 }
 
 protocol RootViewModelOutput {
@@ -31,15 +29,46 @@ protocol RootViewModelOutput {
 
 protocol RootViewModel: RootViewModelInput, RootViewModelOutput { }
 
-final class DefaultRootViewModel: RootViewModel {
-    var status: Observable<DataReadyStatus> = Observable(.loading)
-//    private let dependencies: RootViewModelDependencies
-}
+typealias FetchRecentUserUseCaseFactory = (@escaping (Result<AuthenticationToken?, Error>) -> Void) -> UseCase
 
-extension DefaultRootViewModel {
-    func refreshAuthenticationToken() {
-        DispatchQueue.main.asyncAfter(deadline: .now() + 3.0) { [weak self] in
-            self?.status.value = .finished
+final class DefaultRootViewModel: RootViewModel {
+    
+    private let fetchRecentUserUseCases: FetchRecentUserUseCaseFactory
+    private let actions: RootViewModelActions?
+    
+    // MARK: - RootViewModelOutput
+    var status: Observable<DataReadyStatus> = Observable(.loading)
+    
+    init(fetchRecentUserUseCases: @escaping FetchRecentUserUseCaseFactory, actions: RootViewModelActions? = nil) {
+        self.fetchRecentUserUseCases = fetchRecentUserUseCases
+        self.actions = actions
+    }
+    
+    private func loadRecentUser() {
+        let completion: (Result<AuthenticationToken?, Error>) -> Void = { result in
+            switch result {
+            case .success(let authToken):
+                if authToken != nil {
+                    self.actions?.navigateToMainSceneFlow()
+                    print("navigateToMainSceneFlow")
+                } else {
+                    self.actions?.navigateToSignInSceneFlow()
+                    print("navigateToSignInSceneFlow")
+                }
+                self.status.value = .finished
+            case .failure:
+                self.actions?.navigateToSignInSceneFlow()
+                print("navigateToSignInSceneFlow-->")
+                self.status.value = .cancelled
+            }
         }
+        let useCase = fetchRecentUserUseCases(completion)
+        useCase.start()
+    }
+    
+    // MARK: - RootViewModelInput
+    
+    func viewWillAppear() {
+        loadRecentUser()
     }
 }

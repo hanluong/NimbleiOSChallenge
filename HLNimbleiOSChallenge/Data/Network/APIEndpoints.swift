@@ -29,13 +29,16 @@ struct APIEndpoints {
                                           "client_secret": "lMQb900L-mTeU-FVTCwyhjsfBwRCxwwbCitPob96cuU"])
     }
     
-    static func refreshToken(token: String) -> Endpoint<Data> {
+    static func refreshUserToken(with userRequestDTO: UserRequestDTO) -> Endpoint<UserResponseDTO> {
         return Endpoint(path: "/api/v1/oauth/token",
                         method: .post,
-                        queryParameters: ["grant_type":"refresh_token",
-                                          "refresh_token": token,
-                                          "client_id": "ofzl-2h5ympKa0WqqTzqlVJUiRsxmXQmt5tkgrlWnOE",
-                                          "client_secret": "lMQb900L-mTeU-FVTCwyhjsfBwRCxwwbCitPob96cuU"])
+                        queryParametersEncodable: userRequestDTO)
+//        return Endpoint(path: "/api/v1/oauth/token",
+//                        method: .post,
+//                        queryParameters: ["grant_type":"refresh_token",
+//                                          "refresh_token": token,
+//                                          "client_id": "ofzl-2h5ympKa0WqqTzqlVJUiRsxmXQmt5tkgrlWnOE",
+//                                          "client_secret": "lMQb900L-mTeU-FVTCwyhjsfBwRCxwwbCitPob96cuU"])
     }
     
     static func resetPassword(email: String) -> Endpoint<Data> {
