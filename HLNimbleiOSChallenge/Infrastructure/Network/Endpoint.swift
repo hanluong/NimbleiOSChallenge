@@ -85,7 +85,23 @@ enum RequestGenerationError: Error {
 
 extension Requestable {
     
-    func url(with config: NetworkConfigurable) throws -> URL {
+    public func urlRequest(with config: NetworkConfigurable) throws -> URLRequest {
+        
+        let url = try self.url(with: config)
+        var urlRequest = URLRequest(url: url)
+        var allHeaders: [String: String] = config.headers
+        headerParamaters.forEach { allHeaders.updateValue($1, forKey: $0) }
+
+        let bodyParamaters = try bodyParamatersEncodable?.toDictionary() ?? self.bodyParamaters
+        if !bodyParamaters.isEmpty {
+            urlRequest.httpBody = encodeBody(bodyParamaters: bodyParamaters, bodyEncoding: bodyEncoding)
+        }
+        urlRequest.httpMethod = method.rawValue
+        urlRequest.allHTTPHeaderFields = allHeaders
+        return urlRequest
+    }
+    
+    private func url(with config: NetworkConfigurable) throws -> URL {
 
         let baseURL = config.baseURL.absoluteString.last != "/" ? config.baseURL.absoluteString + "/" : config.baseURL.absoluteString
         let endpoint = isFullPath ? path : baseURL.appending(path)
@@ -103,22 +119,6 @@ extension Requestable {
         urlComponents.queryItems = !urlQueryItems.isEmpty ? urlQueryItems : nil
         guard let url = urlComponents.url else { throw RequestGenerationError.components }
         return url
-    }
-    
-    public func urlRequest(with config: NetworkConfigurable) throws -> URLRequest {
-        
-        let url = try self.url(with: config)
-        var urlRequest = URLRequest(url: url)
-        var allHeaders: [String: String] = config.headers
-        headerParamaters.forEach { allHeaders.updateValue($1, forKey: $0) }
-
-        let bodyParamaters = try bodyParamatersEncodable?.toDictionary() ?? self.bodyParamaters
-        if !bodyParamaters.isEmpty {
-            urlRequest.httpBody = encodeBody(bodyParamaters: bodyParamaters, bodyEncoding: bodyEncoding)
-        }
-        urlRequest.httpMethod = method.rawValue
-        urlRequest.allHTTPHeaderFields = allHeaders
-        return urlRequest
     }
     
     private func encodeBody(bodyParamaters: [String: Any], bodyEncoding: BodyEncoding) -> Data? {
@@ -142,8 +142,8 @@ private extension Dictionary {
 private extension Encodable {
     func toDictionary() throws -> [String: Any]? {
         let data = try JSONEncoder().encode(self)
-        let josnData = try JSONSerialization.jsonObject(with: data)
-        return josnData as? [String : Any]
+        let jsonData = try JSONSerialization.jsonObject(with: data)
+        return jsonData as? [String : Any]
     }
 }
 
