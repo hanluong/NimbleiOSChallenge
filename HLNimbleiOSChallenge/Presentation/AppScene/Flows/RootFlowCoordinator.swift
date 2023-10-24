@@ -9,7 +9,7 @@ import UIKit
 
 protocol RootFlowCoordinatorDependencies {
     func makeRootViewController(actions: RootViewModelActions) -> RootViewController
-    func makeLoginViewController() -> LoginViewController
+    func makeLoginViewController(actions: LoginViewModelActions) -> LoginViewController
     func makeHomeViewController() -> HomeViewController
 }
 
@@ -31,7 +31,8 @@ final class RootFlowCoordinator {
     }
     
     private func showLoginView() {
-        let vc = dependencies.makeLoginViewController()
+        let actions = LoginViewModelActions(showHomeView: showHomeView)
+        let vc = dependencies.makeLoginViewController(actions: actions)
         navigationController?.pushViewController(vc, animated: true)
     }
     

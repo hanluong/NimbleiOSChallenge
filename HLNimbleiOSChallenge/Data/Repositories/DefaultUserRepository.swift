@@ -27,35 +27,21 @@ extension DefaultUserRepository: UserRepository {
     func saveRecentUser(user: User, completion: @escaping (Result<AuthenticationToken, Error>) -> Void) {
         userPersistentStorage.saveRecentUser(user: user, completion: completion)
     }
+    
+    func login(email: String, password: String, completion: @escaping (Result<User, Error>) -> Void) -> Cancellable? {
+        let requestDTO = UserRequestDTO(email: email, password: password)
+        let task = RepositoryTask()
+        guard !task.isCancelled else { return nil }
+        let endpoint = APIEndpoints.signIn(with: requestDTO)
+        task.networkTask = self.dataTransferService.request(with: endpoint) { result in
+            switch result {
+            case .success(let responseDTO):
+                completion(.success(responseDTO.toDomain()))
+            case .failure(let error):
+                completion(.failure(error))
+            }
+        }
+        return task
+    }
 }
-
-//extension DefaultUserRepository: UserRepository {
-//
-//    func refreshCurrentUser(token: String,
-//                     cached: @escaping (User) -> Void,
-//                     completion: @escaping (Result<User, Error>) -> Void) -> Cancellable? {
-//        let requestDTO = UserRequestDTO(id: "", token: token)
-//        let task = RepositoryTask()
-//
-//        cache.getResponse(for: requestDTO) { result in
-//
-//            if case let .success(responseDTO?) = result {
-//                cached(responseDTO.toDomain())
-//            }
-//            guard !task.isCancelled else { return }
-//
-//            let endpoint = APIEndpoints.refreshUserToken(with: requestDTO)
-//            task.networkTask = self.dataTransferService.request(with: endpoint) { result in
-//                switch result {
-//                case .success(let responseDTO):
-//                    self.cache.save(response: responseDTO, for: requestDTO)
-//                    completion(.success(responseDTO.toDomain()))
-//                case .failure(let error):
-//                    completion(.failure(error))
-//                }
-//            }
-//        }
-//        return task
-//    }
-//}
 

@@ -10,37 +10,37 @@ import CoreData
 
 final class CoreDataUserResponseStorage {
 
-    private let coreDataStorage: CoreDataStorage
-
-    init(coreDataStorage: CoreDataStorage = CoreDataStorage.shared) {
-        self.coreDataStorage = coreDataStorage
-    }
-
-    // MARK: - Private
-
-    private func fetchRequest(for requestDto: UserRequestDTO) -> NSFetchRequest<UserRequestEntity> {
-        let request: NSFetchRequest = UserRequestEntity.fetchRequest()
-        request.predicate = NSPredicate(format: "%K = %@",
-                                        #keyPath(UserRequestEntity.token), requestDto.token)
-        return request
-    }
-
-    private func deleteResponse(for requestDto: UserRequestDTO, in context: NSManagedObjectContext) {
-        let request = fetchRequest(for: requestDto)
-
-        do {
-            if let result = try context.fetch(request).first {
-                context.delete(result)
-            }
-        } catch {
-            print(error)
-        }
-    }
+//    private let coreDataStorage: CoreDataStorage
+//
+//    init(coreDataStorage: CoreDataStorage = CoreDataStorage.shared) {
+//        self.coreDataStorage = coreDataStorage
+//    }
+//
+//    // MARK: - Private
+//
+//    private func fetchRequest(for requestDto: AuthenticationTokenRequestDTO) -> NSFetchRequest<UserRequestEntity> {
+//        let request: NSFetchRequest = UserRequestEntity.fetchRequest()
+//        request.predicate = NSPredicate(format: "%K = %@",
+//                                        #keyPath(UserRequestEntity.token), requestDto.token)
+//        return request
+//    }
+//
+//    private func deleteResponse(for requestDto: AuthenticationTokenRequestDTO, in context: NSManagedObjectContext) {
+//        let request = fetchRequest(for: requestDto)
+//
+//        do {
+//            if let result = try context.fetch(request).first {
+//                context.delete(result)
+//            }
+//        } catch {
+//            print(error)
+//        }
+//    }
 }
 
 extension CoreDataUserResponseStorage: UserResponseStorage {
 
-    func getResponse(for requestDto: UserRequestDTO, completion: @escaping (Result<UserResponseDTO?, CoreDataStorageError>) -> Void) {
+    func getResponse(for requestDto: AuthenticationTokenRequestDTO, completion: @escaping (Result<UserResponseDTO?, CoreDataStorageError>) -> Void) {
 //        coreDataStorage.performBackgroundTask { context in
 //            do {
 //                let fetchRequest = self.fetchRequest(for: requestDto)
@@ -53,7 +53,7 @@ extension CoreDataUserResponseStorage: UserResponseStorage {
 //        }
     }
 
-    func save(response responseDto: UserResponseDTO, for requestDto: UserRequestDTO) {
+    func save(response responseDto: UserResponseDTO, for requestDto: AuthenticationTokenRequestDTO) {
 //        coreDataStorage.performBackgroundTask { context in
 //            do {
 //                self.deleteResponse(for: requestDto, in: context)

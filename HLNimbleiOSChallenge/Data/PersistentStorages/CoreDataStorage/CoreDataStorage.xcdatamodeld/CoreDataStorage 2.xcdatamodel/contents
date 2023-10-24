@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="21754" systemVersion="22A400" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
-    <entity name="UserRequestEntity" representedClassName="UserRequestEntity" syncable="YES" codeGenerationType="class">
-        <attribute name="id" optional="YES" attributeType="String"/>
+    <entity name="AuthenticationRequestEntity" representedClassName="AuthenticationRequestEntity" syncable="YES" codeGenerationType="class">
         <attribute name="token" optional="YES" attributeType="String"/>
     </entity>
     <entity name="UserResponseEntity" representedClassName="UserResponseEntity" syncable="YES" codeGenerationType="class">

@@ -37,8 +37,8 @@ final class RootSceneDIContainer {
 
 extension RootSceneDIContainer: RootFlowCoordinatorDependencies {
     
-    func makeLoginViewController() -> LoginViewController {
-        return LoginViewController.create()
+    func makeLoginViewController(actions: LoginViewModelActions) -> LoginViewController {
+        return LoginViewController.create(with: makeLoginViewModel(actions: actions))
     }
     
     func makeHomeViewController() -> HomeViewController {
@@ -53,9 +53,17 @@ extension RootSceneDIContainer: RootFlowCoordinatorDependencies {
         return DefaultRootViewModel(fetchRecentUserUseCases: makeFetchRecentUserUseCase, actions: actions)
     }
     
+    private func makeLoginViewModel(actions: LoginViewModelActions) -> LoginViewModel {
+        return DefaultLoginViewModel(loginUseCase: makeLoginUseCase(), actions: actions)
+    }
+    
     // MARK: - Use Cases
     private func makeFetchRecentUserUseCase(completion: @escaping (Result<AuthenticationToken?, Error>) -> Void) -> UseCase {
         return FetchRecentUserUseCase(userRepository: makeUserRepository(), completion: completion)
+    }
+    
+    private func makeLoginUseCase() -> LoginUseCase {
+        return DefaultLoginUseCase(userRepository: makeUserRepository())
     }
     
     // MARK: - Repository

@@ -15,6 +15,9 @@
 		980AB8882AE700EB00CFBEBB /* UIViewController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980AB8872AE700EB00CFBEBB /* UIViewController+Ext.swift */; };
 		980AB88C2AE77A1D00CFBEBB /* HomeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 980AB88B2AE77A1D00CFBEBB /* HomeViewController.storyboard */; };
 		980AB88E2AE77A2900CFBEBB /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980AB88D2AE77A2900CFBEBB /* HomeViewController.swift */; };
+		980AB8922AE78A8100CFBEBB /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980AB8912AE78A8100CFBEBB /* LoginViewModel.swift */; };
+		980AB8942AE78B9C00CFBEBB /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980AB8932AE78B9C00CFBEBB /* String+Ext.swift */; };
+		980AB8962AE7932C00CFBEBB /* LoginUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980AB8952AE7932C00CFBEBB /* LoginUseCase.swift */; };
 		989DA4872AE26D8700054926 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989DA4862AE26D8700054926 /* AppDelegate.swift */; };
 		989DA4892AE26D8700054926 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989DA4882AE26D8700054926 /* SceneDelegate.swift */; };
 		989DA4902AE26D8800054926 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 989DA48F2AE26D8800054926 /* Assets.xcassets */; };
@@ -100,6 +103,9 @@
 		980AB8872AE700EB00CFBEBB /* UIViewController+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Ext.swift"; sourceTree = "<group>"; };
 		980AB88B2AE77A1D00CFBEBB /* HomeViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeViewController.storyboard; sourceTree = "<group>"; };
 		980AB88D2AE77A2900CFBEBB /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		980AB8912AE78A8100CFBEBB /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		980AB8932AE78B9C00CFBEBB /* String+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
+		980AB8952AE7932C00CFBEBB /* LoginUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUseCase.swift; sourceTree = "<group>"; };
 		989DA4832AE26D8700054926 /* HLNimbleiOSChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HLNimbleiOSChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		989DA4862AE26D8700054926 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		989DA4882AE26D8700054926 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -259,6 +265,14 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		980AB8902AE78A6E00CFBEBB /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				980AB8912AE78A8100CFBEBB /* LoginViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		989DA47A2AE26D8700054926 = {
 			isa = PBXGroup;
 			children = (
@@ -359,7 +373,7 @@
 			isa = PBXGroup;
 			children = (
 				989DA4DA2AE2EAE300054926 /* Flows */,
-				989DA4C12AE2CDCF00054926 /* ViewModel */,
+				980AB8902AE78A6E00CFBEBB /* ViewModel */,
 				989DA4C02AE2CDC800054926 /* View */,
 			);
 			path = Login;
@@ -381,13 +395,6 @@
 				989DA4F32AE42EF600054926 /* LoginViewController.storyboard */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		989DA4C12AE2CDCF00054926 /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		989DA4C82AE2D28800054926 /* View */ = {
@@ -433,6 +440,7 @@
 			children = (
 				989DA4D52AE2E5CB00054926 /* UIColor+Ext.swift */,
 				980AB8872AE700EB00CFBEBB /* UIViewController+Ext.swift */,
+				980AB8932AE78B9C00CFBEBB /* String+Ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -604,6 +612,7 @@
 			isa = PBXGroup;
 			children = (
 				989DA5372AE63D2600054926 /* FetchRecentUserUseCase.swift */,
+				980AB8952AE7932C00CFBEBB /* LoginUseCase.swift */,
 				989DA5182AE5FCD400054926 /* Protocol */,
 			);
 			path = UseCases;
@@ -941,12 +950,14 @@
 				989DA4892AE26D8700054926 /* SceneDelegate.swift in Sources */,
 				989DA54E2AE6605600054926 /* CoreDataUserResponseStorage.swift in Sources */,
 				989DA54A2AE65E2E00054926 /* CoreDataStorage.xcdatamodeld in Sources */,
+				980AB8922AE78A8100CFBEBB /* LoginViewModel.swift in Sources */,
 				989DA4D92AE2E77F00054926 /* LoadingView.swift in Sources */,
 				989DA5512AE6612F00054926 /* UserResponseEntity+Mapping.swift in Sources */,
 				989DA5362AE6351500054926 /* RootFlowCoordinator.swift in Sources */,
 				989DA4F82AE45CBD00054926 /* HomeSceneDIContainer.swift in Sources */,
 				980AB88E2AE77A2900CFBEBB /* HomeViewController.swift in Sources */,
 				989DA5382AE63D2600054926 /* FetchRecentUserUseCase.swift in Sources */,
+				980AB8962AE7932C00CFBEBB /* LoginUseCase.swift in Sources */,
 				989DA4DE2AE2EC9400054926 /* AppFlowCoordinator.swift in Sources */,
 				989DA4CC2AE2D29A00054926 /* ForgotPasswordViewController.swift in Sources */,
 				989DA5092AE5F94E00054926 /* ConnectionError.swift in Sources */,
@@ -969,6 +980,7 @@
 				989DA5062AE53EA600054926 /* Observable.swift in Sources */,
 				980AB8832AE6E51500CFBEBB /* UserDefaultsUserStorage.swift in Sources */,
 				989DA5442AE651CA00054926 /* UserResponseDTO+Mapping.swift in Sources */,
+				980AB8942AE78B9C00CFBEBB /* String+Ext.swift in Sources */,
 				980AB8862AE6E5A500CFBEBB /* UserUDS+Mapping.swift in Sources */,
 				980AB87F2AE6E4C800CFBEBB /* UserStorage.swift in Sources */,
 				989DA54C2AE65E4700054926 /* CoreDataStorage.swift in Sources */,

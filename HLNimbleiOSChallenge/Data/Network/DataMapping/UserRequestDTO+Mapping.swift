@@ -8,7 +8,11 @@
 import Foundation
 
 struct UserRequestDTO: Encodable {
-    let id: String
+    let email: String
+    let password: String
+}
+
+struct AuthenticationTokenRequestDTO: Encodable {
     let token: String
 }
 

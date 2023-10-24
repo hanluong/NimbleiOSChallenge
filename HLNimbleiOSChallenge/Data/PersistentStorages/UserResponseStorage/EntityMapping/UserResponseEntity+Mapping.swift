@@ -14,10 +14,9 @@ extension UserResponseEntity {
     }
 }
 
-extension UserRequestDTO {
-    func toEntity(in context: NSManagedObjectContext) -> UserRequestEntity {
-        let entity: UserRequestEntity = .init(context: context)
-        entity.id = id
+extension AuthenticationTokenRequestDTO {
+    func toEntity(in context: NSManagedObjectContext) -> AuthenticationRequestEntity {
+        let entity: AuthenticationRequestEntity = .init(context: context)
         entity.token = token
         return entity
     }
