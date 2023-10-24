@@ -58,12 +58,4 @@ class ForgotPasswordViewController: UIViewController, StoryboardInstantiable {
 //            showAlert("", "Enter Email")
 //        }
     }
-    
-    @IBAction func disMiss(_ sender: UIButton) {
-        dismisView()
-    }
-    
-    func dismisView() {
-        dismiss(animated: true) {}
-    }
 }

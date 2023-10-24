@@ -13,6 +13,8 @@
 		980AB8832AE6E51500CFBEBB /* UserDefaultsUserStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980AB8822AE6E51500CFBEBB /* UserDefaultsUserStorage.swift */; };
 		980AB8862AE6E5A500CFBEBB /* UserUDS+Mapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980AB8852AE6E5A500CFBEBB /* UserUDS+Mapping.swift */; };
 		980AB8882AE700EB00CFBEBB /* UIViewController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980AB8872AE700EB00CFBEBB /* UIViewController+Ext.swift */; };
+		980AB88C2AE77A1D00CFBEBB /* HomeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 980AB88B2AE77A1D00CFBEBB /* HomeViewController.storyboard */; };
+		980AB88E2AE77A2900CFBEBB /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980AB88D2AE77A2900CFBEBB /* HomeViewController.swift */; };
 		989DA4872AE26D8700054926 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989DA4862AE26D8700054926 /* AppDelegate.swift */; };
 		989DA4892AE26D8700054926 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989DA4882AE26D8700054926 /* SceneDelegate.swift */; };
 		989DA4902AE26D8800054926 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 989DA48F2AE26D8800054926 /* Assets.xcassets */; };
@@ -96,6 +98,8 @@
 		980AB8822AE6E51500CFBEBB /* UserDefaultsUserStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsUserStorage.swift; sourceTree = "<group>"; };
 		980AB8852AE6E5A500CFBEBB /* UserUDS+Mapping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserUDS+Mapping.swift"; sourceTree = "<group>"; };
 		980AB8872AE700EB00CFBEBB /* UIViewController+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Ext.swift"; sourceTree = "<group>"; };
+		980AB88B2AE77A1D00CFBEBB /* HomeViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeViewController.storyboard; sourceTree = "<group>"; };
+		980AB88D2AE77A2900CFBEBB /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		989DA4832AE26D8700054926 /* HLNimbleiOSChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HLNimbleiOSChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		989DA4862AE26D8700054926 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		989DA4882AE26D8700054926 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -202,7 +206,6 @@
 				ED8C103A389A357F7246E919 /* Pods-HLNimbleiOSChallengeTests.debug.xcconfig */,
 				BFA87B47881D1AD4A201CF7E /* Pods-HLNimbleiOSChallengeTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -238,6 +241,22 @@
 				980AB8852AE6E5A500CFBEBB /* UserUDS+Mapping.swift */,
 			);
 			path = DataMapping;
+			sourceTree = "<group>";
+		};
+		980AB8892AE779E200CFBEBB /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		980AB88A2AE779EC00CFBEBB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				980AB88D2AE77A2900CFBEBB /* HomeViewController.swift */,
+				980AB88B2AE77A1D00CFBEBB /* HomeViewController.storyboard */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		989DA47A2AE26D8700054926 = {
@@ -403,6 +422,8 @@
 			isa = PBXGroup;
 			children = (
 				989DA4F92AE45D3300054926 /* Flows */,
+				980AB8892AE779E200CFBEBB /* ViewModel */,
+				980AB88A2AE779EC00CFBEBB /* View */,
 			);
 			path = HomeScene;
 			sourceTree = "<group>";
@@ -782,6 +803,7 @@
 			files = (
 				989DA4932AE26D8800054926 /* LaunchScreen.storyboard in Resources */,
 				989DA4F62AE430B600054926 /* ForgotPasswordViewController.storyboard in Resources */,
+				980AB88C2AE77A1D00CFBEBB /* HomeViewController.storyboard in Resources */,
 				989DA4F42AE42EF600054926 /* LoginViewController.storyboard in Resources */,
 				989DA5002AE5336900054926 /* RootViewController.storyboard in Resources */,
 				989DA4902AE26D8800054926 /* Assets.xcassets in Resources */,
@@ -923,6 +945,7 @@
 				989DA5512AE6612F00054926 /* UserResponseEntity+Mapping.swift in Sources */,
 				989DA5362AE6351500054926 /* RootFlowCoordinator.swift in Sources */,
 				989DA4F82AE45CBD00054926 /* HomeSceneDIContainer.swift in Sources */,
+				980AB88E2AE77A2900CFBEBB /* HomeViewController.swift in Sources */,
 				989DA5382AE63D2600054926 /* FetchRecentUserUseCase.swift in Sources */,
 				989DA4DE2AE2EC9400054926 /* AppFlowCoordinator.swift in Sources */,
 				989DA4CC2AE2D29A00054926 /* ForgotPasswordViewController.swift in Sources */,

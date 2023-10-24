@@ -41,6 +41,8 @@ class LoginViewController: UIViewController, StoryboardInstantiable {
     // MARK: - Private
     
     private func setupViews() {
+        navigationItem.setHidesBackButton(true, animated: true)
+        navigationItem.backButtonTitle = ""
         passwordTextField.rightView = forgotPasswordButton
         passwordTextField.rightViewMode = .always
         forgotPasswordButton.addTarget(self, action: #selector(handleForgotPassword(sender:)), for: .touchUpInside)
@@ -55,9 +57,7 @@ class LoginViewController: UIViewController, StoryboardInstantiable {
     
     @objc func handleForgotPassword(sender: UIButton) {
         let vc = ForgotPasswordViewController.create()
-        vc.modalTransitionStyle = .crossDissolve
-        vc.modalPresentationStyle = .fullScreen
-        self.present(vc, animated: true)
+        navigationController?.pushViewController(vc, animated: true)
     }
     
     // MARK: - Actions

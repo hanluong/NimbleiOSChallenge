@@ -20,62 +20,55 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_blur" translatesAutoresizingMaskIntoConstraints="NO" id="VQ9-ub-CsL">
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="150" translatesAutoresizingMaskIntoConstraints="NO" id="xIT-kt-pgl">
-                                <rect key="frame" x="15" y="159" width="363" height="418"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="Gkq-2i-wkG">
+                                <rect key="frame" x="112.66666666666669" y="182" width="168" height="40"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="gOl-Pl-msT" userLabel="Form Stack View">
+                                <rect key="frame" x="24" y="322" width="345" height="208"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="Gkq-2i-wkG">
-                                        <rect key="frame" x="97.666666666666686" y="0.0" width="168" height="40"/>
-                                    </imageView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="gOl-Pl-msT">
-                                        <rect key="frame" x="10" y="190" width="343" height="228"/>
-                                        <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" minimumFontSize="19" translatesAutoresizingMaskIntoConstraints="NO" id="F72-z1-exl" customClass="CustomTextField" customModule="HLNimbleiOSChallenge" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="343" height="56"/>
-                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <textInputTraits key="textInputTraits" spellCheckingType="no" textContentType="email"/>
-                                            </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qSf-ZJ-n2I" customClass="CustomTextField" customModule="HLNimbleiOSChallenge" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="86" width="343" height="56"/>
-                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
-                                            </textField>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H1v-p0-Ral" customClass="CustomButton" customModule="HLNimbleiOSChallenge" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="172" width="343" height="56"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="56" id="4v5-mU-VO5"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <state key="normal" title="Log in">
-                                                    <color key="titleColor" systemColor="labelColor"/>
-                                                </state>
-                                                <connections>
-                                                    <action selector="logInButtonTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="w7k-XV-Phl"/>
-                                                </connections>
-                                            </button>
-                                        </subviews>
-                                    </stackView>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" minimumFontSize="19" translatesAutoresizingMaskIntoConstraints="NO" id="F72-z1-exl" customClass="CustomTextField" customModule="HLNimbleiOSChallenge" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="345" height="56"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits" spellCheckingType="no" textContentType="email"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qSf-ZJ-n2I" customClass="CustomTextField" customModule="HLNimbleiOSChallenge" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="76" width="345" height="56"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H1v-p0-Ral" customClass="CustomButton" customModule="HLNimbleiOSChallenge" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="152" width="345" height="56"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="56" id="YSU-Ig-xvR"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <state key="normal" title="Log in">
+                                            <color key="titleColor" systemColor="labelColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="logInButtonTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="w7k-XV-Phl"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
-                                <constraints>
-                                    <constraint firstItem="gOl-Pl-msT" firstAttribute="leading" secondItem="xIT-kt-pgl" secondAttribute="leading" constant="10" id="Sd4-k8-He1"/>
-                                    <constraint firstAttribute="trailing" secondItem="gOl-Pl-msT" secondAttribute="trailing" constant="10" id="aea-Aj-KGF"/>
-                                </constraints>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="xIT-kt-pgl" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="100" id="3OS-kq-6sQ"/>
-                            <constraint firstAttribute="trailing" secondItem="VQ9-ub-CsL" secondAttribute="trailing" id="SRO-TH-mSm"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="xIT-kt-pgl" secondAttribute="trailing" constant="15" id="YZU-xQ-ktX"/>
-                            <constraint firstAttribute="bottom" secondItem="VQ9-ub-CsL" secondAttribute="bottom" id="cfb-Nz-eMh"/>
-                            <constraint firstItem="VQ9-ub-CsL" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="qVS-oS-KOh"/>
-                            <constraint firstItem="VQ9-ub-CsL" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leading" id="u0f-Ll-VQQ"/>
-                            <constraint firstItem="xIT-kt-pgl" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="15" id="uYH-qU-2zb"/>
+                            <constraint firstItem="Gkq-2i-wkG" firstAttribute="bottom" secondItem="gOl-Pl-msT" secondAttribute="top" constant="-100" id="84A-fv-Sq0"/>
+                            <constraint firstItem="gOl-Pl-msT" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="Hge-TO-Dbx"/>
+                            <constraint firstItem="VQ9-ub-CsL" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="Hkg-wt-bkY"/>
+                            <constraint firstItem="Gkq-2i-wkG" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="P7P-fT-ERK"/>
+                            <constraint firstItem="VQ9-ub-CsL" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="W3T-MO-ZiR"/>
+                            <constraint firstItem="gOl-Pl-msT" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="24" id="XnL-2o-enB"/>
+                            <constraint firstItem="VQ9-ub-CsL" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="fcX-0k-g15"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="gOl-Pl-msT" secondAttribute="trailing" constant="24" id="ha7-kG-0SS"/>
+                            <constraint firstAttribute="bottom" secondItem="VQ9-ub-CsL" secondAttribute="bottom" id="nUZ-aw-FS1"/>
                         </constraints>
                     </view>
                     <connections>

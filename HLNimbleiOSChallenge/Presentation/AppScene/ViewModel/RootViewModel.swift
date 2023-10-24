@@ -8,15 +8,14 @@
 import Foundation
 
 struct RootViewModelActions {
-    let navigateToSignInSceneFlow: () -> Void
-    let navigateToSignUpSceneFlow: () -> Void
-    let navigateToMainSceneFlow: () -> Void
+    let navigateToLoginSceneFlow: () -> Void
+    let navigateToHomeSceneFlow: () -> Void
 }
 
 enum DataReadyStatus {
-  case loading
-  case finished
-  case cancelled
+    case loading
+    case finished
+    case cancelled
 }
 
 protocol RootViewModelInput {
@@ -37,6 +36,7 @@ final class DefaultRootViewModel: RootViewModel {
     private let actions: RootViewModelActions?
     
     // MARK: - RootViewModelOutput
+    
     var status: Observable<DataReadyStatus> = Observable(.loading)
     
     init(fetchRecentUserUseCases: @escaping FetchRecentUserUseCaseFactory, actions: RootViewModelActions? = nil) {
@@ -49,16 +49,19 @@ final class DefaultRootViewModel: RootViewModel {
             switch result {
             case .success(let authToken):
                 if authToken != nil {
-                    self.actions?.navigateToMainSceneFlow()
-                    print("navigateToMainSceneFlow")
+                    DispatchQueue.main.async {
+                        self.actions?.navigateToHomeSceneFlow()
+                    }
                 } else {
-                    self.actions?.navigateToSignInSceneFlow()
-                    print("navigateToSignInSceneFlow")
+                    DispatchQueue.main.async {
+                        self.actions?.navigateToLoginSceneFlow()
+                    }
                 }
                 self.status.value = .finished
             case .failure:
-                self.actions?.navigateToSignInSceneFlow()
-                print("navigateToSignInSceneFlow-->")
+                DispatchQueue.main.async {
+                    self.actions?.navigateToLoginSceneFlow()
+                }
                 self.status.value = .cancelled
             }
         }

@@ -24,26 +24,33 @@ final class RootSceneDIContainer {
         return RootFlowCoordinator(navigationController: navigationController, dependencies: self)
     }
     
-    // MARK: - DIContainers of scenes
-    
-    func makeLoginSceneDIContainer() -> LoginSceneDIContainer {
-        return LoginSceneDIContainer(dependencies: dependencies)
-    }
-    
-    func makeHomeSceneDIContainer() -> HomeSceneDIContainer {
-        return HomeSceneDIContainer(dependencies: dependencies)
-    }
+//    // MARK: - DIContainers of scenes
+//
+//    func makeLoginSceneDIContainer() -> LoginSceneDIContainer {
+//        return LoginSceneDIContainer(dependencies: dependencies)
+//    }
+//
+//    func makeHomeSceneDIContainer() -> HomeSceneDIContainer {
+//        return HomeSceneDIContainer(dependencies: dependencies)
+//    }
 }
 
 extension RootSceneDIContainer: RootFlowCoordinatorDependencies {
     
-    // MARK: - Root View
-    func makeRootViewController() -> UIViewController {
-        return RootViewController.create(with: makeRootViewControllerViewModel())
+    func makeLoginViewController() -> LoginViewController {
+        return LoginViewController.create()
     }
     
-    private func makeRootViewControllerViewModel() -> RootViewModel {
-        return DefaultRootViewModel(fetchRecentUserUseCases: makeFetchRecentUserUseCase)
+    func makeHomeViewController() -> HomeViewController {
+        return HomeViewController.create()
+    }
+    
+    func makeRootViewController(actions: RootViewModelActions) -> RootViewController {
+        return RootViewController.create(with: makeRootViewControllerViewModel(actions: actions))
+    }
+    
+    private func makeRootViewControllerViewModel(actions: RootViewModelActions) -> RootViewModel {
+        return DefaultRootViewModel(fetchRecentUserUseCases: makeFetchRecentUserUseCase, actions: actions)
     }
     
     // MARK: - Use Cases

@@ -16,7 +16,6 @@ final class HomeSceneDIContainer: HomeFlowCoordinatorDependencies {
     }
     
     // MARK: - Flow Coordinators
-    // MARK: - Flow Coordinators
     func makeHomeFlowCoordinator(navigationController: UINavigationController) -> HomeFlowCoordinator {
         return HomeFlowCoordinator(navigationController: navigationController,
                                            dependencies: self)
