@@ -8,7 +8,7 @@
 import Foundation
 
 protocol UserResponseStorage {
-    func getResponse(for request: AuthenticationTokenRequestDTO, completion: @escaping (Result<UserResponseDTO?, CoreDataStorageError>) -> Void)
-    func save(response: UserResponseDTO, for requestDto: AuthenticationTokenRequestDTO)
+    func getResponse(for request: RefreshTokenRequestDTO, completion: @escaping (Result<UserResponseDTO?, CoreDataStorageError>) -> Void)
+    func save(response: UserResponseDTO, for requestDto: RefreshTokenRequestDTO)
 }
 

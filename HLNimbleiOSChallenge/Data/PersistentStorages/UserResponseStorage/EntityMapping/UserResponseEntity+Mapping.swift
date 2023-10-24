@@ -14,7 +14,7 @@ import CoreData
 //    }
 //}
 //
-//extension AuthenticationTokenRequestDTO {
+//extension RefreshTokenRequestDTO {
 //    func toEntity(in context: NSManagedObjectContext) -> AuthenticationRequestEntity {
 //        let entity: AuthenticationRequestEntity = .init(context: context)
 //        entity.token = token

@@ -25,7 +25,7 @@ extension DefaultUserRepository: UserRepository {
         guard !task.isCancelled else { return nil }
         userPersistentStorage.fetchRecentUser { recentAuthResult in
             if case .success(let authToken) = recentAuthResult, let authToken = authToken {
-                let requestDTO = AuthenticationTokenRequestDTO(token: authToken.token)
+                let requestDTO = RefreshTokenRequestDTO(token: authToken.token)
                 let endpoint = APIEndpoints.refreshUserToken(with: requestDTO)
                 task.networkTask = self.dataTransferService.request(with: endpoint) { result in
                     switch result {

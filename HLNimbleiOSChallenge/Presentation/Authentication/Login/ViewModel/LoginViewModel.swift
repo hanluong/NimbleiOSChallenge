@@ -36,7 +36,9 @@ final class DefaultLoginViewModel: LoginViewModel {
 extension DefaultLoginViewModel {
     
     func didLogin(email: String, password: String) {
+        LoadingView.show()
         userLoginTask = loginUseCase.execute(requestValue: .init(email: email, password: password), completion: { result in
+            LoadingView.hide()
             switch result {
             case .success(let user):
                 print(user)

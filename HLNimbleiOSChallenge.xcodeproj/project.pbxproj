@@ -70,7 +70,7 @@
 		989DA5382AE63D2600054926 /* FetchRecentUserUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989DA5372AE63D2600054926 /* FetchRecentUserUseCase.swift */; };
 		989DA53A2AE6408C00054926 /* UserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989DA5392AE6408C00054926 /* UserRepository.swift */; };
 		989DA53C2AE64C5F00054926 /* DefaultUserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989DA53B2AE64C5F00054926 /* DefaultUserRepository.swift */; };
-		989DA53F2AE6505700054926 /* UserRequestDTO+Mapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989DA53E2AE6505700054926 /* UserRequestDTO+Mapping.swift */; };
+		989DA53F2AE6505700054926 /* RefreshTokenRequestDTO+Mapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989DA53E2AE6505700054926 /* RefreshTokenRequestDTO+Mapping.swift */; };
 		989DA5422AE6517800054926 /* UserResponseStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989DA5412AE6517800054926 /* UserResponseStorage.swift */; };
 		989DA5442AE651CA00054926 /* UserResponseDTO+Mapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989DA5432AE651CA00054926 /* UserResponseDTO+Mapping.swift */; };
 		989DA5462AE656E200054926 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989DA5452AE656E200054926 /* User.swift */; };
@@ -167,7 +167,7 @@
 		989DA5372AE63D2600054926 /* FetchRecentUserUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchRecentUserUseCase.swift; sourceTree = "<group>"; };
 		989DA5392AE6408C00054926 /* UserRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepository.swift; sourceTree = "<group>"; };
 		989DA53B2AE64C5F00054926 /* DefaultUserRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultUserRepository.swift; sourceTree = "<group>"; };
-		989DA53E2AE6505700054926 /* UserRequestDTO+Mapping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserRequestDTO+Mapping.swift"; sourceTree = "<group>"; };
+		989DA53E2AE6505700054926 /* RefreshTokenRequestDTO+Mapping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RefreshTokenRequestDTO+Mapping.swift"; sourceTree = "<group>"; };
 		989DA5412AE6517800054926 /* UserResponseStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserResponseStorage.swift; sourceTree = "<group>"; };
 		989DA5432AE651CA00054926 /* UserResponseDTO+Mapping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserResponseDTO+Mapping.swift"; sourceTree = "<group>"; };
 		989DA5452AE656E200054926 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
@@ -347,6 +347,16 @@
 			children = (
 			);
 			path = Flows;
+			sourceTree = "<group>";
+		};
+		980AB8AB2AE8310700CFBEBB /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				989DA53E2AE6505700054926 /* RefreshTokenRequestDTO+Mapping.swift */,
+				980AB8A92AE8228A00CFBEBB /* SignInRequestDTO+Mapping.swift */,
+				989DA5432AE651CA00054926 /* UserResponseDTO+Mapping.swift */,
+			);
+			path = Authentication;
 			sourceTree = "<group>";
 		};
 		989DA47A2AE26D8700054926 = {
@@ -736,9 +746,7 @@
 		989DA53D2AE6503000054926 /* DataMapping */ = {
 			isa = PBXGroup;
 			children = (
-				989DA53E2AE6505700054926 /* UserRequestDTO+Mapping.swift */,
-				980AB8A92AE8228A00CFBEBB /* SignInRequestDTO+Mapping.swift */,
-				989DA5432AE651CA00054926 /* UserResponseDTO+Mapping.swift */,
+				980AB8AB2AE8310700CFBEBB /* Authentication */,
 			);
 			path = DataMapping;
 			sourceTree = "<group>";
@@ -1053,7 +1061,7 @@
 				989DA4D62AE2E5CB00054926 /* UIColor+Ext.swift in Sources */,
 				989DA4E92AE4203500054926 /* DataTransferService.swift in Sources */,
 				989DA50B2AE5F96400054926 /* Cancellable.swift in Sources */,
-				989DA53F2AE6505700054926 /* UserRequestDTO+Mapping.swift in Sources */,
+				989DA53F2AE6505700054926 /* RefreshTokenRequestDTO+Mapping.swift in Sources */,
 				989DA5122AE5FC0100054926 /* APIEndpoints.swift in Sources */,
 				989DA4E32AE2EE7500054926 /* LoginSceneDIContainer.swift in Sources */,
 				989DA4E12AE2ECB800054926 /* AppDIContainer.swift in Sources */,

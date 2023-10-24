@@ -15,10 +15,9 @@ struct APIEndpoints {
         return Endpoint(path: "api/v1/oauth/token",
                         method: .post,
                         queryParametersEncodable: signInRequestDTO)
-        
     }
     
-    static func refreshUserToken(with authenticationTokenRequestDTO: AuthenticationTokenRequestDTO) -> Endpoint<UserResponseDTO> {
+    static func refreshUserToken(with authenticationTokenRequestDTO: RefreshTokenRequestDTO) -> Endpoint<UserResponseDTO> {
         return Endpoint(path: "/api/v1/oauth/token",
                         method: .post,
                         queryParametersEncodable: authenticationTokenRequestDTO)
