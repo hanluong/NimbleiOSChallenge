@@ -18,6 +18,10 @@
 		980AB8922AE78A8100CFBEBB /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980AB8912AE78A8100CFBEBB /* LoginViewModel.swift */; };
 		980AB8942AE78B9C00CFBEBB /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980AB8932AE78B9C00CFBEBB /* String+Ext.swift */; };
 		980AB8962AE7932C00CFBEBB /* LoginUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980AB8952AE7932C00CFBEBB /* LoginUseCase.swift */; };
+		980AB89C2AE7B6B200CFBEBB /* ThankYouViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 980AB89B2AE7B6B200CFBEBB /* ThankYouViewController.storyboard */; };
+		980AB89E2AE7B6C500CFBEBB /* ThankYouViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980AB89D2AE7B6C500CFBEBB /* ThankYouViewController.swift */; };
+		980AB8A62AE7B86700CFBEBB /* SurveyViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 980AB8A52AE7B86700CFBEBB /* SurveyViewController.storyboard */; };
+		980AB8A82AE7B87300CFBEBB /* SurveyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980AB8A72AE7B87300CFBEBB /* SurveyViewController.swift */; };
 		989DA4872AE26D8700054926 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989DA4862AE26D8700054926 /* AppDelegate.swift */; };
 		989DA4892AE26D8700054926 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989DA4882AE26D8700054926 /* SceneDelegate.swift */; };
 		989DA4902AE26D8800054926 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 989DA48F2AE26D8800054926 /* Assets.xcassets */; };
@@ -106,6 +110,10 @@
 		980AB8912AE78A8100CFBEBB /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		980AB8932AE78B9C00CFBEBB /* String+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
 		980AB8952AE7932C00CFBEBB /* LoginUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUseCase.swift; sourceTree = "<group>"; };
+		980AB89B2AE7B6B200CFBEBB /* ThankYouViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ThankYouViewController.storyboard; sourceTree = "<group>"; };
+		980AB89D2AE7B6C500CFBEBB /* ThankYouViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThankYouViewController.swift; sourceTree = "<group>"; };
+		980AB8A52AE7B86700CFBEBB /* SurveyViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SurveyViewController.storyboard; sourceTree = "<group>"; };
+		980AB8A72AE7B87300CFBEBB /* SurveyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyViewController.swift; sourceTree = "<group>"; };
 		989DA4832AE26D8700054926 /* HLNimbleiOSChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HLNimbleiOSChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		989DA4862AE26D8700054926 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		989DA4882AE26D8700054926 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -273,6 +281,72 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		980AB8992AE7B66F00CFBEBB /* SurveyScene */ = {
+			isa = PBXGroup;
+			children = (
+				980AB8A42AE7B84D00CFBEBB /* Flows */,
+				980AB8A32AE7B84700CFBEBB /* ViewModel */,
+				980AB8A22AE7B84100CFBEBB /* View */,
+			);
+			path = SurveyScene;
+			sourceTree = "<group>";
+		};
+		980AB89A2AE7B68B00CFBEBB /* ThankYouScene */ = {
+			isa = PBXGroup;
+			children = (
+				980AB8A12AE7B6E500CFBEBB /* Flows */,
+				980AB89F2AE7B6CD00CFBEBB /* ViewModel */,
+				980AB8A02AE7B6D600CFBEBB /* View */,
+			);
+			path = ThankYouScene;
+			sourceTree = "<group>";
+		};
+		980AB89F2AE7B6CD00CFBEBB /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		980AB8A02AE7B6D600CFBEBB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				980AB89D2AE7B6C500CFBEBB /* ThankYouViewController.swift */,
+				980AB89B2AE7B6B200CFBEBB /* ThankYouViewController.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		980AB8A12AE7B6E500CFBEBB /* Flows */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Flows;
+			sourceTree = "<group>";
+		};
+		980AB8A22AE7B84100CFBEBB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				980AB8A72AE7B87300CFBEBB /* SurveyViewController.swift */,
+				980AB8A52AE7B86700CFBEBB /* SurveyViewController.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		980AB8A32AE7B84700CFBEBB /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		980AB8A42AE7B84D00CFBEBB /* Flows */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Flows;
+			sourceTree = "<group>";
+		};
 		989DA47A2AE26D8700054926 = {
 			isa = PBXGroup;
 			children = (
@@ -355,6 +429,8 @@
 				989DA4FC2AE5306800054926 /* AppScene */,
 				989DA4BD2AE2CD3F00054926 /* Authentication */,
 				989DA4CF2AE2D9BF00054926 /* HomeScene */,
+				980AB8992AE7B66F00CFBEBB /* SurveyScene */,
+				980AB89A2AE7B68B00CFBEBB /* ThankYouScene */,
 				989DA4CE2AE2D9B100054926 /* Utils */,
 			);
 			path = Presentation;
@@ -812,6 +888,8 @@
 			files = (
 				989DA4932AE26D8800054926 /* LaunchScreen.storyboard in Resources */,
 				989DA4F62AE430B600054926 /* ForgotPasswordViewController.storyboard in Resources */,
+				980AB89C2AE7B6B200CFBEBB /* ThankYouViewController.storyboard in Resources */,
+				980AB8A62AE7B86700CFBEBB /* SurveyViewController.storyboard in Resources */,
 				980AB88C2AE77A1D00CFBEBB /* HomeViewController.storyboard in Resources */,
 				989DA4F42AE42EF600054926 /* LoginViewController.storyboard in Resources */,
 				989DA5002AE5336900054926 /* RootViewController.storyboard in Resources */,
@@ -960,6 +1038,7 @@
 				980AB8962AE7932C00CFBEBB /* LoginUseCase.swift in Sources */,
 				989DA4DE2AE2EC9400054926 /* AppFlowCoordinator.swift in Sources */,
 				989DA4CC2AE2D29A00054926 /* ForgotPasswordViewController.swift in Sources */,
+				980AB89E2AE7B6C500CFBEBB /* ThankYouViewController.swift in Sources */,
 				989DA5092AE5F94E00054926 /* ConnectionError.swift in Sources */,
 				989DA53C2AE64C5F00054926 /* DefaultUserRepository.swift in Sources */,
 				989DA51A2AE5FCE200054926 /* UseCase.swift in Sources */,
@@ -982,6 +1061,7 @@
 				989DA5442AE651CA00054926 /* UserResponseDTO+Mapping.swift in Sources */,
 				980AB8942AE78B9C00CFBEBB /* String+Ext.swift in Sources */,
 				980AB8862AE6E5A500CFBEBB /* UserUDS+Mapping.swift in Sources */,
+				980AB8A82AE7B87300CFBEBB /* SurveyViewController.swift in Sources */,
 				980AB87F2AE6E4C800CFBEBB /* UserStorage.swift in Sources */,
 				989DA54C2AE65E4700054926 /* CoreDataStorage.swift in Sources */,
 				989DA4FB2AE45D5000054926 /* HomeFlowCoordinator.swift in Sources */,

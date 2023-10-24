@@ -54,7 +54,8 @@ final class DefaultRootViewModel: RootViewModel {
                     }
                 } else {
                     DispatchQueue.main.async {
-                        self.actions?.navigateToLoginSceneFlow()
+                        // self.actions?.navigateToLoginSceneFlow()
+                        self.actions?.navigateToHomeSceneFlow()
                     }
                 }
                 self.status.value = .finished
