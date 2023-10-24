@@ -58,7 +58,7 @@ extension RootSceneDIContainer: RootFlowCoordinatorDependencies {
     }
     
     // MARK: - Use Cases
-    private func makeFetchRecentUserUseCase(completion: @escaping (Result<AuthenticationToken?, Error>) -> Void) -> UseCase {
+    private func makeFetchRecentUserUseCase(completion: @escaping (Result<User?, Error>) -> Void) -> UseCase {
         return FetchRecentUserUseCase(userRepository: makeUserRepository(), completion: completion)
     }
     

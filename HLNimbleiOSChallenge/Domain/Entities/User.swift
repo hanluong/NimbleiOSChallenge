@@ -9,7 +9,8 @@ import Foundation
 
 struct User: Equatable, Identifiable {
     let id: String
-    let token: String
+    let accessToken: String
+    let refreshToken: String
 }
 
 struct AuthenticationToken: Equatable {

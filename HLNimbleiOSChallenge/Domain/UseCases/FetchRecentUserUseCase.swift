@@ -10,9 +10,9 @@ import Foundation
 final class FetchRecentUserUseCase: UseCase {
     
     private let userRepository: UserRepository
-    private let completionResult: (Result<AuthenticationToken?, Error>) -> Void
+    private let completionResult: (Result<User?, Error>) -> Void
 
-    init(userRepository: UserRepository, completion: @escaping (Result<AuthenticationToken?, Error>) -> Void) {
+    init(userRepository: UserRepository, completion: @escaping (Result<User?, Error>) -> Void) {
         self.userRepository = userRepository
         self.completionResult = completion
     }

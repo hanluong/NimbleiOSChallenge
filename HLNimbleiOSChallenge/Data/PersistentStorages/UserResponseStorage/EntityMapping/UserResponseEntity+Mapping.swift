@@ -8,16 +8,16 @@
 import Foundation
 import CoreData
 
-extension UserResponseEntity {
-    func toDTO() -> User {
-        return .init(id: id ?? "", token: token ?? "")
-    }
-}
-
-extension AuthenticationTokenRequestDTO {
-    func toEntity(in context: NSManagedObjectContext) -> AuthenticationRequestEntity {
-        let entity: AuthenticationRequestEntity = .init(context: context)
-        entity.token = token
-        return entity
-    }
-}
+//extension UserResponseEntity {
+//    func toDTO() -> User {
+//        return .init(id: id ?? "", token: token ?? "")
+//    }
+//}
+//
+//extension AuthenticationTokenRequestDTO {
+//    func toEntity(in context: NSManagedObjectContext) -> AuthenticationRequestEntity {
+//        let entity: AuthenticationRequestEntity = .init(context: context)
+//        entity.token = token
+//        return entity
+//    }
+//}

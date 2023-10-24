@@ -28,7 +28,7 @@ protocol RootViewModelOutput {
 
 protocol RootViewModel: RootViewModelInput, RootViewModelOutput { }
 
-typealias FetchRecentUserUseCaseFactory = (@escaping (Result<AuthenticationToken?, Error>) -> Void) -> UseCase
+typealias FetchRecentUserUseCaseFactory = (@escaping (Result<User?, Error>) -> Void) -> UseCase
 
 final class DefaultRootViewModel: RootViewModel {
     
@@ -45,17 +45,16 @@ final class DefaultRootViewModel: RootViewModel {
     }
     
     private func loadRecentUser() {
-        let completion: (Result<AuthenticationToken?, Error>) -> Void = { result in
+        let completion: (Result<User?, Error>) -> Void = { result in
             switch result {
-            case .success(let authToken):
-                if authToken != nil {
+            case .success(let user):
+                if user != nil {
                     DispatchQueue.main.async {
                         self.actions?.navigateToHomeSceneFlow()
                     }
                 } else {
                     DispatchQueue.main.async {
-                        // self.actions?.navigateToLoginSceneFlow()
-                        self.actions?.navigateToHomeSceneFlow()
+                         self.actions?.navigateToLoginSceneFlow()
                     }
                 }
                 self.status.value = .finished

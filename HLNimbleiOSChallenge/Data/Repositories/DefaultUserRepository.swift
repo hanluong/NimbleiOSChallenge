@@ -20,8 +20,28 @@ final class DefaultUserRepository {
 
 extension DefaultUserRepository: UserRepository {
     
-    func fetchRecentUser(completion: @escaping (Result<AuthenticationToken?, Error>) -> Void) {
-        userPersistentStorage.fetchRecentUser(completion: completion)
+    func fetchRecentUser(completion: @escaping (Result<User?, Error>) -> Void) -> Cancellable? {
+        let task = RepositoryTask()
+        guard !task.isCancelled else { return nil }
+        userPersistentStorage.fetchRecentUser { recentAuthResult in
+            if case .success(let authToken) = recentAuthResult, let authToken = authToken {
+                let requestDTO = AuthenticationTokenRequestDTO(token: authToken.token)
+                let endpoint = APIEndpoints.refreshUserToken(with: requestDTO)
+                task.networkTask = self.dataTransferService.request(with: endpoint) { result in
+                    switch result {
+                    case .success(let responseDTO):
+                        let user = responseDTO.toDomain()
+                        self.saveRecentUser(user: user) { _ in }
+                        completion(.success(user))
+                    case .failure(let error):
+                        completion(.failure(error))
+                    }
+                }
+            } else {
+                completion(.success(nil))
+            }
+        }
+        return task
     }
     
     func saveRecentUser(user: User, completion: @escaping (Result<AuthenticationToken, Error>) -> Void) {
@@ -29,14 +49,16 @@ extension DefaultUserRepository: UserRepository {
     }
     
     func login(email: String, password: String, completion: @escaping (Result<User, Error>) -> Void) -> Cancellable? {
-        let requestDTO = UserRequestDTO(email: email, password: password)
+        let requestDTO = SignInRequestDTO(email: email, password: password)
         let task = RepositoryTask()
         guard !task.isCancelled else { return nil }
         let endpoint = APIEndpoints.signIn(with: requestDTO)
         task.networkTask = self.dataTransferService.request(with: endpoint) { result in
             switch result {
             case .success(let responseDTO):
-                completion(.success(responseDTO.toDomain()))
+                let user = responseDTO.toDomain()
+                self.saveRecentUser(user: user) { _ in }
+                completion(.success(user))
             case .failure(let error):
                 completion(.failure(error))
             }

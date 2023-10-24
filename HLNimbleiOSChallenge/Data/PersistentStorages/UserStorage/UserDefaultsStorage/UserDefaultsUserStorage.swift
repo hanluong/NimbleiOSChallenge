@@ -45,8 +45,8 @@ extension UserDefaultsUserStorage: UserStorage {
     func saveRecentUser(user: User, completion: @escaping (Result<AuthenticationToken, Error>) -> Void) {
         DispatchQueue.global(qos: .userInitiated).async { [weak self] in
             guard let self = self else { return }
-            self.persist(token: user.token)
-            completion(.success(AuthenticationToken(token: user.token)))
+            self.persist(token: user.refreshToken)
+            completion(.success(AuthenticationToken(token: user.refreshToken)))
         }
     }
     

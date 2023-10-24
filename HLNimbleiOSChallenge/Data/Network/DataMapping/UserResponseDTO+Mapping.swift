@@ -42,7 +42,7 @@ extension UserResponseDTO {
 
 extension UserResponseDTO {
     func toDomain() -> User {
-        return .init(id: data.id, token: data.attributes.refreshToken)
+        return .init(id: data.id, accessToken: data.attributes.accessToken, refreshToken: data.attributes.refreshToken)
     }
 }
 
