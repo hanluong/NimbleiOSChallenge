@@ -72,8 +72,6 @@
 		989DA51C2AE5FDC400054926 /* Answer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989DA51B2AE5FDC400054926 /* Answer.swift */; };
 		989DA51E2AE5FEEB00054926 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989DA51D2AE5FEEB00054926 /* Question.swift */; };
 		989DA5202AE5FF2000054926 /* Survey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989DA51F2AE5FF2000054926 /* Survey.swift */; };
-		989DA5222AE6027E00054926 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989DA5212AE6027E00054926 /* LoginModel.swift */; };
-		989DA5242AE6029500054926 /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989DA5232AE6029500054926 /* HomeModel.swift */; };
 		989DA5332AE631FC00054926 /* RootSceneDIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989DA5322AE631FC00054926 /* RootSceneDIContainer.swift */; };
 		989DA5362AE6351500054926 /* RootFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989DA5352AE6351500054926 /* RootFlowCoordinator.swift */; };
 		989DA5382AE63D2600054926 /* FetchRecentUserUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989DA5372AE63D2600054926 /* FetchRecentUserUseCase.swift */; };
@@ -178,8 +176,6 @@
 		989DA51B2AE5FDC400054926 /* Answer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Answer.swift; sourceTree = "<group>"; };
 		989DA51D2AE5FEEB00054926 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		989DA51F2AE5FF2000054926 /* Survey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Survey.swift; sourceTree = "<group>"; };
-		989DA5212AE6027E00054926 /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
-		989DA5232AE6029500054926 /* HomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
 		989DA5322AE631FC00054926 /* RootSceneDIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootSceneDIContainer.swift; sourceTree = "<group>"; };
 		989DA5352AE6351500054926 /* RootFlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootFlowCoordinator.swift; sourceTree = "<group>"; };
 		989DA5372AE63D2600054926 /* FetchRecentUserUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchRecentUserUseCase.swift; sourceTree = "<group>"; };
@@ -398,6 +394,21 @@
 			path = AllSurveysView;
 			sourceTree = "<group>";
 		};
+		980AB8C62AE8CCBD00CFBEBB /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				980AB8C72AE8CCDD00CFBEBB /* LoginScene */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		980AB8C72AE8CCDD00CFBEBB /* LoginScene */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = LoginScene;
+			sourceTree = "<group>";
+		};
 		989DA47A2AE26D8700054926 = {
 			isa = PBXGroup;
 			children = (
@@ -437,6 +448,7 @@
 		989DA49C2AE26D8800054926 /* HLNimbleiOSChallengeTests */ = {
 			isa = PBXGroup;
 			children = (
+				980AB8C62AE8CCBD00CFBEBB /* Presentation */,
 				989DA49D2AE26D8800054926 /* HLNimbleiOSChallengeTests.swift */,
 			);
 			path = HLNimbleiOSChallengeTests;
@@ -754,8 +766,6 @@
 				989DA51B2AE5FDC400054926 /* Answer.swift */,
 				989DA51F2AE5FF2000054926 /* Survey.swift */,
 				989DA5452AE656E200054926 /* User.swift */,
-				989DA5212AE6027E00054926 /* LoginModel.swift */,
-				989DA5232AE6029500054926 /* HomeModel.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -1126,8 +1136,6 @@
 				989DA54C2AE65E4700054926 /* CoreDataStorage.swift in Sources */,
 				989DA4FB2AE45D5000054926 /* HomeFlowCoordinator.swift in Sources */,
 				989DA4DC2AE2EBC700054926 /* LoginFlowCoordinator.swift in Sources */,
-				989DA5222AE6027E00054926 /* LoginModel.swift in Sources */,
-				989DA5242AE6029500054926 /* HomeModel.swift in Sources */,
 				989DA5422AE6517800054926 /* UserResponseStorage.swift in Sources */,
 				989DA4C42AE2CE4E00054926 /* LoginViewController.swift in Sources */,
 				989DA4F22AE42DF300054926 /* NetworkService.swift in Sources */,

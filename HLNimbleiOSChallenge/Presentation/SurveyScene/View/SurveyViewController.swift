@@ -32,6 +32,13 @@ class SurveyViewController: UIViewController, StoryboardInstantiable {
         super.viewWillAppear(animated)
     }
 
+    @IBAction func startSurveyButtonTapped(_ sender: Any) {
+        let vc = ThankYouViewController.create()
+        vc.modalTransitionStyle = .crossDissolve
+        vc.modalPresentationStyle = .fullScreen
+        self.present(vc, animated: true)
+    }
+    
     // MARK: - Private
 
     private func setupViews() {

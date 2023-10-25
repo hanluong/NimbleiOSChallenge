@@ -45,17 +45,20 @@
                                 </constraints>
                                 <state key="normal" backgroundImage="next_btn_icon"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yIf-pA-Wb1" userLabel="Submit Button" customClass="CustomButton" customModule="HLNimbleiOSChallenge" customModuleProvider="target">
-                                <rect key="frame" x="253" y="742" width="120" height="56"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yIf-pA-Wb1" userLabel="Start survey Button" customClass="CustomButton" customModule="HLNimbleiOSChallenge" customModuleProvider="target">
+                                <rect key="frame" x="223" y="742" width="150" height="56"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="56" id="X8O-i1-RA9"/>
-                                    <constraint firstAttribute="width" constant="120" id="k5f-UU-V2X"/>
+                                    <constraint firstAttribute="width" constant="150" id="k5f-UU-V2X"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                <state key="normal" title="Submit">
+                                <state key="normal" title="Start survey">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="startSurveyButtonTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="piW-iz-kIt"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>

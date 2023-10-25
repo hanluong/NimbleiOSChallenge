@@ -9,6 +9,11 @@ import UIKit
 
 class ThankYouViewController: UIViewController, StoryboardInstantiable {
 
+    static func create() -> ThankYouViewController {
+        let view = ThankYouViewController.instantiateViewController()
+        return view
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
