@@ -32,6 +32,11 @@
 		980AB8BE2AE845A900CFBEBB /* SurveyResponseDTO+Mapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980AB8BD2AE845A900CFBEBB /* SurveyResponseDTO+Mapping.swift */; };
 		980AB8C32AE8B78E00CFBEBB /* InfoSlideViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980AB8C22AE8B78E00CFBEBB /* InfoSlideViewModel.swift */; };
 		980AB8C52AE8BD8200CFBEBB /* SurveyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980AB8C42AE8BD8200CFBEBB /* SurveyViewModel.swift */; };
+		980AB8CB2AE8D06B00CFBEBB /* DataTransferServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980AB8CA2AE8D06B00CFBEBB /* DataTransferServiceTests.swift */; };
+		980AB8CD2AE8D15500CFBEBB /* NetworkSessionManagerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980AB8CC2AE8D15500CFBEBB /* NetworkSessionManagerMock.swift */; };
+		980AB8D02AE8D19400CFBEBB /* NetworkConfigurableMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980AB8CF2AE8D19400CFBEBB /* NetworkConfigurableMock.swift */; };
+		980AB8D22AE8D36200CFBEBB /* NetworkServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980AB8D12AE8D36200CFBEBB /* NetworkServiceTests.swift */; };
+		980AB8D52AE8D50700CFBEBB /* AppConfiguratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980AB8D42AE8D50700CFBEBB /* AppConfiguratorTests.swift */; };
 		989DA4872AE26D8700054926 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989DA4862AE26D8700054926 /* AppDelegate.swift */; };
 		989DA4892AE26D8700054926 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989DA4882AE26D8700054926 /* SceneDelegate.swift */; };
 		989DA4902AE26D8800054926 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 989DA48F2AE26D8800054926 /* Assets.xcassets */; };
@@ -132,6 +137,11 @@
 		980AB8BD2AE845A900CFBEBB /* SurveyResponseDTO+Mapping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SurveyResponseDTO+Mapping.swift"; sourceTree = "<group>"; };
 		980AB8C22AE8B78E00CFBEBB /* InfoSlideViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoSlideViewModel.swift; sourceTree = "<group>"; };
 		980AB8C42AE8BD8200CFBEBB /* SurveyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyViewModel.swift; sourceTree = "<group>"; };
+		980AB8CA2AE8D06B00CFBEBB /* DataTransferServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTransferServiceTests.swift; sourceTree = "<group>"; };
+		980AB8CC2AE8D15500CFBEBB /* NetworkSessionManagerMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkSessionManagerMock.swift; sourceTree = "<group>"; };
+		980AB8CF2AE8D19400CFBEBB /* NetworkConfigurableMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConfigurableMock.swift; sourceTree = "<group>"; };
+		980AB8D12AE8D36200CFBEBB /* NetworkServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceTests.swift; sourceTree = "<group>"; };
+		980AB8D42AE8D50700CFBEBB /* AppConfiguratorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfiguratorTests.swift; sourceTree = "<group>"; };
 		989DA4832AE26D8700054926 /* HLNimbleiOSChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HLNimbleiOSChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		989DA4862AE26D8700054926 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		989DA4882AE26D8700054926 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -409,6 +419,41 @@
 			path = LoginScene;
 			sourceTree = "<group>";
 		};
+		980AB8C82AE8D02D00CFBEBB /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				980AB8C92AE8D04100CFBEBB /* Network */,
+			);
+			path = Infrastructure;
+			sourceTree = "<group>";
+		};
+		980AB8C92AE8D04100CFBEBB /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				980AB8CA2AE8D06B00CFBEBB /* DataTransferServiceTests.swift */,
+				980AB8D12AE8D36200CFBEBB /* NetworkServiceTests.swift */,
+				980AB8CE2AE8D18000CFBEBB /* Mocks */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		980AB8CE2AE8D18000CFBEBB /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				980AB8CC2AE8D15500CFBEBB /* NetworkSessionManagerMock.swift */,
+				980AB8CF2AE8D19400CFBEBB /* NetworkConfigurableMock.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		980AB8D32AE8D4F600CFBEBB /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				980AB8D42AE8D50700CFBEBB /* AppConfiguratorTests.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
 		989DA47A2AE26D8700054926 = {
 			isa = PBXGroup;
 			children = (
@@ -448,7 +493,9 @@
 		989DA49C2AE26D8800054926 /* HLNimbleiOSChallengeTests */ = {
 			isa = PBXGroup;
 			children = (
+				980AB8D32AE8D4F600CFBEBB /* Application */,
 				980AB8C62AE8CCBD00CFBEBB /* Presentation */,
+				980AB8C82AE8D02D00CFBEBB /* Infrastructure */,
 				989DA49D2AE26D8800054926 /* HLNimbleiOSChallengeTests.swift */,
 			);
 			path = HLNimbleiOSChallengeTests;
@@ -1157,7 +1204,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				980AB8D52AE8D50700CFBEBB /* AppConfiguratorTests.swift in Sources */,
+				980AB8D22AE8D36200CFBEBB /* NetworkServiceTests.swift in Sources */,
+				980AB8CB2AE8D06B00CFBEBB /* DataTransferServiceTests.swift in Sources */,
+				980AB8D02AE8D19400CFBEBB /* NetworkConfigurableMock.swift in Sources */,
 				989DA49E2AE26D8800054926 /* HLNimbleiOSChallengeTests.swift in Sources */,
+				980AB8CD2AE8D15500CFBEBB /* NetworkSessionManagerMock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
