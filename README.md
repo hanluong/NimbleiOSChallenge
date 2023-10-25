@@ -1,4 +1,4 @@
-$# NimbleiOSChallenge
+## NimbleiOSChallenge
 NimbleiOSChallenge project implemented with Clean Layered Architecture and MVVM. 
 
 ## Layers
