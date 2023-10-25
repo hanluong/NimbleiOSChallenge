@@ -18,25 +18,17 @@ struct APIEndpoints {
     }
     
     static func refreshUserToken(with authenticationTokenRequestDTO: RefreshTokenRequestDTO) -> Endpoint<UserResponseDTO> {
-        return Endpoint(path: "/api/v1/oauth/token",
+        return Endpoint(path: "api/v1/oauth/token",
                         method: .post,
                         queryParametersEncodable: authenticationTokenRequestDTO)
     }
     
     // MARK: - Home
     
-    static func getUserData() -> Endpoint<Data> {
-        return Endpoint(path: "/api/v1/me", method: .get)
-    }
-    
-    static func getAllSurveys() -> Endpoint<Data> {
-        return Endpoint(path: "/api/v1/surveys", method: .get)
-    }
-    
-    static func getSingleSurvey(id: String) -> Endpoint<Data> {
+    static func getAllSurveys(with accessToken: String) -> Endpoint<SurveyDataResponseDTO> {
         return Endpoint(path: "/api/v1/surveys",
                         method: .get,
-                        queryParametersEncodable: id)
+                        headerParamaters: ["Authorization": "Bearer \(accessToken)"])
     }
 }
 

@@ -9,7 +9,8 @@ import Foundation
 
 final class UserDefaultsUserStorage {
     
-    private let recentUserTokenKey = "recentUserToken"
+    private let recentUserRefreshTokenKey = "recentUserRefreshToken"
+    private let recentUserAccessTokenKey = "recentUserAccessToken"
     private var userDefaults: UserDefaults
     
     init(userDefaults: UserDefaults = UserDefaults.standard) {
@@ -17,7 +18,7 @@ final class UserDefaultsUserStorage {
     }
 
     private func fetchUser() -> AuthenticationToken? {
-        if let queriesData = userDefaults.object(forKey: recentUserTokenKey) as? Data {
+        if let queriesData = userDefaults.object(forKey: recentUserRefreshTokenKey) as? Data {
             if let authenticationTokenUDS = try? JSONDecoder().decode(AuthenticationTokenUDS.self, from: queriesData) {
                 return authenticationTokenUDS.toDomain()
             }
@@ -28,7 +29,7 @@ final class UserDefaultsUserStorage {
     private func persist(token: String) {
         let encoder = JSONEncoder()
         if let encoded = try? encoder.encode(AuthenticationTokenUDS(token: token)) {
-            userDefaults.set(encoded, forKey: recentUserTokenKey)
+            userDefaults.set(encoded, forKey: recentUserRefreshTokenKey)
         }
     }
 }

@@ -7,12 +7,11 @@
 
 import Foundation
 
+struct SurveyList: Codable {
+    let surveys: [Survey]
+}
 struct Survey: Codable {
     let id: String
-    let questions: [Question]
-
-    enum CodingKeys: String, CodingKey {
-        case id = "survey_id"
-        case questions
-    }
+    let title: String
+    let description: String
 }

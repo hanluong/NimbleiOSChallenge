@@ -8,15 +8,22 @@
 import UIKit
 
 class HomeViewController: UIViewController, StoryboardInstantiable {
-
-//    let viewModel = LoginViewModel(apiClient: APIClient(cachedData: CacheData()))
-//    private var viewModel: MovieDetailsViewModel!
+    
+    // MARK: - IBOutlets
+    @IBOutlet weak var fullDateLabel: UILabel!
+    @IBOutlet weak var dateLabel: UILabel!
+    @IBOutlet weak var avatarImageView: UIImageView!
+    @IBOutlet weak var contentScrollView: UIScrollView!
+    @IBOutlet weak var pageControl: UIPageControl!
+    
+    // Variables
+    private var viewModel: HomeViewModel!
     
     // MARK: - Lifecycle
     
-    static func create() -> HomeViewController {
+    static func create(with viewModel: HomeViewModel) -> HomeViewController {
         let view = HomeViewController.instantiateViewController()
-//        view.viewModel = viewModel
+        view.viewModel = viewModel
         return view
     }
     
@@ -27,5 +34,6 @@ class HomeViewController: UIViewController, StoryboardInstantiable {
     
     private func setupViews() {
         navigationItem.setHidesBackButton(true, animated: true)
+        view.bringSubviewToFront(pageControl)
     }
 }

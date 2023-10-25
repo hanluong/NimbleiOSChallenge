@@ -46,6 +46,7 @@ extension DefaultLoginViewModel {
             default:
                 print("FAILED login")
             }
+            self.userLoginTask = nil
         })
     }
 }

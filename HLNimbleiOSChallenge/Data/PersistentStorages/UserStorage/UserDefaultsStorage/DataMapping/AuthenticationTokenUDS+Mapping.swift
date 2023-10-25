@@ -1,5 +1,5 @@
 //
-//  AuthenticationTokenUDS+Mapping.swift
+//  UserUDS+Mapping.swift
 //  HLNimbleiOSChallenge
 //
 //  Created by Han Luong on 24/10/2023.

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="InfoSlideView" customModule="HLNimbleiOSChallenge" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home_bg" translatesAutoresizingMaskIntoConstraints="NO" id="bHU-bS-sTO">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                </imageView>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="top" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="uzk-rC-0c4" userLabel="Survey Info Stack View">
+                    <rect key="frame" x="20" y="659" width="353" height="139"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Career training and development" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Qq-Tg-sf2">
+                            <rect key="frame" x="0.0" y="0.0" width="235" height="67"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="uD0-xv-xOf" userLabel="Description Stack View">
+                            <rect key="frame" x="0.0" y="83" width="353" height="56"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We would like to know what are your goals and skills you wanted..." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x4H-Wz-mCy">
+                                    <rect key="frame" x="0.0" y="7.6666666666666288" width="267" height="40.666666666666664"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Ee-Mv-l0p">
+                                    <rect key="frame" x="297" y="0.0" width="56" height="56"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="56" id="6D6-Hp-N54"/>
+                                        <constraint firstAttribute="width" constant="56" id="pYg-0J-Y9q"/>
+                                    </constraints>
+                                    <state key="normal" backgroundImage="next_btn_icon"/>
+                                    <connections>
+                                        <action selector="startSurveyButtonTapped:" destination="iN0-l3-epB" eventType="touchUpInside" id="A08-uc-qQO"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="uD0-xv-xOf" secondAttribute="trailing" id="Cks-MW-F7Z"/>
+                        <constraint firstItem="uD0-xv-xOf" firstAttribute="leading" secondItem="uzk-rC-0c4" secondAttribute="leading" id="RgR-cI-UGd"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="bHU-bS-sTO" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="D1B-Ym-gNA"/>
+                <constraint firstItem="uzk-rC-0c4" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="DpZ-iz-H68"/>
+                <constraint firstItem="bHU-bS-sTO" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="ZBB-Sd-y08"/>
+                <constraint firstAttribute="bottom" secondItem="bHU-bS-sTO" secondAttribute="bottom" id="hRq-fo-VcC"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="uzk-rC-0c4" secondAttribute="bottom" constant="20" id="lDn-DZ-FBb"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="bHU-bS-sTO" secondAttribute="trailing" id="qr0-6U-gMN"/>
+                <constraint firstAttribute="trailing" secondItem="uzk-rC-0c4" secondAttribute="trailing" constant="20" id="wgZ-Jb-wv5"/>
+            </constraints>
+            <connections>
+                <outlet property="descInfoLabel" destination="x4H-Wz-mCy" id="XI9-eF-7cz"/>
+                <outlet property="titleInfoLabel" destination="9Qq-Tg-sf2" id="Uox-xZ-Ufc"/>
+            </connections>
+            <point key="canvasLocation" x="123" y="-11"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="home_bg" width="375" height="812"/>
+        <image name="next_btn_icon" width="56" height="56"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

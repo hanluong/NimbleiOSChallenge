@@ -23,6 +23,13 @@
 		980AB8A62AE7B86700CFBEBB /* SurveyViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 980AB8A52AE7B86700CFBEBB /* SurveyViewController.storyboard */; };
 		980AB8A82AE7B87300CFBEBB /* SurveyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980AB8A72AE7B87300CFBEBB /* SurveyViewController.swift */; };
 		980AB8AA2AE8228A00CFBEBB /* SignInRequestDTO+Mapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980AB8A92AE8228A00CFBEBB /* SignInRequestDTO+Mapping.swift */; };
+		980AB8B12AE839B600CFBEBB /* InfoSlideView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 980AB8B02AE839B600CFBEBB /* InfoSlideView.xib */; };
+		980AB8B32AE83B4200CFBEBB /* InfoSlideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980AB8B22AE83B4200CFBEBB /* InfoSlideView.swift */; };
+		980AB8B52AE83EA400CFBEBB /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980AB8B42AE83EA400CFBEBB /* HomeViewModel.swift */; };
+		980AB8B72AE83F4E00CFBEBB /* HomeUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980AB8B62AE83F4E00CFBEBB /* HomeUseCase.swift */; };
+		980AB8B92AE8425700CFBEBB /* SurveyRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980AB8B82AE8425700CFBEBB /* SurveyRepository.swift */; };
+		980AB8BB2AE843A200CFBEBB /* DefaultSurveyRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980AB8BA2AE843A200CFBEBB /* DefaultSurveyRepository.swift */; };
+		980AB8BE2AE845A900CFBEBB /* SurveyResponseDTO+Mapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980AB8BD2AE845A900CFBEBB /* SurveyResponseDTO+Mapping.swift */; };
 		989DA4872AE26D8700054926 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989DA4862AE26D8700054926 /* AppDelegate.swift */; };
 		989DA4892AE26D8700054926 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989DA4882AE26D8700054926 /* SceneDelegate.swift */; };
 		989DA4902AE26D8800054926 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 989DA48F2AE26D8800054926 /* Assets.xcassets */; };
@@ -116,6 +123,13 @@
 		980AB8A52AE7B86700CFBEBB /* SurveyViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SurveyViewController.storyboard; sourceTree = "<group>"; };
 		980AB8A72AE7B87300CFBEBB /* SurveyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyViewController.swift; sourceTree = "<group>"; };
 		980AB8A92AE8228A00CFBEBB /* SignInRequestDTO+Mapping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SignInRequestDTO+Mapping.swift"; sourceTree = "<group>"; };
+		980AB8B02AE839B600CFBEBB /* InfoSlideView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InfoSlideView.xib; sourceTree = "<group>"; };
+		980AB8B22AE83B4200CFBEBB /* InfoSlideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoSlideView.swift; sourceTree = "<group>"; };
+		980AB8B42AE83EA400CFBEBB /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		980AB8B62AE83F4E00CFBEBB /* HomeUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeUseCase.swift; sourceTree = "<group>"; };
+		980AB8B82AE8425700CFBEBB /* SurveyRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyRepository.swift; sourceTree = "<group>"; };
+		980AB8BA2AE843A200CFBEBB /* DefaultSurveyRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultSurveyRepository.swift; sourceTree = "<group>"; };
+		980AB8BD2AE845A900CFBEBB /* SurveyResponseDTO+Mapping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SurveyResponseDTO+Mapping.swift"; sourceTree = "<group>"; };
 		989DA4832AE26D8700054926 /* HLNimbleiOSChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HLNimbleiOSChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		989DA4862AE26D8700054926 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		989DA4882AE26D8700054926 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -262,6 +276,7 @@
 		980AB8892AE779E200CFBEBB /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				980AB8B42AE83EA400CFBEBB /* HomeViewModel.swift */,
 			);
 			name = ViewModel;
 			sourceTree = "<group>";
@@ -271,6 +286,8 @@
 			children = (
 				980AB88D2AE77A2900CFBEBB /* HomeViewController.swift */,
 				980AB88B2AE77A1D00CFBEBB /* HomeViewController.storyboard */,
+				980AB8B22AE83B4200CFBEBB /* InfoSlideView.swift */,
+				980AB8B02AE839B600CFBEBB /* InfoSlideView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -357,6 +374,14 @@
 				989DA5432AE651CA00054926 /* UserResponseDTO+Mapping.swift */,
 			);
 			path = Authentication;
+			sourceTree = "<group>";
+		};
+		980AB8BC2AE8456500CFBEBB /* Survey */ = {
+			isa = PBXGroup;
+			children = (
+				980AB8BD2AE845A900CFBEBB /* SurveyResponseDTO+Mapping.swift */,
+			);
+			path = Survey;
 			sourceTree = "<group>";
 		};
 		989DA47A2AE26D8700054926 = {
@@ -664,6 +689,7 @@
 			isa = PBXGroup;
 			children = (
 				989DA53B2AE64C5F00054926 /* DefaultUserRepository.swift */,
+				980AB8BA2AE843A200CFBEBB /* DefaultSurveyRepository.swift */,
 				989DA50C2AE5FB7D00054926 /* Utils */,
 			);
 			path = Repositories;
@@ -701,6 +727,7 @@
 			children = (
 				989DA5372AE63D2600054926 /* FetchRecentUserUseCase.swift */,
 				980AB8952AE7932C00CFBEBB /* LoginUseCase.swift */,
+				980AB8B62AE83F4E00CFBEBB /* HomeUseCase.swift */,
 				989DA5182AE5FCD400054926 /* Protocol */,
 			);
 			path = UseCases;
@@ -723,6 +750,7 @@
 			isa = PBXGroup;
 			children = (
 				989DA5392AE6408C00054926 /* UserRepository.swift */,
+				980AB8B82AE8425700CFBEBB /* SurveyRepository.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -747,6 +775,7 @@
 			isa = PBXGroup;
 			children = (
 				980AB8AB2AE8310700CFBEBB /* Authentication */,
+				980AB8BC2AE8456500CFBEBB /* Survey */,
 			);
 			path = DataMapping;
 			sourceTree = "<group>";
@@ -900,6 +929,7 @@
 				989DA4932AE26D8800054926 /* LaunchScreen.storyboard in Resources */,
 				989DA4F62AE430B600054926 /* ForgotPasswordViewController.storyboard in Resources */,
 				980AB89C2AE7B6B200CFBEBB /* ThankYouViewController.storyboard in Resources */,
+				980AB8B12AE839B600CFBEBB /* InfoSlideView.xib in Resources */,
 				980AB8A62AE7B86700CFBEBB /* SurveyViewController.storyboard in Resources */,
 				980AB88C2AE77A1D00CFBEBB /* HomeViewController.storyboard in Resources */,
 				989DA4F42AE42EF600054926 /* LoginViewController.storyboard in Resources */,
@@ -1033,6 +1063,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				989DA4872AE26D8700054926 /* AppDelegate.swift in Sources */,
+				980AB8BB2AE843A200CFBEBB /* DefaultSurveyRepository.swift in Sources */,
 				989DA4D12AE2D9F600054926 /* CustomTextField.swift in Sources */,
 				980AB8882AE700EB00CFBEBB /* UIViewController+Ext.swift in Sources */,
 				989DA5042AE5399F00054926 /* RootViewModel.swift in Sources */,
@@ -1075,6 +1106,7 @@
 				980AB8862AE6E5A500CFBEBB /* AuthenticationTokenUDS+Mapping.swift in Sources */,
 				980AB8A82AE7B87300CFBEBB /* SurveyViewController.swift in Sources */,
 				980AB87F2AE6E4C800CFBEBB /* UserStorage.swift in Sources */,
+				980AB8B52AE83EA400CFBEBB /* HomeViewModel.swift in Sources */,
 				989DA54C2AE65E4700054926 /* CoreDataStorage.swift in Sources */,
 				989DA4FB2AE45D5000054926 /* HomeFlowCoordinator.swift in Sources */,
 				989DA4DC2AE2EBC700054926 /* LoginFlowCoordinator.swift in Sources */,
@@ -1083,13 +1115,17 @@
 				989DA5422AE6517800054926 /* UserResponseStorage.swift in Sources */,
 				989DA4C42AE2CE4E00054926 /* LoginViewController.swift in Sources */,
 				989DA4F22AE42DF300054926 /* NetworkService.swift in Sources */,
+				980AB8BE2AE845A900CFBEBB /* SurveyResponseDTO+Mapping.swift in Sources */,
 				989DA50E2AE5FB8800054926 /* RepositoryTask.swift in Sources */,
 				989DA4EC2AE4218300054926 /* StoryboardInstantiable.swift in Sources */,
 				989DA51C2AE5FDC400054926 /* Answer.swift in Sources */,
 				989DA4EE2AE42DA800054926 /* Endpoint.swift in Sources */,
 				989DA53A2AE6408C00054926 /* UserRepository.swift in Sources */,
+				980AB8B32AE83B4200CFBEBB /* InfoSlideView.swift in Sources */,
 				989DA4B92AE27FB100054926 /* AppAppearance.swift in Sources */,
+				980AB8B72AE83F4E00CFBEBB /* HomeUseCase.swift in Sources */,
 				989DA5462AE656E200054926 /* User.swift in Sources */,
+				980AB8B92AE8425700CFBEBB /* SurveyRepository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

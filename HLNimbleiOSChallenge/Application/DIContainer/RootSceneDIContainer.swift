@@ -23,16 +23,7 @@ final class RootSceneDIContainer {
     func makeRootFlowCoordinator(navigationController: UINavigationController) -> RootFlowCoordinator {
         return RootFlowCoordinator(navigationController: navigationController, dependencies: self)
     }
-    
-//    // MARK: - DIContainers of scenes
-//
-//    func makeLoginSceneDIContainer() -> LoginSceneDIContainer {
-//        return LoginSceneDIContainer(dependencies: dependencies)
-//    }
-//
-//    func makeHomeSceneDIContainer() -> HomeSceneDIContainer {
-//        return HomeSceneDIContainer(dependencies: dependencies)
-//    }
+
 }
 
 extension RootSceneDIContainer: RootFlowCoordinatorDependencies {
@@ -42,7 +33,7 @@ extension RootSceneDIContainer: RootFlowCoordinatorDependencies {
     }
     
     func makeHomeViewController() -> HomeViewController {
-        return HomeViewController.create()
+        return HomeViewController.create(with: makeHomeViewModel())
     }
     
     func makeRootViewController(actions: RootViewModelActions) -> RootViewController {
@@ -57,6 +48,10 @@ extension RootSceneDIContainer: RootFlowCoordinatorDependencies {
         return DefaultLoginViewModel(loginUseCase: makeLoginUseCase(), actions: actions)
     }
     
+    private func makeHomeViewModel() -> HomeViewModel {
+        return DefaultHomeViewModel(homeUseCase: makeHomeUseCase())
+    }
+    
     // MARK: - Use Cases
     private func makeFetchRecentUserUseCase(completion: @escaping (Result<User?, Error>) -> Void) -> UseCase {
         return FetchRecentUserUseCase(userRepository: makeUserRepository(), completion: completion)
@@ -66,9 +61,17 @@ extension RootSceneDIContainer: RootFlowCoordinatorDependencies {
         return DefaultLoginUseCase(userRepository: makeUserRepository())
     }
     
+    private func makeHomeUseCase() -> HomeUseCase {
+        return DefaultHomeUseCase(surveyRepository: makeSurveyRepository())
+    }
+    
     // MARK: - Repository
     private func makeUserRepository() -> UserRepository {
         return DefaultUserRepository(dataTransferService: dependencies, userPersistentStorage: userStorage)
+    }
+    
+    private func makeSurveyRepository() -> SurveyRepository {
+        return DefaultSurveyRepository(dataTransferService: dependencies)
     }
     
 }
