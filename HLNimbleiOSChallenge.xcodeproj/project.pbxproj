@@ -37,6 +37,8 @@
 		980AB8D02AE8D19400CFBEBB /* NetworkConfigurableMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980AB8CF2AE8D19400CFBEBB /* NetworkConfigurableMock.swift */; };
 		980AB8D22AE8D36200CFBEBB /* NetworkServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980AB8D12AE8D36200CFBEBB /* NetworkServiceTests.swift */; };
 		980AB8D52AE8D50700CFBEBB /* AppConfiguratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980AB8D42AE8D50700CFBEBB /* AppConfiguratorTests.swift */; };
+		980AB8D72AE8DAAB00CFBEBB /* LoginViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980AB8D62AE8DAAB00CFBEBB /* LoginViewModelTests.swift */; };
+		980AB8DA2AE8DC3600CFBEBB /* HomeViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980AB8D92AE8DC3600CFBEBB /* HomeViewModelTests.swift */; };
 		989DA4872AE26D8700054926 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989DA4862AE26D8700054926 /* AppDelegate.swift */; };
 		989DA4892AE26D8700054926 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989DA4882AE26D8700054926 /* SceneDelegate.swift */; };
 		989DA4902AE26D8800054926 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 989DA48F2AE26D8800054926 /* Assets.xcassets */; };
@@ -142,6 +144,8 @@
 		980AB8CF2AE8D19400CFBEBB /* NetworkConfigurableMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConfigurableMock.swift; sourceTree = "<group>"; };
 		980AB8D12AE8D36200CFBEBB /* NetworkServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceTests.swift; sourceTree = "<group>"; };
 		980AB8D42AE8D50700CFBEBB /* AppConfiguratorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfiguratorTests.swift; sourceTree = "<group>"; };
+		980AB8D62AE8DAAB00CFBEBB /* LoginViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModelTests.swift; sourceTree = "<group>"; };
+		980AB8D92AE8DC3600CFBEBB /* HomeViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModelTests.swift; sourceTree = "<group>"; };
 		989DA4832AE26D8700054926 /* HLNimbleiOSChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HLNimbleiOSChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		989DA4862AE26D8700054926 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		989DA4882AE26D8700054926 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -407,6 +411,7 @@
 		980AB8C62AE8CCBD00CFBEBB /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				980AB8D82AE8DC2300CFBEBB /* HomeScene */,
 				980AB8C72AE8CCDD00CFBEBB /* LoginScene */,
 			);
 			path = Presentation;
@@ -415,6 +420,7 @@
 		980AB8C72AE8CCDD00CFBEBB /* LoginScene */ = {
 			isa = PBXGroup;
 			children = (
+				980AB8D62AE8DAAB00CFBEBB /* LoginViewModelTests.swift */,
 			);
 			path = LoginScene;
 			sourceTree = "<group>";
@@ -452,6 +458,14 @@
 				980AB8D42AE8D50700CFBEBB /* AppConfiguratorTests.swift */,
 			);
 			path = Application;
+			sourceTree = "<group>";
+		};
+		980AB8D82AE8DC2300CFBEBB /* HomeScene */ = {
+			isa = PBXGroup;
+			children = (
+				980AB8D92AE8DC3600CFBEBB /* HomeViewModelTests.swift */,
+			);
+			path = HomeScene;
 			sourceTree = "<group>";
 		};
 		989DA47A2AE26D8700054926 = {
@@ -1209,7 +1223,9 @@
 				980AB8CB2AE8D06B00CFBEBB /* DataTransferServiceTests.swift in Sources */,
 				980AB8D02AE8D19400CFBEBB /* NetworkConfigurableMock.swift in Sources */,
 				989DA49E2AE26D8800054926 /* HLNimbleiOSChallengeTests.swift in Sources */,
+				980AB8D72AE8DAAB00CFBEBB /* LoginViewModelTests.swift in Sources */,
 				980AB8CD2AE8D15500CFBEBB /* NetworkSessionManagerMock.swift in Sources */,
+				980AB8DA2AE8DC3600CFBEBB /* HomeViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
