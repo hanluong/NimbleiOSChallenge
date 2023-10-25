@@ -7,6 +7,7 @@ target 'HLNimbleiOSChallenge' do
 
   # Pods for HLNimbleiOSChallenge
   pod 'IQKeyboardManagerSwift'
+  pod 'SDWebImage'
 
   target 'HLNimbleiOSChallengeTests' do
     inherit! :search_paths

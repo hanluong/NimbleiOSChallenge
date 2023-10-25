@@ -59,7 +59,7 @@ extension SurveyDataResponseDTO {
 
 extension SurveyDataResponseDTO.SurveyData {
     func toDomain() -> Survey {
-        return .init(id: id, title: attributes.title, description: attributes.description)
+        return .init(id: id, title: attributes.title, description: attributes.description, imageUrl: attributes.coverImageUrl)
     }
 }
 

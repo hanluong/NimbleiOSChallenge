@@ -18,6 +18,10 @@
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home_bg" translatesAutoresizingMaskIntoConstraints="NO" id="bHU-bS-sTO">
                     <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                 </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vic-Q7-dk0" userLabel=" Bg View">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="uzk-rC-0c4" userLabel="Survey Info Stack View">
                     <rect key="frame" x="20" y="638" width="353" height="160"/>
                     <subviews>
@@ -60,15 +64,20 @@
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
+                <constraint firstItem="Vic-Q7-dk0" firstAttribute="bottom" secondItem="bHU-bS-sTO" secondAttribute="bottom" id="3ve-Vw-zG7"/>
                 <constraint firstItem="bHU-bS-sTO" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="D1B-Ym-gNA"/>
                 <constraint firstItem="uzk-rC-0c4" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="DpZ-iz-H68"/>
+                <constraint firstItem="Vic-Q7-dk0" firstAttribute="trailing" secondItem="bHU-bS-sTO" secondAttribute="trailing" id="I0k-xz-n44"/>
                 <constraint firstItem="bHU-bS-sTO" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="ZBB-Sd-y08"/>
                 <constraint firstAttribute="bottom" secondItem="bHU-bS-sTO" secondAttribute="bottom" id="hRq-fo-VcC"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="uzk-rC-0c4" secondAttribute="bottom" constant="20" id="lDn-DZ-FBb"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="bHU-bS-sTO" secondAttribute="trailing" id="qr0-6U-gMN"/>
                 <constraint firstAttribute="trailing" secondItem="uzk-rC-0c4" secondAttribute="trailing" constant="20" id="wgZ-Jb-wv5"/>
+                <constraint firstItem="Vic-Q7-dk0" firstAttribute="top" secondItem="bHU-bS-sTO" secondAttribute="top" id="wgn-BK-jxL"/>
+                <constraint firstItem="Vic-Q7-dk0" firstAttribute="leading" secondItem="bHU-bS-sTO" secondAttribute="leading" id="x89-iM-9Wr"/>
             </constraints>
             <connections>
+                <outlet property="bgImageView" destination="bHU-bS-sTO" id="I0F-AR-7FE"/>
                 <outlet property="descInfoLabel" destination="x4H-Wz-mCy" id="XI9-eF-7cz"/>
                 <outlet property="titleInfoLabel" destination="9Qq-Tg-sf2" id="Uox-xZ-Ufc"/>
             </connections>

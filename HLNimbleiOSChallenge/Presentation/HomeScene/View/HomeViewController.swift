@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SDWebImage
 
 class HomeViewController: UIViewController, StoryboardInstantiable {
     
@@ -36,7 +37,6 @@ class HomeViewController: UIViewController, StoryboardInstantiable {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        
         viewModel.viewWillAppear()
     }
     
@@ -58,6 +58,7 @@ class HomeViewController: UIViewController, StoryboardInstantiable {
             guard let slide = Bundle.main.loadNibNamed("InfoSlideView", owner: self, options: nil)?.first as? InfoSlideView else { return nil }
             slide.titleInfoLabel.text = survey.title
             slide.descInfoLabel.text = survey.description
+            slide.bgImageView.sd_setImage(with: URL(string: survey.imageUrl), placeholderImage: UIImage(named: "bg_lazy_load"))
             slides.append(slide)
         }
         return slides

@@ -8,6 +8,7 @@
 import UIKit
 
 class InfoSlideView: UIView {
+    @IBOutlet weak var bgImageView: UIImageView!
     @IBOutlet weak var titleInfoLabel: UILabel!
     @IBOutlet weak var descInfoLabel: UILabel!
     
