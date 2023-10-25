@@ -9,12 +9,12 @@ import UIKit
 import SDWebImage
 
 protocol InfoSlideViewDelegate {
-    func didTappOnStartSurvey(_ vm: InfoSlideViewModel)
+    func didTappOnStartSurvey(_ survey: Survey)
 }
 
 class InfoSlideView: UIView {
     
-    private var viewModel: InfoSlideViewModel!
+    private var survey: Survey!
     var delegate: InfoSlideViewDelegate?
     
     // MARK: - IBOutlets
@@ -22,21 +22,14 @@ class InfoSlideView: UIView {
     @IBOutlet weak var titleInfoLabel: UILabel!
     @IBOutlet weak var descInfoLabel: UILabel!
     
-    func setupViews(with viewModel: InfoSlideViewModel) {
-        self.viewModel = viewModel
-        titleInfoLabel.text = viewModel.title
-        descInfoLabel.text = viewModel.description
-        bgImageView.sd_setImage(with: URL(string: viewModel.imageUrl), placeholderImage: UIImage(named: "bg_lazy_load"))
+    func setupViews(with survey: Survey) {
+        self.survey = survey
+        titleInfoLabel.text = survey.title
+        descInfoLabel.text = survey.description
+        bgImageView.sd_setImage(with: URL(string: survey.imageUrl), placeholderImage: UIImage(named: "bg_lazy_load"))
     }
     
     @IBAction func startSurveyButtonTapped(_ sender: Any) {
-        delegate?.didTappOnStartSurvey(viewModel)
+        delegate?.didTappOnStartSurvey(survey)
     }
-}
-
-
-struct InfoSlideViewModel {
-    let title: String
-    let description: String
-    let imageUrl: String
 }

@@ -11,7 +11,7 @@ protocol RootFlowCoordinatorDependencies {
     func makeRootViewController(actions: RootViewModelActions) -> RootViewController
     func makeLoginViewController(actions: LoginViewModelActions) -> LoginViewController
     func makeHomeViewController(actions: HomeViewModelActions) -> HomeViewController
-    func makeSurveyViewController() -> SurveyViewController
+    func makeSurveyViewController(survey: Survey) -> SurveyViewController
 }
 
 final class RootFlowCoordinator {
@@ -43,8 +43,8 @@ final class RootFlowCoordinator {
         navigationController?.pushViewController(vc, animated: true)
     }
     
-    private func showSurveyView() {
-        let vc = dependencies.makeSurveyViewController()
+    private func showSurveyView(_ survey: Survey) {
+        let vc = dependencies.makeSurveyViewController(survey: survey)
         navigationController?.pushViewController(vc, animated: true)
     }
 }

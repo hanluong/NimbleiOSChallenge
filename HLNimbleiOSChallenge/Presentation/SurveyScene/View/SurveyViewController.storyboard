@@ -75,6 +75,10 @@
                             <constraint firstItem="SYF-L6-84X" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="yOf-kN-rfT"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="descriptionLabel" destination="oCO-ef-iQG" id="kTq-rp-v8A"/>
+                        <outlet property="titleLabel" destination="geu-yX-UFi" id="UeK-go-Jks"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

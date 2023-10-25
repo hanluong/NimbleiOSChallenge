@@ -59,7 +59,7 @@ class HomeViewController: UIViewController, StoryboardInstantiable {
         var slides = [InfoSlideView]()
         for survey in surveyList.surveys {
             guard let slide = Bundle.main.loadNibNamed("InfoSlideView", owner: self, options: nil)?.first as? InfoSlideView else { return nil }
-            slide.setupViews(with: InfoSlideViewModel(title: survey.title, description: survey.description, imageUrl: survey.imageUrl))
+            slide.setupViews(with: survey)
             slide.delegate = self
             slides.append(slide)
         }
@@ -105,8 +105,8 @@ extension HomeViewController: UIScrollViewDelegate {
 // MARK: - InfoSlideViewDelegate
 extension HomeViewController: InfoSlideViewDelegate {
     
-    func didTappOnStartSurvey(_ vm: InfoSlideViewModel) {
-        viewModel.didStartSurvey()
+    func didTappOnStartSurvey(_ survey: Survey) {
+        viewModel.didStartSurvey(survey)
     }
     
 }
