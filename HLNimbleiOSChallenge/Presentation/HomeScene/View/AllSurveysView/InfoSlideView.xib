@@ -18,26 +18,26 @@
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home_bg" translatesAutoresizingMaskIntoConstraints="NO" id="bHU-bS-sTO">
                     <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                 </imageView>
-                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="top" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="uzk-rC-0c4" userLabel="Survey Info Stack View">
-                    <rect key="frame" x="20" y="659" width="353" height="139"/>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="uzk-rC-0c4" userLabel="Survey Info Stack View">
+                    <rect key="frame" x="20" y="638" width="353" height="160"/>
                     <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Career training and development" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Qq-Tg-sf2">
-                            <rect key="frame" x="0.0" y="0.0" width="235" height="67"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Career training and development" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Qq-Tg-sf2">
+                            <rect key="frame" x="0.0" y="0.0" width="318" height="83.666666666666671"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="uD0-xv-xOf" userLabel="Description Stack View">
-                            <rect key="frame" x="0.0" y="83" width="353" height="56"/>
+                            <rect key="frame" x="0.0" y="87.666666666666629" width="353" height="72.333333333333314"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We would like to know what are your goals and skills you wanted..." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x4H-Wz-mCy">
-                                    <rect key="frame" x="0.0" y="7.6666666666666288" width="267" height="40.666666666666664"/>
+                                    <rect key="frame" x="0.0" y="15.999999999999996" width="267" height="40.666666666666657"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Ee-Mv-l0p">
-                                    <rect key="frame" x="297" y="0.0" width="56" height="56"/>
+                                    <rect key="frame" x="297" y="8.3333333333333712" width="56" height="56"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="56" id="6D6-Hp-N54"/>
                                         <constraint firstAttribute="width" constant="56" id="pYg-0J-Y9q"/>
@@ -53,6 +53,7 @@
                     <constraints>
                         <constraint firstAttribute="trailing" secondItem="uD0-xv-xOf" secondAttribute="trailing" id="Cks-MW-F7Z"/>
                         <constraint firstItem="uD0-xv-xOf" firstAttribute="leading" secondItem="uzk-rC-0c4" secondAttribute="leading" id="RgR-cI-UGd"/>
+                        <constraint firstAttribute="height" constant="160" id="XwU-bs-ff3"/>
                     </constraints>
                 </stackView>
             </subviews>

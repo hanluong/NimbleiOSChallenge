@@ -23,7 +23,7 @@ extension DefaultUserRepository: UserRepository {
     func fetchRecentUser(completion: @escaping (Result<User?, Error>) -> Void) -> Cancellable? {
         let task = RepositoryTask()
         guard !task.isCancelled else { return nil }
-        userPersistentStorage.fetchRecentUser { recentAuthResult in
+        userPersistentStorage.fetchRecentUserRefreshToken { recentAuthResult in
             if case .success(let authToken) = recentAuthResult, let authToken = authToken {
                 let requestDTO = RefreshTokenRequestDTO(token: authToken.token)
                 let endpoint = APIEndpoints.refreshUserToken(with: requestDTO)
@@ -44,7 +44,7 @@ extension DefaultUserRepository: UserRepository {
         return task
     }
     
-    func saveRecentUser(user: User, completion: @escaping (Result<AuthenticationToken, Error>) -> Void) {
+    func saveRecentUser(user: User, completion: @escaping (Result<Bool, Error>) -> Void) {
         userPersistentStorage.saveRecentUser(user: user, completion: completion)
     }
     

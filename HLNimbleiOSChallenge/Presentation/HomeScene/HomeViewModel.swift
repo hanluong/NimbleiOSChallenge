@@ -36,16 +36,16 @@ final class DefaultHomeViewModel: HomeViewModel {
     }
     
     private func loadAllSurveys() {
-//        LoadingView.show()
-//        loadSurveyListTask = homeUseCase.execute(user: , completion: { result in
-//            LoadingView.hide()
-//            switch result {
-//            case .success(let surveyList):
-//                self.surveyList.value = surveyList
-//            case .failure(let error):
-//                print(error.localizedDescription)
-//            }
-//        })
+        LoadingView.show()
+        loadSurveyListTask = homeUseCase.execute{ result in
+            LoadingView.hide()
+            switch result {
+            case .success(let surveyList):
+                self.surveyList.value = surveyList
+            case .failure(let error):
+                print(error.localizedDescription)
+            }
+        }
     }
 }
 

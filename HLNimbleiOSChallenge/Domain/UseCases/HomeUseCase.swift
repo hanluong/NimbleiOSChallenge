@@ -8,7 +8,7 @@
 import Foundation
 
 protocol HomeUseCase {
-    func execute(user: User, completion: @escaping (Result<SurveyList, Error>) -> Void) -> Cancellable?
+    func execute(completion: @escaping (Result<SurveyList, Error>) -> Void) -> Cancellable?
 }
 
 final class DefaultHomeUseCase: HomeUseCase {
@@ -19,8 +19,8 @@ final class DefaultHomeUseCase: HomeUseCase {
         self.surveyRepository = surveyRepository
     }
 
-    func execute(user: User, completion: @escaping (Result<SurveyList, Error>) -> Void) -> Cancellable? {
-        return surveyRepository.fetchSurveysList(user: user, completion: completion)
+    func execute(completion: @escaping (Result<SurveyList, Error>) -> Void) -> Cancellable? {
+        return surveyRepository.fetchSurveysList(completion: completion)
     }
 }
 

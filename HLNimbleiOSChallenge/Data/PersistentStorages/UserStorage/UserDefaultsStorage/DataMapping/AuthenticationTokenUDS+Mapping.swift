@@ -16,3 +16,13 @@ extension AuthenticationTokenUDS {
         return .init(token: token)
     }
 }
+
+struct AccessTokenUDS: Codable {
+    let token: String
+}
+
+extension AccessTokenUDS {
+    func toDomain() -> AccessToken {
+        return .init(token: token)
+    }
+}

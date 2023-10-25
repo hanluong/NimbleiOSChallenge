@@ -17,7 +17,7 @@ final class UserDefaultsUserStorage {
         self.userDefaults = userDefaults
     }
 
-    private func fetchUser() -> AuthenticationToken? {
+    private func fetchUserRefreshToken() -> AuthenticationToken? {
         if let queriesData = userDefaults.object(forKey: recentUserRefreshTokenKey) as? Data {
             if let authenticationTokenUDS = try? JSONDecoder().decode(AuthenticationTokenUDS.self, from: queriesData) {
                 return authenticationTokenUDS.toDomain()
@@ -25,29 +25,49 @@ final class UserDefaultsUserStorage {
         }
         return nil
     }
+    
+    private func fetchUserAccessToken() -> AccessToken? {
+        if let queriesData = userDefaults.object(forKey: recentUserAccessTokenKey) as? Data {
+            if let accessTokenUDS = try? JSONDecoder().decode(AccessTokenUDS.self, from: queriesData) {
+                return accessTokenUDS.toDomain()
+            }
+        }
+        return nil
+    }
 
-    private func persist(token: String) {
+    private func persist(user: User) {
         let encoder = JSONEncoder()
-        if let encoded = try? encoder.encode(AuthenticationTokenUDS(token: token)) {
+        if let encoded = try? encoder.encode(AuthenticationTokenUDS(token: user.refreshToken)) {
             userDefaults.set(encoded, forKey: recentUserRefreshTokenKey)
+        }
+        if let encoded = try? encoder.encode(AccessTokenUDS(token: user.accessToken)) {
+            userDefaults.set(encoded, forKey: recentUserAccessTokenKey)
         }
     }
 }
 
 extension UserDefaultsUserStorage: UserStorage {
     
-    func fetchRecentUser(completion: @escaping (Result<AuthenticationToken?, Error>) -> Void) {
+    func fetchRecentUserAccessToken(completion: @escaping (Result<AccessToken?, Error>) -> Void) {
         DispatchQueue.global(qos: .userInitiated).async { [weak self] in
             guard let self = self else { return }
-            completion(.success(self.fetchUser()))
+            completion(.success(self.fetchUserAccessToken()))
         }
     }
     
-    func saveRecentUser(user: User, completion: @escaping (Result<AuthenticationToken, Error>) -> Void) {
+    
+    func fetchRecentUserRefreshToken(completion: @escaping (Result<AuthenticationToken?, Error>) -> Void) {
         DispatchQueue.global(qos: .userInitiated).async { [weak self] in
             guard let self = self else { return }
-            self.persist(token: user.refreshToken)
-            completion(.success(AuthenticationToken(token: user.refreshToken)))
+            completion(.success(self.fetchUserRefreshToken()))
+        }
+    }
+    
+    func saveRecentUser(user: User, completion: @escaping (Result<Bool, Error>) -> Void) {
+        DispatchQueue.global(qos: .userInitiated).async { [weak self] in
+            guard let self = self else { return }
+            self.persist(user: user)
+            completion(.success(true))
         }
     }
     

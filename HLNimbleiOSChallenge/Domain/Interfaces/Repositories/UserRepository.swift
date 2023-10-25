@@ -10,6 +10,6 @@ import Foundation
 protocol UserRepository {
     @discardableResult
     func fetchRecentUser(completion: @escaping (Result<User?, Error>) -> Void) -> Cancellable?
-    func saveRecentUser(user: User, completion: @escaping (Result<AuthenticationToken, Error>) -> Void)
+    func saveRecentUser(user: User, completion: @escaping (Result<Bool, Error>) -> Void)
     func login(email: String, password: String, completion: @escaping (Result<User, Error>) -> Void) -> Cancellable?
 }

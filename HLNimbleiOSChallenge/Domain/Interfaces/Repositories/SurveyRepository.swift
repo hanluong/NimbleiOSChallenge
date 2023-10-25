@@ -8,5 +8,5 @@
 import Foundation
 
 protocol SurveyRepository {
-    func fetchSurveysList(user: User, completion: @escaping (Result<SurveyList, Error>) -> Void) -> Cancellable?
+    func fetchSurveysList(completion: @escaping (Result<SurveyList, Error>) -> Void) -> Cancellable?
 }

@@ -71,7 +71,7 @@ extension RootSceneDIContainer: RootFlowCoordinatorDependencies {
     }
     
     private func makeSurveyRepository() -> SurveyRepository {
-        return DefaultSurveyRepository(dataTransferService: dependencies)
+        return DefaultSurveyRepository(dataTransferService: dependencies, userPersistentStorage: userStorage)
     }
     
 }

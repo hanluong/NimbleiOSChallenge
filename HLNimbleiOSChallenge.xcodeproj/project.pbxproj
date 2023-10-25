@@ -286,8 +286,7 @@
 			children = (
 				980AB88D2AE77A2900CFBEBB /* HomeViewController.swift */,
 				980AB88B2AE77A1D00CFBEBB /* HomeViewController.storyboard */,
-				980AB8B22AE83B4200CFBEBB /* InfoSlideView.swift */,
-				980AB8B02AE839B600CFBEBB /* InfoSlideView.xib */,
+				980AB8C12AE8ADB400CFBEBB /* AllSurveysView */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -382,6 +381,15 @@
 				980AB8BD2AE845A900CFBEBB /* SurveyResponseDTO+Mapping.swift */,
 			);
 			path = Survey;
+			sourceTree = "<group>";
+		};
+		980AB8C12AE8ADB400CFBEBB /* AllSurveysView */ = {
+			isa = PBXGroup;
+			children = (
+				980AB8B22AE83B4200CFBEBB /* InfoSlideView.swift */,
+				980AB8B02AE839B600CFBEBB /* InfoSlideView.xib */,
+			);
+			path = AllSurveysView;
 			sourceTree = "<group>";
 		};
 		989DA47A2AE26D8700054926 = {

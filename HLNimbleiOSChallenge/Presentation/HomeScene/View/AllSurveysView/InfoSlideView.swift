@@ -13,5 +13,6 @@ class InfoSlideView: UIView {
     
     
     @IBAction func startSurveyButtonTapped(_ sender: Any) {
+        print("Hellllloo--->")
     }
 }

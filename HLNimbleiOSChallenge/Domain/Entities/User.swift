@@ -17,3 +17,7 @@ struct AuthenticationToken: Equatable {
     let token: String
 }
 
+struct AccessToken: Equatable {
+    let token: String
+}
+
