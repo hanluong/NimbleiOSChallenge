@@ -9,21 +9,42 @@ import UIKit
 
 class SurveyViewController: UIViewController, StoryboardInstantiable {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    // MARK: - Lifecycle
 
-        // Do any additional setup after loading the view.
+//    private var viewModel: SurveyViewModel!
+    
+    static func create(with viewModel: SurveyViewModel) -> SurveyViewController {
+        let view = SurveyViewController.instantiateViewController()
+//        view.viewModel = viewModel
+        return view
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        setupViews()
+//        bind(to: viewModel)
     }
-    */
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+//        viewModel.viewWillAppear()
+    }
+
+//    private func bind(to viewModel: RootViewModel) {
+//        viewModel.status.observe(on: self) { status in
+//            switch status {
+//            case .loading:
+//                LoadingView.show()
+//            case .cancelled, .finished:
+//                LoadingView.hide()
+//            }
+//        }
+//    }
+
+    // MARK: - Private
+
+    private func setupViews() {
+    }
 
 }

@@ -30,6 +30,8 @@
 		980AB8B92AE8425700CFBEBB /* SurveyRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980AB8B82AE8425700CFBEBB /* SurveyRepository.swift */; };
 		980AB8BB2AE843A200CFBEBB /* DefaultSurveyRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980AB8BA2AE843A200CFBEBB /* DefaultSurveyRepository.swift */; };
 		980AB8BE2AE845A900CFBEBB /* SurveyResponseDTO+Mapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980AB8BD2AE845A900CFBEBB /* SurveyResponseDTO+Mapping.swift */; };
+		980AB8C32AE8B78E00CFBEBB /* InfoSlideViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980AB8C22AE8B78E00CFBEBB /* InfoSlideViewModel.swift */; };
+		980AB8C52AE8BD8200CFBEBB /* SurveyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980AB8C42AE8BD8200CFBEBB /* SurveyViewModel.swift */; };
 		989DA4872AE26D8700054926 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989DA4862AE26D8700054926 /* AppDelegate.swift */; };
 		989DA4892AE26D8700054926 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989DA4882AE26D8700054926 /* SceneDelegate.swift */; };
 		989DA4902AE26D8800054926 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 989DA48F2AE26D8800054926 /* Assets.xcassets */; };
@@ -130,6 +132,8 @@
 		980AB8B82AE8425700CFBEBB /* SurveyRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyRepository.swift; sourceTree = "<group>"; };
 		980AB8BA2AE843A200CFBEBB /* DefaultSurveyRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultSurveyRepository.swift; sourceTree = "<group>"; };
 		980AB8BD2AE845A900CFBEBB /* SurveyResponseDTO+Mapping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SurveyResponseDTO+Mapping.swift"; sourceTree = "<group>"; };
+		980AB8C22AE8B78E00CFBEBB /* InfoSlideViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoSlideViewModel.swift; sourceTree = "<group>"; };
+		980AB8C42AE8BD8200CFBEBB /* SurveyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyViewModel.swift; sourceTree = "<group>"; };
 		989DA4832AE26D8700054926 /* HLNimbleiOSChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HLNimbleiOSChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		989DA4862AE26D8700054926 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		989DA4882AE26D8700054926 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -354,6 +358,7 @@
 		980AB8A32AE7B84700CFBEBB /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				980AB8C42AE8BD8200CFBEBB /* SurveyViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -386,6 +391,7 @@
 		980AB8C12AE8ADB400CFBEBB /* AllSurveysView */ = {
 			isa = PBXGroup;
 			children = (
+				980AB8C22AE8B78E00CFBEBB /* InfoSlideViewModel.swift */,
 				980AB8B22AE83B4200CFBEBB /* InfoSlideView.swift */,
 				980AB8B02AE839B600CFBEBB /* InfoSlideView.xib */,
 			);
@@ -1085,6 +1091,7 @@
 				989DA4F82AE45CBD00054926 /* HomeSceneDIContainer.swift in Sources */,
 				980AB88E2AE77A2900CFBEBB /* HomeViewController.swift in Sources */,
 				989DA5382AE63D2600054926 /* FetchRecentUserUseCase.swift in Sources */,
+				980AB8C32AE8B78E00CFBEBB /* InfoSlideViewModel.swift in Sources */,
 				980AB8962AE7932C00CFBEBB /* LoginUseCase.swift in Sources */,
 				989DA4DE2AE2EC9400054926 /* AppFlowCoordinator.swift in Sources */,
 				989DA4CC2AE2D29A00054926 /* ForgotPasswordViewController.swift in Sources */,
@@ -1093,6 +1100,7 @@
 				989DA53C2AE64C5F00054926 /* DefaultUserRepository.swift in Sources */,
 				989DA51A2AE5FCE200054926 /* UseCase.swift in Sources */,
 				989DA4D32AE2DDD300054926 /* CustomButton.swift in Sources */,
+				980AB8C52AE8BD8200CFBEBB /* SurveyViewModel.swift in Sources */,
 				989DA4F02AE42DC000054926 /* NetworkConfig.swift in Sources */,
 				989DA5332AE631FC00054926 /* RootSceneDIContainer.swift in Sources */,
 				989DA4BB2AE2840F00054926 /* AppConfigurations.swift in Sources */,

@@ -17,9 +17,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home_bg" translatesAutoresizingMaskIntoConstraints="NO" id="DeC-03-gkC">
-                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Monday, JUNE 15" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jtb-0k-3fe">
                                 <rect key="frame" x="20" y="58.999999999999993" width="106" height="15.666666666666664"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
@@ -55,6 +52,9 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vyn-rF-0YJ">
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                             </scrollView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home_bg_lazyload" translatesAutoresizingMaskIntoConstraints="NO" id="DeC-03-gkC">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="E3g-XQ-gx7"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -78,6 +78,7 @@
                     </view>
                     <connections>
                         <outlet property="avatarImageView" destination="i6U-5m-aRx" id="Ugi-eK-RP1"/>
+                        <outlet property="bgImageView" destination="DeC-03-gkC" id="Kjs-jh-BRP"/>
                         <outlet property="contentScrollView" destination="Vyn-rF-0YJ" id="dBY-Vp-5SF"/>
                         <outlet property="dateLabel" destination="FKq-PR-tm0" id="xZr-XQ-7PV"/>
                         <outlet property="fullDateLabel" destination="Jtb-0k-3fe" id="A06-Tj-t2n"/>
@@ -92,7 +93,7 @@
     </scenes>
     <resources>
         <image name="avatart" width="36" height="36"/>
-        <image name="home_bg" width="375" height="812"/>
+        <image name="home_bg_lazyload" width="375" height="812"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

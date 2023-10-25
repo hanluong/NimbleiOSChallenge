@@ -8,10 +8,12 @@
 import Foundation
 
 struct HomeViewModelActions {
+    let showSurveyView: () -> Void
 }
 
 protocol HomeViewModelInput {
     func viewWillAppear()
+    func didStartSurvey()
 }
 
 protocol HomeViewModelOutput {
@@ -54,5 +56,11 @@ extension DefaultHomeViewModel {
     
     func viewWillAppear() {
         loadAllSurveys()
+    }
+    
+    func didStartSurvey() {
+        DispatchQueue.main.async {
+            self.actions?.showSurveyView()
+        }
     }
 }

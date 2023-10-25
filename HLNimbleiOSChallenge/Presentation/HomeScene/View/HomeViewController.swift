@@ -6,11 +6,11 @@
 //
 
 import UIKit
-import SDWebImage
 
 class HomeViewController: UIViewController, StoryboardInstantiable {
     
     // MARK: - IBOutlets
+    @IBOutlet weak var bgImageView: UIImageView!
     @IBOutlet weak var fullDateLabel: UILabel!
     @IBOutlet weak var userInfoStackView: UIStackView!
     @IBOutlet weak var dateLabel: UILabel!
@@ -42,12 +42,15 @@ class HomeViewController: UIViewController, StoryboardInstantiable {
     
     private func setupViews() {
         navigationItem.setHidesBackButton(true, animated: true)
+        navigationItem.backButtonTitle = ""
+        bgImageView.isHidden = false
     }
     
     private func bind(to viewModel: HomeViewModel) {
         viewModel.surveyList.observe(on: self) { [weak self] surveyListResult in
             guard let surveyList = surveyListResult else { return }
             guard let surveySlides = self?.createSurveySlide(surveyList: surveyList) else { return }
+            self?.bgImageView.isHidden = true
             self?.setupSurveyScrollViews(slides: surveySlides)
         }
     }
@@ -56,9 +59,8 @@ class HomeViewController: UIViewController, StoryboardInstantiable {
         var slides = [InfoSlideView]()
         for survey in surveyList.surveys {
             guard let slide = Bundle.main.loadNibNamed("InfoSlideView", owner: self, options: nil)?.first as? InfoSlideView else { return nil }
-            slide.titleInfoLabel.text = survey.title
-            slide.descInfoLabel.text = survey.description
-            slide.bgImageView.sd_setImage(with: URL(string: survey.imageUrl), placeholderImage: UIImage(named: "bg_lazy_load"))
+            slide.setupViews(with: InfoSlideViewModel(title: survey.title, description: survey.description, imageUrl: survey.imageUrl))
+            slide.delegate = self
             slides.append(slide)
         }
         return slides
@@ -98,4 +100,13 @@ extension HomeViewController: UIScrollViewDelegate {
         pageControl.currentPage = pageIndex
         pageControl.currentPageIndicatorTintColor = UIColor.white
     }
+}
+
+// MARK: - InfoSlideViewDelegate
+extension HomeViewController: InfoSlideViewDelegate {
+    
+    func didTappOnStartSurvey(_ vm: InfoSlideViewModel) {
+        viewModel.didStartSurvey()
+    }
+    
 }
