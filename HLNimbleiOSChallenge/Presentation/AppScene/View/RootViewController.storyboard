@@ -24,9 +24,9 @@
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="94U-Dj-Ikm" secondAttribute="bottom" constant="-34" id="PdL-DF-1mP"/>
+                            <constraint firstAttribute="bottom" secondItem="94U-Dj-Ikm" secondAttribute="bottom" id="PdL-DF-1mP"/>
                             <constraint firstItem="94U-Dj-Ikm" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="QiN-d9-cE3"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="94U-Dj-Ikm" secondAttribute="trailing" id="dBT-vh-PGH"/>
+                            <constraint firstAttribute="trailing" secondItem="94U-Dj-Ikm" secondAttribute="trailing" id="dBT-vh-PGH"/>
                             <constraint firstItem="94U-Dj-Ikm" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leading" id="uUq-PD-EI8"/>
                         </constraints>
                     </view>
