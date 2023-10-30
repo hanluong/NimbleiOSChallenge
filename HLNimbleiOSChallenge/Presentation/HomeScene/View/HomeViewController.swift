@@ -54,9 +54,13 @@ class HomeViewController: UIViewController, StoryboardInstantiable {
             self?.bgImageView.isHidden = true
             self?.setupSurveyScrollViews(slides: surveySlides)
         }
+        viewModel.dateTimeString.observe(on: self) { [weak self] dateTimeValue in
+            self?.fullDateLabel.text = dateTimeValue
+        }
     }
     
     private func createSurveySlide(surveyList: SurveyList) -> [InfoSlideView]? {
+        slides.removeAll()
         for survey in surveyList.surveys {
             guard let slide = Bundle.main.loadNibNamed("InfoSlideView", owner: self, options: nil)?.first as? InfoSlideView else { return nil }
             slide.setupViews(with: survey)
@@ -74,6 +78,10 @@ class HomeViewController: UIViewController, StoryboardInstantiable {
         pageControl.numberOfPages = slides.count
         pageControl.currentPage = 0
         pageControl.currentPageIndicatorTintColor = UIColor.white
+        if #available(iOS 14.0, *) {
+          pageControl.backgroundStyle = .minimal
+          pageControl.allowsContinuousInteraction = false
+        }
         pageControl.addTarget(self, action: #selector(pageControlTapped(sender:)), for: .valueChanged)
         
         contentScrollView.delegate = self
