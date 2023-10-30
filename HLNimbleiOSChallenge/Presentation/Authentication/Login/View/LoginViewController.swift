@@ -7,7 +7,7 @@
 
 import UIKit
 
-class LoginViewController: UIViewController, StoryboardInstantiable {
+class LoginViewController: UIViewController, StoryboardInstantiable, Alertable {
     
     // MARK: - Outlets
     
@@ -35,6 +35,7 @@ class LoginViewController: UIViewController, StoryboardInstantiable {
         super.viewDidLoad()
         hideKeyboardWhenTappedAround()
         setupViews()
+        bind(to: viewModel)
     }
     
     // MARK: - Private
@@ -47,16 +48,25 @@ class LoginViewController: UIViewController, StoryboardInstantiable {
         forgotPasswordButton.addTarget(self, action: #selector(handleForgotPassword(sender:)), for: .touchUpInside)
     }
     
+    private func bind(to viewModel: LoginViewModel) {
+        viewModel.error.observe(on: self) { [weak self] in
+            self?.showError($0)
+        }
+    }
+    
     @objc func handleForgotPassword(sender: UIButton) {
         let vc = ForgotPasswordViewController.create()
         navigationController?.pushViewController(vc, animated: true)
     }
     
+    private func showError(_ error: String) {
+        guard !error.isEmpty else { return }
+        showAlert(title: "ERROR!", message: error)
+    }
+    
     // MARK: - Actions
     
     @IBAction func logInButtonTapped(_ sender: CustomButton) {
-        guard let email = emailTextField.text, email.isValidEmail() else { return }
-        guard let password = passwordTextField.text else { return }
-        viewModel.didLogin(email: email, password: password)
+        viewModel.didLogin(email: emailTextField.text, password: passwordTextField.text)
     }
 }
