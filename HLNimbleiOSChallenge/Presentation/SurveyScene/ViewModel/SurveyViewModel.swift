@@ -7,16 +7,39 @@
 
 import Foundation
 
-struct SurveyViewModel: Equatable {
-    let title: String
-    let description: String
+struct SurveyViewModelActions {
+    let showThankYouView: () -> Void
 }
 
+protocol SurveyViewModelInput {
+    func didFinishedSurvey()
+}
 
-extension SurveyViewModel {
+protocol SurveyViewModelOutput {
+    var title: String { get }
+    var description: String { get }
+}
+
+protocol SurveyViewModel: SurveyViewModelInput, SurveyViewModelOutput { }
+
+final class DefaultSurveyViewModel: SurveyViewModel {
     
-    init(survey: Survey) {
+    private let actions: SurveyViewModelActions?
+    
+    // MARK: - Output
+    let title: String
+    let description: String
+    
+    init(survey: Survey, actions: SurveyViewModelActions? = nil) {
         self.title = survey.title
         self.description = survey.description
+        self.actions = actions
+    }
+}
+
+extension DefaultSurveyViewModel {
+    
+    func didFinishedSurvey() {
+        actions?.showThankYouView()
     }
 }

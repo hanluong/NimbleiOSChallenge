@@ -27,8 +27,12 @@ final class RootSceneDIContainer {
 }
 
 extension RootSceneDIContainer: RootFlowCoordinatorDependencies {
-    func makeSurveyViewController(survey: Survey) -> SurveyViewController {
-        return SurveyViewController.create(with: makeSurveyViewModel(survey: survey))
+    func makeThankYouViewController(actions: ThankYouViewModelActions) -> ThankYouViewController {
+        return ThankYouViewController.create(with: makeThankYouViewModel(actions: actions))
+    }
+    
+    func makeSurveyViewController(survey: Survey, actions: SurveyViewModelActions) -> SurveyViewController {
+        return SurveyViewController.create(with: makeSurveyViewModel(survey: survey, actions: actions))
     }
     
     func makeLoginViewController(actions: LoginViewModelActions) -> LoginViewController {
@@ -55,9 +59,14 @@ extension RootSceneDIContainer: RootFlowCoordinatorDependencies {
         return DefaultHomeViewModel(homeUseCase: makeHomeUseCase(), actions: actions)
     }
     
-    private func makeSurveyViewModel(survey: Survey) -> SurveyViewModel {
-        return SurveyViewModel(survey: survey)
+    private func makeSurveyViewModel(survey: Survey, actions: SurveyViewModelActions) -> SurveyViewModel {
+        return DefaultSurveyViewModel(survey: survey, actions: actions)
     }
+    
+    private func makeThankYouViewModel(actions: ThankYouViewModelActions) -> ThankYouViewModel {
+        return DefaultThankYouViewModel(actions: actions)
+    }
+    
     // MARK: - Use Cases
     private func makeFetchRecentUserUseCase(completion: @escaping (Result<User?, Error>) -> Void) -> UseCase {
         return FetchRecentUserUseCase(userRepository: makeUserRepository(), completion: completion)
