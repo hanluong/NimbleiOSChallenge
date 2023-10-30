@@ -40,6 +40,7 @@
 		980AB8D72AE8DAAB00CFBEBB /* LoginViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980AB8D62AE8DAAB00CFBEBB /* LoginViewModelTests.swift */; };
 		980AB8DA2AE8DC3600CFBEBB /* HomeViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980AB8D92AE8DC3600CFBEBB /* HomeViewModelTests.swift */; };
 		981A78E52AEF6E7000B37B09 /* Alertable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981A78E42AEF6E7000B37B09 /* Alertable.swift */; };
+		981A78E72AEF71A900B37B09 /* MyCustomPageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981A78E62AEF71A900B37B09 /* MyCustomPageControl.swift */; };
 		989DA4872AE26D8700054926 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989DA4862AE26D8700054926 /* AppDelegate.swift */; };
 		989DA4892AE26D8700054926 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989DA4882AE26D8700054926 /* SceneDelegate.swift */; };
 		989DA4902AE26D8800054926 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 989DA48F2AE26D8800054926 /* Assets.xcassets */; };
@@ -148,6 +149,7 @@
 		980AB8D62AE8DAAB00CFBEBB /* LoginViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModelTests.swift; sourceTree = "<group>"; };
 		980AB8D92AE8DC3600CFBEBB /* HomeViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModelTests.swift; sourceTree = "<group>"; };
 		981A78E42AEF6E7000B37B09 /* Alertable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alertable.swift; sourceTree = "<group>"; };
+		981A78E62AEF71A900B37B09 /* MyCustomPageControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCustomPageControl.swift; sourceTree = "<group>"; };
 		989DA4832AE26D8700054926 /* HLNimbleiOSChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HLNimbleiOSChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		989DA4862AE26D8700054926 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		989DA4882AE26D8700054926 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -652,6 +654,7 @@
 			children = (
 				989DA4D02AE2D9F600054926 /* CustomTextField.swift */,
 				989DA4D22AE2DDD300054926 /* CustomButton.swift */,
+				981A78E62AEF71A900B37B09 /* MyCustomPageControl.swift */,
 			);
 			path = Customized;
 			sourceTree = "<group>";
@@ -1183,6 +1186,7 @@
 				989DA4E92AE4203500054926 /* DataTransferService.swift in Sources */,
 				989DA50B2AE5F96400054926 /* Cancellable.swift in Sources */,
 				989DA53F2AE6505700054926 /* RefreshTokenRequestDTO+Mapping.swift in Sources */,
+				981A78E72AEF71A900B37B09 /* MyCustomPageControl.swift in Sources */,
 				989DA5122AE5FC0100054926 /* APIEndpoints.swift in Sources */,
 				989DA4E32AE2EE7500054926 /* LoginSceneDIContainer.swift in Sources */,
 				989DA4E12AE2ECB800054926 /* AppDIContainer.swift in Sources */,
