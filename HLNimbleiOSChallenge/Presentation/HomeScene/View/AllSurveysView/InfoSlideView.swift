@@ -26,7 +26,7 @@ class InfoSlideView: UIView {
         self.survey = survey
         titleInfoLabel.text = survey.title
         descInfoLabel.text = survey.description
-        bgImageView.sd_setImage(with: URL(string: survey.imageUrl), placeholderImage: UIImage(named: "bg_lazy_load"))
+        bgImageView.sd_setImage(with: URL(string: survey.imageUrl.appending("l")), placeholderImage: UIImage(named: "bg_lazy_load"))
     }
     
     @IBAction func startSurveyButtonTapped(_ sender: Any) {
