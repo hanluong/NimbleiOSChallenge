@@ -18,6 +18,7 @@ protocol HomeViewModelInput {
 
 protocol HomeViewModelOutput {
     var surveyList: Observable<SurveyList?> { get }
+    var dateTimeString: Observable<String> { get }
 }
 
 protocol HomeViewModel: HomeViewModelInput, HomeViewModelOutput { }
@@ -31,6 +32,7 @@ final class DefaultHomeViewModel: HomeViewModel {
     
     // MARK: - Output
     var surveyList: Observable<SurveyList?> = Observable(nil)
+    var dateTimeString: Observable<String> = Observable("")
     
     init(homeUseCase: HomeUseCase, actions: HomeViewModelActions? = nil) {
         self.homeUseCase = homeUseCase
@@ -49,6 +51,19 @@ final class DefaultHomeViewModel: HomeViewModel {
             }
         }
     }
+    
+    private func getCurrentDate() {
+        // get the current date and time
+        let currentDateTime = Date()
+
+        // initialize the date formatter and set the style
+        let formatter = DateFormatter()
+        formatter.dateFormat = "EEEE, MMM d"
+        formatter.locale = Locale(identifier: "en_US_POSIX")
+
+        // get the date time String from the date object
+        dateTimeString.value = formatter.string(from: currentDateTime).uppercased()
+    }
 }
 
 // MARK: - Input
@@ -56,6 +71,7 @@ extension DefaultHomeViewModel {
     
     func viewWillAppear() {
         loadAllSurveys()
+        getCurrentDate()
     }
     
     func didStartSurvey(_ survey: Survey) {

@@ -47,7 +47,7 @@
                                 </subviews>
                             </stackView>
                             <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="WKX-1i-xfm" customClass="MyCustomPageControl" customModule="HLNimbleiOSChallenge" customModuleProvider="target">
-                                <rect key="frame" x="20.000000000000007" y="592" width="115.66666666666669" height="26"/>
+                                <rect key="frame" x="18.000000000000007" y="602" width="115.66666666666669" height="26"/>
                             </pageControl>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vyn-rF-0YJ">
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
@@ -63,11 +63,11 @@
                             <constraint firstItem="E3g-XQ-gx7" firstAttribute="trailing" secondItem="Vyn-rF-0YJ" secondAttribute="trailing" id="26r-GZ-UHX"/>
                             <constraint firstItem="E3g-XQ-gx7" firstAttribute="trailing" secondItem="DeC-03-gkC" secondAttribute="trailing" id="5FF-sa-JJv"/>
                             <constraint firstAttribute="bottom" secondItem="DeC-03-gkC" secondAttribute="bottom" id="6Hy-hU-amZ"/>
-                            <constraint firstItem="WKX-1i-xfm" firstAttribute="leading" secondItem="E3g-XQ-gx7" secondAttribute="leading" constant="20" id="LNf-Pb-pm9"/>
+                            <constraint firstItem="WKX-1i-xfm" firstAttribute="leading" secondItem="E3g-XQ-gx7" secondAttribute="leading" constant="18" id="LNf-Pb-pm9"/>
                             <constraint firstAttribute="bottom" secondItem="Vyn-rF-0YJ" secondAttribute="bottom" id="RML-dG-Sy6"/>
                             <constraint firstItem="DeC-03-gkC" firstAttribute="top" secondItem="mqO-jp-uZd" secondAttribute="top" id="TQH-aX-kwy"/>
                             <constraint firstItem="bO2-AT-aE6" firstAttribute="leading" secondItem="E3g-XQ-gx7" secondAttribute="leading" constant="20" id="TsE-aP-Yd4"/>
-                            <constraint firstItem="E3g-XQ-gx7" firstAttribute="bottom" secondItem="WKX-1i-xfm" secondAttribute="bottom" constant="200" id="VOg-eM-kQ8"/>
+                            <constraint firstItem="E3g-XQ-gx7" firstAttribute="bottom" secondItem="WKX-1i-xfm" secondAttribute="bottom" constant="190" id="VOg-eM-kQ8"/>
                             <constraint firstItem="Jtb-0k-3fe" firstAttribute="leading" secondItem="E3g-XQ-gx7" secondAttribute="leading" constant="20" id="Whk-9R-ngj"/>
                             <constraint firstItem="Vyn-rF-0YJ" firstAttribute="leading" secondItem="E3g-XQ-gx7" secondAttribute="leading" id="byg-37-iOK"/>
                             <constraint firstItem="Vyn-rF-0YJ" firstAttribute="top" secondItem="mqO-jp-uZd" secondAttribute="top" id="cg5-4d-Dxw"/>
@@ -75,6 +75,11 @@
                             <constraint firstItem="bO2-AT-aE6" firstAttribute="top" secondItem="Jtb-0k-3fe" secondAttribute="bottom" constant="4" id="k2M-DP-x0J"/>
                             <constraint firstItem="DeC-03-gkC" firstAttribute="leading" secondItem="E3g-XQ-gx7" secondAttribute="leading" id="sVJ-aA-4mc"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="DeC-03-gkC"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <outlet property="avatarImageView" destination="i6U-5m-aRx" id="Ugi-eK-RP1"/>
