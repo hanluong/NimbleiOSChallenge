@@ -16,10 +16,11 @@ class HomeViewController: UIViewController, StoryboardInstantiable {
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var avatarImageView: UIImageView!
     @IBOutlet weak var contentScrollView: UIScrollView!
-    @IBOutlet weak var pageControl: UIPageControl!
+    @IBOutlet weak var pageControl: MyCustomPageControl!
     
     // Variables
     private var viewModel: HomeViewModel!
+    private var slides = [InfoSlideView]()
     
     // MARK: - Lifecycle
     
@@ -56,7 +57,6 @@ class HomeViewController: UIViewController, StoryboardInstantiable {
     }
     
     private func createSurveySlide(surveyList: SurveyList) -> [InfoSlideView]? {
-        var slides = [InfoSlideView]()
         for survey in surveyList.surveys {
             guard let slide = Bundle.main.loadNibNamed("InfoSlideView", owner: self, options: nil)?.first as? InfoSlideView else { return nil }
             slide.setupViews(with: survey)
@@ -74,6 +74,7 @@ class HomeViewController: UIViewController, StoryboardInstantiable {
         pageControl.numberOfPages = slides.count
         pageControl.currentPage = 0
         pageControl.currentPageIndicatorTintColor = UIColor.white
+        pageControl.addTarget(self, action: #selector(pageControlTapped(sender:)), for: .valueChanged)
         
         contentScrollView.delegate = self
         contentScrollView.isPagingEnabled = true
@@ -88,18 +89,20 @@ class HomeViewController: UIViewController, StoryboardInstantiable {
         }
         contentScrollView.contentSize = CGSize(width: view.frame.width * CGFloat(slides.count), height: view.frame.height)
     }
+    
+    @objc func pageControlTapped(sender: MyCustomPageControl) {
+        contentScrollView.contentOffset = CGPoint(x: view.frame.width * CGFloat(sender.currentPage), y: 0)
+    }
 }
 
 // MARK: - UIScrollViewDelegate
 extension HomeViewController: UIScrollViewDelegate {
     
-    func scrollViewDidScroll(_ scrollView: UIScrollView) {}
-    
-    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
         let pageIndex = Int(round(scrollView.contentOffset.x / view.frame.width))
         pageControl.currentPage = pageIndex
-        pageControl.currentPageIndicatorTintColor = UIColor.white
     }
+    
 }
 
 // MARK: - InfoSlideViewDelegate
