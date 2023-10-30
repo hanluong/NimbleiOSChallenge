@@ -75,11 +75,6 @@
                             <constraint firstItem="bO2-AT-aE6" firstAttribute="top" secondItem="Jtb-0k-3fe" secondAttribute="bottom" constant="4" id="k2M-DP-x0J"/>
                             <constraint firstItem="DeC-03-gkC" firstAttribute="leading" secondItem="E3g-XQ-gx7" secondAttribute="leading" id="sVJ-aA-4mc"/>
                         </constraints>
-                        <variation key="default">
-                            <mask key="subviews">
-                                <exclude reference="DeC-03-gkC"/>
-                            </mask>
-                        </variation>
                     </view>
                     <connections>
                         <outlet property="avatarImageView" destination="i6U-5m-aRx" id="Ugi-eK-RP1"/>
