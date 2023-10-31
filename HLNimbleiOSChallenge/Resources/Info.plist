@@ -2,12 +2,12 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>CLIENT_ID</key>
-	<string>$(CLIENT_ID)</string>
-	<key>CLIENT_SECRET</key>
-	<string>$(CLIENT_SECRET)</string>
-	<key>ROOT_URL</key>
-	<string>$(ROOT_URL)</string>
+	<key>BASE_URL</key>
+	<string>$(BASE_URL)</string>
+	<key>NIMBLE_CLIENT_ID</key>
+	<string>$(NIMBLE_CLIENT_ID)</string>
+	<key>NIMBLE_CLIENT_SECRET</key>
+	<string>$(NIMBLE_CLIENT_SECRET)</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>

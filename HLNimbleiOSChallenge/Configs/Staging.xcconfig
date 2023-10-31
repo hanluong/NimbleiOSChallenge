@@ -1,0 +1,12 @@
+//
+//  Staging.xcconfig
+//  HLNimbleiOSChallenge
+//
+//  Created by Han Luong on 31/10/2023.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+BASE_URL = https:\/\/survey-api-staging.nimblehq.co/api/v1/
+NIMBLE_CLIENT_ID = ofzl-2h5ympKa0WqqTzqlVJUiRsxmXQmt5tkgrlWnOE
+NIMBLE_CLIENT_SECRET = lMQb900L-mTeU-FVTCwyhjsfBwRCxwwbCitPob96cuU
