@@ -50,7 +50,7 @@ class LoginViewController: UIViewController, StoryboardInstantiable, Alertable {
     
     private func bind(to viewModel: LoginViewModel) {
         viewModel.error.observe(on: self) { [weak self] in
-            self?.showError($0)
+            self?.showError($0.rawValue)
         }
     }
     
