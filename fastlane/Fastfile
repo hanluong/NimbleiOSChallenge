@@ -20,7 +20,7 @@ platform :ios do
   lane :build_local do
     make_build_folder
     build_ios_app(
-      scheme: "HLNimbleiOSChallenge", 
+      scheme: "HLNimbleiOSChallenge_Debug", 
       workspace: "HLNimbleiOSChallenge.xcworkspace",
       configuration: "Debug", 
       export_method: "development",
@@ -30,6 +30,37 @@ platform :ios do
       clean: true
     )
   end
+
+  desc "Build App in Staging"
+  lane :build_staging do
+    make_build_folder
+    build_ios_app(
+      scheme: "HLNimbleiOSChallenge_Staging", 
+      workspace: "HLNimbleiOSChallenge.xcworkspace",
+      configuration: "Staging", 
+      export_method: "ad-hoc",
+      output_directory: "./build",
+      output_name: "HLNimbleiOSChallenge_Staging.ipa",
+      silent: true,
+      clean: true
+    )
+  end
+
+  desc "Build App in Store"
+  lane :build_release do
+    make_build_folder
+    build_ios_app(
+      scheme: "HLNimbleiOSChallenge_Release", 
+      workspace: "HLNimbleiOSChallenge.xcworkspace",
+      configuration: "Release", 
+      export_method: "app-store",
+      output_directory: "./build",
+      output_name: "HLNimbleiOSChallenge.ipa",
+      silent: true,
+      clean: true
+    )
+  end
+
   desc "Make build Folder"
   private_lane :make_build_folder do
     sh "mkdir -p ./build"
