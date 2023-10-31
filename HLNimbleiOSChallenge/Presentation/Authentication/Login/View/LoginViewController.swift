@@ -18,8 +18,10 @@ class LoginViewController: UIViewController, StoryboardInstantiable, Alertable {
         return button
     }()
     
+    @IBOutlet weak var logoImageView: UIImageView!
     @IBOutlet weak var emailTextField: CustomTextField!
     @IBOutlet weak var passwordTextField: CustomTextField!
+    @IBOutlet weak var loginButton: CustomButton!
     
     private var viewModel: LoginViewModel!
     
@@ -46,11 +48,17 @@ class LoginViewController: UIViewController, StoryboardInstantiable, Alertable {
         passwordTextField.rightView = forgotPasswordButton
         passwordTextField.rightViewMode = .always
         forgotPasswordButton.addTarget(self, action: #selector(handleForgotPassword(sender:)), for: .touchUpInside)
+        
+        emailTextField.accessibilityIdentifier = AuthenticationIdentifier.emailTextField
+        passwordTextField.accessibilityIdentifier = AuthenticationIdentifier.passwordTextField
+        forgotPasswordButton.accessibilityIdentifier = AuthenticationIdentifier.forgotPasswordButton
+        loginButton.accessibilityIdentifier = AuthenticationIdentifier.loginButton
+        logoImageView.accessibilityIdentifier = AuthenticationIdentifier.logoImageView
     }
     
     private func bind(to viewModel: LoginViewModel) {
         viewModel.error.observe(on: self) { [weak self] in
-            self?.showError($0)
+            self?.showError($0.rawValue)
         }
     }
     

@@ -7,6 +7,13 @@
 
 import Foundation
 
+enum LoginError: String {
+    case none                      = ""
+    case emailInvalid              = "Email is empty or invalid. Please enter a valid email address."
+    case passwordEmpty             = "Password is empty. Please enter your password."
+    case incorrectEmailPassword    = "Your email or password is incorrect. Please try again."
+}
+
 struct LoginViewModelActions {
     let showHomeView: () -> Void
 }
@@ -16,7 +23,7 @@ protocol LoginViewModelInput {
 }
 
 protocol LoginViewModelOutput {
-    var error: Observable<String> { get }
+    var error: Observable<LoginError> { get }
 }
 
 protocol LoginViewModel: LoginViewModelInput, LoginViewModelOutput { }
@@ -29,7 +36,7 @@ final class DefaultLoginViewModel: LoginViewModel {
     private var userLoginTask: Cancellable? { willSet { userLoginTask?.cancel() } }
     
     // MARK: - Output
-    var error: Observable<String> = Observable("")
+    var error: Observable<LoginError> = Observable(.none)
     
     init(loginUseCase: LoginUseCase, actions: LoginViewModelActions? = nil) {
         self.loginUseCase = loginUseCase
@@ -41,11 +48,11 @@ extension DefaultLoginViewModel {
     
     func didLogin(email: String?, password: String?) {
         guard let email = email, email.isValidEmail() else {
-            error.value = "Email is empty or invalid. Please enter a valid email address."
+            error.value = .emailInvalid
             return
         }
         guard let password = password, !password.isEmpty else {
-            error.value = "Password is empty. Please enter your password."
+            error.value = .passwordEmpty
             return
         }
         
@@ -57,7 +64,7 @@ extension DefaultLoginViewModel {
                 print(user)
                 self.actions?.showHomeView()
             default:
-                self.error.value = "Your email or password is incorrect. Please try again."
+                self.error.value = .incorrectEmailPassword
             }
             self.userLoginTask = nil
         })
