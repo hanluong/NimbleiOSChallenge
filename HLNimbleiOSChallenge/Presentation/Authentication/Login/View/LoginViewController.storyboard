@@ -73,6 +73,8 @@
                     </view>
                     <connections>
                         <outlet property="emailTextField" destination="F72-z1-exl" id="QLw-56-IOs"/>
+                        <outlet property="loginButton" destination="H1v-p0-Ral" id="jFE-Gl-cts"/>
+                        <outlet property="logoImageView" destination="Gkq-2i-wkG" id="ZWO-pi-46a"/>
                         <outlet property="passwordTextField" destination="qSf-ZJ-n2I" id="AOx-FZ-orA"/>
                     </connections>
                 </viewController>
