@@ -9,20 +9,13 @@ import UIKit
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
-    let appDIContainer = AppDIContainer()
     var appFlowCoordinator: AppFlowCoordinator?
     var window: UIWindow?
 
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         AppAppearance.setupAppearance()
-        guard let windowScene = (scene as? UIWindowScene) else { return }
-        window = UIWindow(windowScene: windowScene)
-        let navigationController = UINavigationController()
-        self.window?.rootViewController = navigationController
-        appFlowCoordinator = AppFlowCoordinator(navigationController: navigationController, appDIContainer: appDIContainer)
-        appFlowCoordinator?.start()
-        self.window?.makeKeyAndVisible()
+        guard let _ = (scene as? UIWindowScene) else { return }
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
@@ -43,8 +36,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     }
 
     func sceneWillEnterForeground(_ scene: UIScene) {
-        // Called as the scene transitions from the background to the foreground.
-        // Use this method to undo the changes made on entering the background.
+        guard let windowScene = (scene as? UIWindowScene) else { return }
+        window = UIWindow(windowScene: windowScene)
+        appFlowCoordinator = AppFlowCoordinator(window: window)
+        appFlowCoordinator?.start()
     }
 
     func sceneDidEnterBackground(_ scene: UIScene) {

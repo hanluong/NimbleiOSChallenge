@@ -72,7 +72,6 @@
 		989DA4FB2AE45D5000054926 /* HomeFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989DA4FA2AE45D5000054926 /* HomeFlowCoordinator.swift */; };
 		989DA5002AE5336900054926 /* RootViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 989DA4FF2AE5336900054926 /* RootViewController.storyboard */; };
 		989DA5022AE5337C00054926 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989DA5012AE5337C00054926 /* RootViewController.swift */; };
-		989DA5042AE5399F00054926 /* RootViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989DA5032AE5399F00054926 /* RootViewModel.swift */; };
 		989DA5062AE53EA600054926 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989DA5052AE53EA600054926 /* Observable.swift */; };
 		989DA5092AE5F94E00054926 /* ConnectionError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989DA5082AE5F94E00054926 /* ConnectionError.swift */; };
 		989DA50B2AE5F96400054926 /* Cancellable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989DA50A2AE5F96300054926 /* Cancellable.swift */; };
@@ -82,8 +81,6 @@
 		989DA51C2AE5FDC400054926 /* Answer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989DA51B2AE5FDC400054926 /* Answer.swift */; };
 		989DA51E2AE5FEEB00054926 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989DA51D2AE5FEEB00054926 /* Question.swift */; };
 		989DA5202AE5FF2000054926 /* Survey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989DA51F2AE5FF2000054926 /* Survey.swift */; };
-		989DA5332AE631FC00054926 /* RootSceneDIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989DA5322AE631FC00054926 /* RootSceneDIContainer.swift */; };
-		989DA5362AE6351500054926 /* RootFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989DA5352AE6351500054926 /* RootFlowCoordinator.swift */; };
 		989DA5382AE63D2600054926 /* FetchRecentUserUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989DA5372AE63D2600054926 /* FetchRecentUserUseCase.swift */; };
 		989DA53A2AE6408C00054926 /* UserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989DA5392AE6408C00054926 /* UserRepository.swift */; };
 		989DA53C2AE64C5F00054926 /* DefaultUserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989DA53B2AE64C5F00054926 /* DefaultUserRepository.swift */; };
@@ -186,7 +183,6 @@
 		989DA4FA2AE45D5000054926 /* HomeFlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFlowCoordinator.swift; sourceTree = "<group>"; };
 		989DA4FF2AE5336900054926 /* RootViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RootViewController.storyboard; sourceTree = "<group>"; };
 		989DA5012AE5337C00054926 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
-		989DA5032AE5399F00054926 /* RootViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewModel.swift; sourceTree = "<group>"; };
 		989DA5052AE53EA600054926 /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
 		989DA5082AE5F94E00054926 /* ConnectionError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionError.swift; sourceTree = "<group>"; };
 		989DA50A2AE5F96300054926 /* Cancellable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cancellable.swift; sourceTree = "<group>"; };
@@ -196,8 +192,6 @@
 		989DA51B2AE5FDC400054926 /* Answer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Answer.swift; sourceTree = "<group>"; };
 		989DA51D2AE5FEEB00054926 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		989DA51F2AE5FF2000054926 /* Survey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Survey.swift; sourceTree = "<group>"; };
-		989DA5322AE631FC00054926 /* RootSceneDIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootSceneDIContainer.swift; sourceTree = "<group>"; };
-		989DA5352AE6351500054926 /* RootFlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootFlowCoordinator.swift; sourceTree = "<group>"; };
 		989DA5372AE63D2600054926 /* FetchRecentUserUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchRecentUserUseCase.swift; sourceTree = "<group>"; };
 		989DA5392AE6408C00054926 /* UserRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepository.swift; sourceTree = "<group>"; };
 		989DA53B2AE64C5F00054926 /* DefaultUserRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultUserRepository.swift; sourceTree = "<group>"; };
@@ -674,7 +668,6 @@
 			isa = PBXGroup;
 			children = (
 				989DA4E02AE2ECB800054926 /* AppDIContainer.swift */,
-				989DA5322AE631FC00054926 /* RootSceneDIContainer.swift */,
 				989DA4E22AE2EE7500054926 /* LoginSceneDIContainer.swift */,
 				989DA4F72AE45CBD00054926 /* HomeSceneDIContainer.swift */,
 			);
@@ -740,19 +733,9 @@
 		989DA4FC2AE5306800054926 /* AppScene */ = {
 			isa = PBXGroup;
 			children = (
-				989DA5342AE6350900054926 /* Flows */,
-				989DA4FD2AE530D300054926 /* ViewModel */,
 				989DA4FE2AE530DA00054926 /* View */,
 			);
 			path = AppScene;
-			sourceTree = "<group>";
-		};
-		989DA4FD2AE530D300054926 /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-				989DA5032AE5399F00054926 /* RootViewModel.swift */,
-			);
-			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		989DA4FE2AE530DA00054926 /* View */ = {
@@ -855,14 +838,6 @@
 				989DA5192AE5FCE200054926 /* UseCase.swift */,
 			);
 			path = Protocol;
-			sourceTree = "<group>";
-		};
-		989DA5342AE6350900054926 /* Flows */ = {
-			isa = PBXGroup;
-			children = (
-				989DA5352AE6351500054926 /* RootFlowCoordinator.swift */,
-			);
-			path = Flows;
 			sourceTree = "<group>";
 		};
 		989DA53D2AE6503000054926 /* DataMapping */ = {
@@ -1160,14 +1135,12 @@
 				980AB8BB2AE843A200CFBEBB /* DefaultSurveyRepository.swift in Sources */,
 				989DA4D12AE2D9F600054926 /* CustomTextField.swift in Sources */,
 				980AB8882AE700EB00CFBEBB /* UIViewController+Ext.swift in Sources */,
-				989DA5042AE5399F00054926 /* RootViewModel.swift in Sources */,
 				989DA4892AE26D8700054926 /* SceneDelegate.swift in Sources */,
 				989DA54E2AE6605600054926 /* CoreDataUserResponseStorage.swift in Sources */,
 				989DA54A2AE65E2E00054926 /* CoreDataStorage.xcdatamodeld in Sources */,
 				980AB8922AE78A8100CFBEBB /* LoginViewModel.swift in Sources */,
 				989DA4D92AE2E77F00054926 /* LoadingView.swift in Sources */,
 				989DA5512AE6612F00054926 /* UserResponseEntity+Mapping.swift in Sources */,
-				989DA5362AE6351500054926 /* RootFlowCoordinator.swift in Sources */,
 				989DA4F82AE45CBD00054926 /* HomeSceneDIContainer.swift in Sources */,
 				980AB88E2AE77A2900CFBEBB /* HomeViewController.swift in Sources */,
 				989DA5382AE63D2600054926 /* FetchRecentUserUseCase.swift in Sources */,
@@ -1182,7 +1155,6 @@
 				989DA4D32AE2DDD300054926 /* CustomButton.swift in Sources */,
 				980AB8C52AE8BD8200CFBEBB /* SurveyViewModel.swift in Sources */,
 				989DA4F02AE42DC000054926 /* NetworkConfig.swift in Sources */,
-				989DA5332AE631FC00054926 /* RootSceneDIContainer.swift in Sources */,
 				989DA4BB2AE2840F00054926 /* AppConfigurations.swift in Sources */,
 				989DA51E2AE5FEEB00054926 /* Question.swift in Sources */,
 				989DA4D62AE2E5CB00054926 /* UIColor+Ext.swift in Sources */,
